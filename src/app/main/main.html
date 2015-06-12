@@ -2,7 +2,7 @@
 
   <ul>
     <li ng-repeat="site in sites">
-      <div class="circle">
+      <div class="circle" style="top: {{site.top}}; left: {{site.left}}">
         <img ng-src="assets/images/{{site.logo}}" />
       </div>
     </li>

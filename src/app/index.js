@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angelMounds', ['ngAnimate', 'ngSanitize', 'ngResource', 'ui.router'])
+angular.module('angelMounds', ['ngAnimate', 'ngSanitize', 'ngResource', 'ui.router', 'sitesFactory'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
