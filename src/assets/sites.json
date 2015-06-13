@@ -1,17 +1,20 @@
 [
   {
     "logo": "angular.png", 
-    "top": "100px",
-    "left": "500px"
+    "y": "100px",
+    "x": "500px",
+    "filterObject": { "title": "AngularJS" }
   },
   {
     "logo": "yeoman.png", 
-    "top": "400px",
-    "left": "300px"
+    "y": "400px",
+    "x": "300px",
+    "filterObject": { "title": "Yeoman" }
   },
   {
     "logo": "gulp.png", 
-    "top": "500px",
-    "left": "800px"
+    "y": "500px",
+    "x": "800px",
+    "filterObject": { "title": "Gulp" }
   }
 ]

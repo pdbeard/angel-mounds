@@ -20,25 +20,25 @@
   {
     "type": "img",
     "url": "browsersync.png", 
-    "title": "BrowserSync",
+    "title": "AngularJS",
     "description": "Time-saving synchronised browser testing"
   },
   {
     "type": "img",
     "url": "jasmine.png", 
-    "title": "Jasmine",
+    "title": "AngularJS",
     "description": "Behavior-Driven JavaScript"
   },
   {
     "type": "img",
     "url": "karma.png", 
-    "title": "Karma",
+    "title": "AngularJS",
     "description": "Spectacular Test Runner for Javascript"
   },
   {
     "type": "img",
     "url": "protractor.png", 
-    "title": "Protractor",
+    "title": "AngularJS",
     "description": "End to end testing for AngularJS"
   }
 ]

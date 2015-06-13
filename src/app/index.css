@@ -33,3 +33,11 @@ ul {
 .site.active {
   background: gold; 
 }
+
+.item {
+  background: gray;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  position: absolute;
+}
