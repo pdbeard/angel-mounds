@@ -6,7 +6,7 @@ angular.module('angelMounds', ['ngAnimate', 'ngSanitize', 'ngResource', 'ui.rout
       .state('home', {
         url: '/',
         templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainController'
       });
 
     $urlRouterProvider.otherwise('/');

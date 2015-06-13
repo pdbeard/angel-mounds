@@ -1,6 +1,6 @@
 'use strict';
 
-describe('MainCtrl', function () {
+describe('MainController', function () {
   var scope,
     $httpBackend,
     mockSites = [
@@ -80,7 +80,7 @@ describe('MainCtrl', function () {
   it('should create "sites" model from XHR request', inject(function ($controller) {
     expect(scope.sites).toBeUndefined();
 
-    $controller('MainCtrl', {
+    $controller('MainController', {
       $scope: scope
     });
     
@@ -93,7 +93,7 @@ describe('MainCtrl', function () {
   it('should create "media" model from XHR request', inject(function ($controller) {
     expect(scope.media).toBeUndefined();
 
-    $controller('MainCtrl', {
+    $controller('MainController', {
       $scope: scope
     });
     

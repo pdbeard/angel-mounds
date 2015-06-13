@@ -1,18 +1,15 @@
 [
   {
-    "active": false,
     "logo": "angular.png", 
     "top": "100px",
     "left": "500px"
   },
   {
-    "active": false,
     "logo": "yeoman.png", 
     "top": "400px",
     "left": "300px"
   },
   {
-    "active": false,
     "logo": "gulp.png", 
     "top": "500px",
     "left": "800px"

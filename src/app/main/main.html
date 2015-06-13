@@ -1,10 +1,12 @@
 <div class="container">
 
   <ul>
-    <li ng-repeat="site in sites">
-      <div class="circle" style="top: {{site.top}}; left: {{site.left}}">
-        <img ng-src="assets/images/{{site.logo}}" />
-      </div>
+    <li class="site" 
+        style="top: {{site.top}}; left: {{site.left}}" 
+        ng-repeat="site in sites" 
+        ng-click="active = !active"
+        ng-class="{'button active': active}">
+      <img ng-src="assets/images/{{site.logo}}" />
     </li>
   </ul>
 

@@ -6,7 +6,8 @@
 'use strict';
 
 var MainPage = function() { 
-  this.sites = element(by.css('body')).all(by.repeater('site in sites'));
+  this.sites = element.all(by.css('.site'));
+  this.firstSite = this.sites.first();
 };
 
 module.exports = new MainPage();
