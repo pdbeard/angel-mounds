@@ -40,5 +40,14 @@ describe('The first site', function () {
     page.firstSite.click();
     expect(page.firstSite).not.toHaveClass('active');
   });
-
+  
+  it('should add filtered media when clicked', function () {
+    var mediaOnScreen = element.all(by.repeater('item in media'));
+    
+    expect(mediaOnScreen.count()).toBe(0);
+    page.firstSite.click();
+    expect(mediaOnScreen.count()).toBe(5);
+    page.firstSite.click();
+    expect(mediaOnScreen.count()).toBe(0);
+  });
 });
