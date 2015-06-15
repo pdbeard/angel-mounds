@@ -18,7 +18,7 @@ body {
 }
 
 ul {
-  list-style: none; 
+  list-style: none;
 }
 
 .site {
@@ -28,16 +28,31 @@ ul {
   border-radius: 50%;
   padding: 15px;
   position: absolute;
+  transition: all .5s;
+
 }
 
-.site.active {
-  background: gold; 
+.site.on {
+  background: gold;
+  transition: all .5s;
 }
 
+.itemOff {
+opacity: 0;
+}
 .item {
   background: gray;
   width: 100px;
   height: 100px;
   padding: 15px;
   position: absolute;
+/*
+  transition: all .5s;
+  opacity: 1;
+  -webkit-transition-delay: .5s;
+  -moz-transition-delay: .5s;
+  -o-transition-delay: .5s;
+  -ms-transition-delay: .5s;
+  transition-delay: .5s;
+*/
 }

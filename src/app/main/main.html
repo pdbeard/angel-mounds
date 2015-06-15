@@ -5,9 +5,11 @@
         style="transform: translate({{site.x}}, {{site.y}});"
         ng-repeat="site in sites"
         ng-click="active = !active"
-        ng-class="{'button active': active}">
+        ng-class="active ? 'site on' : 'site'"
+        >
       <img ng-src="assets/images/{{site.logo}}" />
-      <ul ng-if="active">
+
+       <ul ng-if="active">
         <li class="item"
             style="transform: translate({{x($index, media.length)-50}}px, {{y($index, media.length)-125}}px);"
             ng-repeat="item in media | filter:site.filterObject">
@@ -15,7 +17,22 @@
           <!--<p>{{theta}}</p>-->
         </li>
       </ul>
+
     </li>
   </ul>
 
 </div>
+
+
+
+
+<!-- Random Bits
+////
+ng-class="variableToEvaluate ? 'class-if-true' : 'class-if-false'"
+ng-class="active ? 'siteOn' : 'siteOff"
+////
+////
+ng-class="{'classtoadd': True}
+ng-class="{'siteOn': active}"
+////
+-->
