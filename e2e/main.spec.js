@@ -46,7 +46,7 @@ describe('The first site', function () {
     
     expect(mediaOnScreen.count()).toBe(0);
     page.firstSite.click();
-    expect(mediaOnScreen.count()).toBe(5);
+    expect(mediaOnScreen.count()).toBe(4);
     page.firstSite.click();
     expect(mediaOnScreen.count()).toBe(0);
   });

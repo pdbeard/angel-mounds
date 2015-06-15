@@ -5,11 +5,14 @@ angular.module('angelMounds')
     $scope.sites = sites.query();
     $scope.media = media.query();
     
-    $scope.x = function (index, length) {
-      return 150 * Math.cos(360 * index / length);
+    /**
+     * Calculate x and y locations on a circle of the given radius
+     */ 
+    $scope.x = function (radius, index, length) {
+      return radius * Math.cos((2 * Math.PI) * (index / length));
     };
-    $scope.y = function (index, length) {
-      return 150 * Math.sin(360 * index / length);
+    $scope.y = function (radius, index, length) {
+      return radius * Math.sin((2 * Math.PI) * (index / length));
     };
                     
   }]);

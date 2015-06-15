@@ -2,17 +2,17 @@
 
   <ul>
     <li class="site" 
-        style="transform: translate({{site.x}}, {{site.y}});" 
+        style="transform: translate({{site.x}}px, {{site.y}}px);" 
         ng-repeat="site in sites" 
         ng-click="active = !active"
         ng-class="{'button active': active}">
       <img ng-src="assets/images/{{site.logo}}" />
       <ul ng-if="active">
         <li class="item"
-            style="transform: translate({{x($index, media.length)-50}}px, {{y($index, media.length)-125}}px);"
+            ng-init="filteredLength = (media | filter:site.filterObject).length;"
+            style="transform: translate({{x(site.radius, $index, filteredLength)}}px, {{y(site.radius, $index, filteredLength)}}px);"
             ng-repeat="item in media | filter:site.filterObject">
           <img ng-src="assets/images/{{item.url}}" />
-          <!--<p>{{theta}}</p>-->
         </li>
       </ul>
     </li>

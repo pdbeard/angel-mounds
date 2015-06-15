@@ -19,6 +19,15 @@ body {
 
 ul {
   list-style: none; 
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 .site {
@@ -27,7 +36,6 @@ ul {
   height: 100px;
   border-radius: 50%;
   padding: 15px;
-  position: absolute;
 }
 
 .site.active {
@@ -39,5 +47,4 @@ ul {
   width: 100px;
   height: 100px;
   padding: 15px;
-  position: absolute;
 }
