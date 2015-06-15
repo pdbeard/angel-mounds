@@ -8,12 +8,13 @@
         ng-class="active ? 'site on' : 'site'">
       <img ng-src="assets/images/{{site.logo}}" />
 
-       <ul ng-if="active" class="items">
-        <li class="item"
+       <ul >
+        <li ng-if="active" class="items"
             ng-init="filteredLength = (media | filter:site.filterObject).length;"
-            style="transform: translate({{x(site.radius, $index, filteredLength)}}px, {{y(site.radius, $index, filteredLength)}}px);"
-            ng-repeat="item in media | filter:site.filterObject"
-            >
+            style="transform: translate({{x(site.radius, $index, filteredLength)}}px, {{y(site.radius, $index, filteredLength)}}px);
+                   opacity:1;
+                   transition:.2s;"
+            ng-repeat="item in media | filter:site.filterObject">
           <img ng-src="assets/images/{{item.url}}" />
         </li>
       </ul>
