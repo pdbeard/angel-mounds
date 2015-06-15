@@ -1,9 +1,9 @@
 <div class="container">
 
   <ul>
-    <li class="site" 
-        style="transform: translate({{site.x}}, {{site.y}});" 
-        ng-repeat="site in sites" 
+    <li class="site"
+        style="transform: translate({{site.x}}, {{site.y}});"
+        ng-repeat="site in sites"
         ng-click="active = !active"
         ng-class="{'button active': active}">
       <img ng-src="assets/images/{{site.logo}}" />
