@@ -8,11 +8,12 @@
         ng-class="active ? 'site on' : 'site'">
       <img ng-src="assets/images/{{site.logo}}" />
 
-       <ul ng-if="active">
+       <ul ng-if="active" class="items">
         <li class="item"
             ng-init="filteredLength = (media | filter:site.filterObject).length;"
             style="transform: translate({{x(site.radius, $index, filteredLength)}}px, {{y(site.radius, $index, filteredLength)}}px);"
-            ng-repeat="item in media | filter:site.filterObject">
+            ng-repeat="item in media | filter:site.filterObject"
+            >
           <img ng-src="assets/images/{{item.url}}" />
         </li>
       </ul>
@@ -34,4 +35,6 @@ ng-class="active ? 'siteOn' : 'siteOff"
 ng-class="{'classtoadd': True}
 ng-class="{'siteOn': active}"
 ////
+
+ng-animate="'item'"
 -->

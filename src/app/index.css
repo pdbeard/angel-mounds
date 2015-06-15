@@ -42,26 +42,39 @@ li {
 
 .site.on {
   background: gold;
+  border-radius:0%;
   transition: all .5s;
 }
 
-.itemOff {
-opacity: 0;
-}
+
 .item {
   background: gray;
   width: 100px;
   height: 100px;
   padding: 15px;
-
-/*
-  transition: all .5s;
-  opacity: 1;
-  -webkit-transition-delay: .5s;
-  -moz-transition-delay: .5s;
-  -o-transition-delay: .5s;
-  -ms-transition-delay: .5s;
-  transition-delay: .5s;
-*/
-
 }
+
+.items.ng-enter {
+  opacity: 0;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -ms-transition: 1s
+}
+
+.items.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.items.ng-leave{
+  opacity: 1;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -ms-transition: 1s;
+}
+.items.ng-leave.ng-leave-active{
+  opacity: 0;
+}
+
