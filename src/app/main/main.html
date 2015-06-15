@@ -14,7 +14,8 @@
             style="transform: translate({{x(site.radius, $index, filteredLength)}}px, {{y(site.radius, $index, filteredLength)}}px);
                    opacity:1;
                    transition:.2s;"
-            ng-repeat="item in media | filter:site.filterObject">
+            ng-repeat="item in media | filter:site.filterObject"
+            ng-click="$event.stopPropagation()">
           <img ng-src="assets/images/{{item.url}}" />
         </li>
       </ul>
