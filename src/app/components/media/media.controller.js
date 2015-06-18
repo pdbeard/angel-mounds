@@ -2,7 +2,8 @@
 
 angular.module('angelMounds')
   .controller('MediaController', ['$scope', function ($scope) {
-    var START_ANGLE = 360 * ($scope.$index / $scope.filteredMedia.length),
+    var oldTransform,
+      START_ANGLE = 360 * ($scope.$index / $scope.filteredMedia.length),
       START_X = $scope.site.radius * Math.cos(START_ANGLE * (Math.PI / 180)),
       START_Y = $scope.site.radius * Math.sin(START_ANGLE * (Math.PI / 180));
     
@@ -15,8 +16,7 @@ angular.module('angelMounds')
       angle: START_ANGLE
     };
     
-    var oldTransform = $scope.transform;
-    
+    oldTransform = $scope.transform;
     
     $scope.touchThis = function (event) {
       $scope.transform = {
@@ -27,12 +27,9 @@ angular.module('angelMounds')
         scale: oldTransform.scale + event.scale,
         angle: oldTransform.angle + event.rotation
       };
-      
-      console.log(event.deltaX);
     };
     
-    $scope.cantTouchThis = function (event) {
+    $scope.cantTouchThis = function () {
       oldTransform = $scope.transform;
-    };
-                    
+    };          
   }]);

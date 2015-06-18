@@ -17,12 +17,8 @@
                    transition:.2s;"
             ng-repeat="item in filteredMedia"
             ng-click="$event.stopPropagation();"
-            hm-pan="touchThis"
-            hm-rotate="touchThis"
-            hm-scale="touchThis"
-            hm-panend="cantTouchThis"
-            hm-rotateend="cantTouchThis"
-            hm-scaleend="cantTouchThis">
+            hm-panmove="touchThis($event)"
+            hm-panend="cantTouchThis">
           <img ng-src="assets/images/{{item.url}}" ondragstart="return false"/>
         </li>
       </ul>
