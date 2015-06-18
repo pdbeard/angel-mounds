@@ -8,16 +8,22 @@
         ng-class="active ? 'site on' : 'site'">
       <img ng-src="assets/images/{{site.logo}}" />
 
-       <ul >
-        <li ng-if="active" class="items"
-            ng-init="filteredLength = (media | filter:site.filterObject).length;"
-            style="transform: translate({{x(site.radius, $index, filteredLength)}}px, {{y(site.radius, $index, filteredLength)}}px)
-                    rotate({{theta($index, filteredLength) - 90}}deg); 
+      <ul ng-if="active" ng-controller="SitesController">
+        <li class="items"
+            ng-controller="MediaController"
+            style="transform: translate({{transform.translate.x}}px, {{transform.translate.y}}px)
+                   rotate({{transform.angle - 90}}deg);
                    opacity:1;
                    transition:.2s;"
-            ng-repeat="item in media | filter:site.filterObject"
-            ng-click="$event.stopPropagation()">
-          <img ng-src="assets/images/{{item.url}}" />
+            ng-repeat="item in filteredMedia"
+            ng-click="$event.stopPropagation();"
+            hm-pan="touchThis"
+            hm-rotate="touchThis"
+            hm-scale="touchThis"
+            hm-panend="cantTouchThis"
+            hm-rotateend="cantTouchThis"
+            hm-scaleend="cantTouchThis">
+          <img ng-src="assets/images/{{item.url}}" ondragstart="return false"/>
         </li>
       </ul>
 
