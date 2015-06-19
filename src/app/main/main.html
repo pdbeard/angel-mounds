@@ -9,17 +9,21 @@
       <li class="items"
           ng-controller="MediaController"
           style="transform: translate({{transform.translate.x}}px, {{transform.translate.y}}px)
-                 rotate({{transform.angle - 90}}deg);
+                 rotate({{transform.angle - 90}}deg)
+                 scale({{transform.scale}});
                  opacity:1;
                  transition:{{transition}}s;"
           ng-repeat="item in filteredMedia"
           ng-click="$event.stopPropagation();"
           hm-panmove="touchThis($event)"
-          hm-panend="cantTouchThis">
+          hm-pinchmove="touchThis($event)"
+          hm-rotatemove="touchThis($event)"
+          hm-panend="cantTouchThis"
+          hm-pinchend="cantTouchThis"
+          hm-rotateend="cantTouchThis">
         <img ng-src="assets/images/{{item.url}}" ondragstart="return false"/>
       </li>
     </ul>
-
   </li>
 </ul>
 

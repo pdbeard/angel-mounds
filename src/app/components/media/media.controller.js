@@ -26,7 +26,7 @@ angular.module('angelMounds')
           x: oldTransform.translate.x + event.deltaX,
           y: oldTransform.translate.y + event.deltaY
         },
-        scale: oldTransform.scale + event.scale,
+        scale: oldTransform.scale * event.scale,
         angle: oldTransform.angle + event.rotation
       };
       
