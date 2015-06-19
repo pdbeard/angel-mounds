@@ -7,6 +7,8 @@ angular.module('angelMounds')
       START_X = $scope.site.radius * Math.cos(START_ANGLE * (Math.PI / 180)),
       START_Y = $scope.site.radius * Math.sin(START_ANGLE * (Math.PI / 180));
     
+    $scope.transition = 0.2;
+    
     $scope.transform = {
       translate: {
         x: START_X,
@@ -27,9 +29,11 @@ angular.module('angelMounds')
         scale: oldTransform.scale + event.scale,
         angle: oldTransform.angle + event.rotation
       };
+      
+      $scope.transition = 0;
     };
     
     $scope.cantTouchThis = function () {
       oldTransform = $scope.transform;
-    };          
+    };
   }]);

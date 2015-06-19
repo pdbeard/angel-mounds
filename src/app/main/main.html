@@ -1,32 +1,27 @@
-<div class="container">
+<ul>
+  <li style="transform: translate({{site.x}}px, {{site.y}}px);"
+      ng-repeat="site in sites"
+      ng-click="active = !active"
+      ng-class="active ? 'site on' : 'site'">
+    <img ng-src="assets/images/{{site.logo}}" />
 
-  <ul>
-    <li class="site"
-        style="transform: translate({{site.x}}px, {{site.y}}px);"
-        ng-repeat="site in sites"
-        ng-click="active = !active"
-        ng-class="active ? 'site on' : 'site'">
-      <img ng-src="assets/images/{{site.logo}}" />
+    <ul ng-if="active" ng-controller="SitesController">
+      <li class="items"
+          ng-controller="MediaController"
+          style="transform: translate({{transform.translate.x}}px, {{transform.translate.y}}px)
+                 rotate({{transform.angle - 90}}deg);
+                 opacity:1;
+                 transition:{{transition}}s;"
+          ng-repeat="item in filteredMedia"
+          ng-click="$event.stopPropagation();"
+          hm-panmove="touchThis($event)"
+          hm-panend="cantTouchThis">
+        <img ng-src="assets/images/{{item.url}}" ondragstart="return false"/>
+      </li>
+    </ul>
 
-      <ul ng-if="active" ng-controller="SitesController">
-        <li class="items"
-            ng-controller="MediaController"
-            style="transform: translate({{transform.translate.x}}px, {{transform.translate.y}}px)
-                   rotate({{transform.angle - 90}}deg);
-                   opacity:1;
-                   transition:.2s;"
-            ng-repeat="item in filteredMedia"
-            ng-click="$event.stopPropagation();"
-            hm-panmove="touchThis($event)"
-            hm-panend="cantTouchThis">
-          <img ng-src="assets/images/{{item.url}}" ondragstart="return false"/>
-        </li>
-      </ul>
-
-    </li>
-  </ul>
-
-</div>
+  </li>
+</ul>
 
 
 
