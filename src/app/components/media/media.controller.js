@@ -20,14 +20,18 @@ angular.module('angelMounds')
     
     oldTransform = $scope.transform;
     
-    $scope.touchThis = function (event) {
+    $scope.grabThis = function ($event) {
+      $scope.grabbed = true;
+    };
+    
+    $scope.touchThis = function ($event) {
       $scope.transform = {
         translate: {
-          x: oldTransform.translate.x + event.deltaX,
-          y: oldTransform.translate.y + event.deltaY
+          x: oldTransform.translate.x + $event.deltaX,
+          y: oldTransform.translate.y + $event.deltaY
         },
-        scale: oldTransform.scale * event.scale,
-        angle: oldTransform.angle + event.rotation
+        scale: oldTransform.scale * $event.scale,
+        angle: oldTransform.angle + $event.rotation
       };
       
       $scope.transition = 0;
@@ -35,5 +39,6 @@ angular.module('angelMounds')
     
     $scope.cantTouchThis = function () {
       oldTransform = $scope.transform;
+      $scope.grabbed = false;
     };
   }]);

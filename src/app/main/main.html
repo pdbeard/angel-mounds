@@ -1,23 +1,29 @@
 <ul>
-  <li style="transform: translate({{site.x}}px, {{site.y}}px);"
+  <li style="left: {{site.x}}px; top: {{site.y}}px;"
       ng-repeat="site in sites"
       ng-click="active = !active"
-      ng-class="active ? 'site on' : 'site'">
+      ng-class="active ? 'site on' : 'site'"
+      class="shadow-1">
     <img ng-src="assets/images/{{site.logo}}" />
 
     <ul ng-if="active" ng-controller="SitesController">
       <li class="items"
+          ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
           ng-controller="MediaController"
           style="transform: translate({{transform.translate.x}}px, {{transform.translate.y}}px)
                  rotate({{transform.angle - 90}}deg)
                  scale({{transform.scale}});
                  opacity:1;
-                 transition:{{transition}}s;"
+                 transition:{{transition}}s;
+                 z-index: {{grabbed ? 2 : auto}}"
           ng-repeat="item in filteredMedia"
           ng-click="$event.stopPropagation();"
-          hm-panmove="touchThis($event)"
-          hm-pinchmove="touchThis($event)"
-          hm-rotatemove="touchThis($event)"
+          hm-panstart="grabThis"
+          hm-pinchstart="grabThis"
+          hm-rotatestart="grabThis"
+          hm-panmove="touchThis"
+          hm-pinchmove="touchThis"
+          hm-rotatemove="touchThis"
           hm-panend="cantTouchThis"
           hm-pinchend="cantTouchThis"
           hm-rotateend="cantTouchThis">
