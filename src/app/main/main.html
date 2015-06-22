@@ -1,5 +1,7 @@
 <ul>
-  <li style="left: {{site.x}}px; top: {{site.y}}px;"
+  <li analytics-on="click"
+      analytics-label="{{site.logo}}"
+      style="left: {{site.x}}px; top: {{site.y}}px;"
       ng-repeat="site in sites"
       ng-click="active = !active"
       ng-class="active ? 'site on' : 'site'"
@@ -11,7 +13,9 @@
         class ="items"
         style="opacity:1; transition:.2s;"
          >
-      <li class="item"
+      <li analytics-on="click"
+          analytics-label="{{item.url}}"
+          class="item"
           ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
           ng-controller="MediaController"
           style="transform: translate({{transform.translate.x}}px, {{transform.translate.y}}px)
