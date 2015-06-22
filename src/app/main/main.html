@@ -21,7 +21,7 @@
           style="transform: translate({{transform.translate.x}}px, {{transform.translate.y}}px)
                  rotate({{transform.angle - 90}}deg)
                  scale({{transform.scale}});
-                 z-index: {{grabbed ? 2 : auto}}"
+                 z-index: {{grabbed ? 1 : auto}}"
           ng-repeat="item in filteredMedia"
           ng-click="$event.stopPropagation();"
           hm-panstart="grabThis"

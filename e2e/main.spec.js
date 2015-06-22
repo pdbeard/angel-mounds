@@ -9,7 +9,7 @@ describe('The main view', function () {
   });
   
   it('should include 3 sites', function () {
-    expect(page.sites.count()).toBe(3);
+    expect(page.sites.count()).toEqual(3);
   });
 
 });
@@ -19,10 +19,10 @@ describe('The first site', function () {
   
   beforeEach(function () {
     this.addMatchers({
-      toHaveClass: function(a) {
-        return this.actual.getAttribute('class').then(function(cls){
+      toHaveClass: function (a) {
+        return this.actual.getAttribute('class').then(function (cls) {
           var patt = new RegExp('(^|\\s)' + a + '(\\s|$)');
-            return patt.test(cls);
+          return patt.test(cls);
         });
       }
     });
@@ -33,16 +33,16 @@ describe('The first site', function () {
     page = require('./main.po');
   });
   
-  /*it('should toggle the active class when clicked', function () {
-    expect(page.firstSite).not.toHaveClass('active');
+  it('should toggle the active class when clicked', function () {
+    expect(page.firstSite).not.toHaveClass('on');
     page.firstSite.click();
-    //expect(page.firstSite).toHaveClass('active'); // error triggered on this line
-    //page.firstSite.click();
-    //expect(page.firstSite).not.toHaveClass('active');
-  });*/
+    expect(page.firstSite).toHaveClass('on');
+    page.firstSite.click();
+    expect(page.firstSite).not.toHaveClass('on');
+  });
   
   it('should add filtered media when clicked', function () {
-    var mediaOnScreen = element.all(by.repeater('item in media'));
+    var mediaOnScreen = element.all(by.repeater('item in filteredMedia'));
     
     expect(mediaOnScreen.count()).toBe(0);
     page.firstSite.click();
