@@ -43,11 +43,14 @@ li {
   transition: .15s;
 }
 
-.items {
+.item {
   background: gray;
+  padding: 15px;
+}
+
+.items {
   width: 100px;
   height: 100px;
-  padding: 15px;
 }
 
 .items.ng-enter {
@@ -67,6 +70,8 @@ li {
   transform: scale(0.2,0.2) translate(0px,0px) !important;
   opacity: 0 !important;
 }
+
+
 
 /* shadow CSS from http://timnew.me/blog/2014/08/16/material-design-shadow-in-html/ */
 .shadow-0 {

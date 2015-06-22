@@ -6,15 +6,17 @@
       class="shadow-1">
     <img ng-src="assets/images/{{site.logo}}" />
 
-    <ul ng-if="active" ng-controller="SitesController">
-      <li class="items"
+    <ul ng-if="active"
+        ng-controller="SitesController"
+        class ="items"
+        style="opacity:1; transition:.2s;"
+         >
+      <li class="item"
           ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
           ng-controller="MediaController"
           style="transform: translate({{transform.translate.x}}px, {{transform.translate.y}}px)
                  rotate({{transform.angle - 90}}deg)
                  scale({{transform.scale}});
-                 opacity:1;
-                 transition:{{transition}}s;
                  z-index: {{grabbed ? 2 : auto}}"
           ng-repeat="item in filteredMedia"
           ng-click="$event.stopPropagation();"
