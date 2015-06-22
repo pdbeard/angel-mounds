@@ -86,7 +86,7 @@ describe('MainController', function () {
     
     $httpBackend.flush();
 
-    expect(angular.isArray(scope.sites)).toBeTruthy();
+    expect(angular.isArray(scope.sites)).toEqual(true);
     expect(scope.sites).toEqualData(mockSites);
   }));
   
@@ -99,33 +99,7 @@ describe('MainController', function () {
     
     $httpBackend.flush();
 
-    expect(angular.isArray(scope.media)).toBeTruthy();
+    expect(angular.isArray(scope.media)).toEqual(true);
     expect(scope.media).toEqualData(mockMedia);
-  }));
-
-  it('should calculate media positions for circle layout', inject(function ($controller) {
-    expect(scope.x).toBeUndefined();
-    expect(scope.y).toBeUndefined();
-
-    $controller('MainController', {
-      $scope: scope
-    });
-
-    // 0 deg
-    expect(scope.x(1, 0, 4)).toBe(1);
-    expect(scope.y(1, 0, 4)).toBe(0);
-
-    // 90 deg
-    expect(Math.floor(scope.x(1, 1, 4))).toBe(0);
-    expect(scope.y(1, 1, 4)).toBe(1);
-
-    // 180 deg
-    expect(scope.x(1, 2, 4)).toBe(-1);
-    expect(Math.floor(scope.y(1, 2, 4))).toBe(0);
-
-    // 270 deg
-    expect(Math.ceil(scope.x(1, 3, 4))).toBe(0);
-    expect(scope.y(1, 3, 4)).toBe(-1);
-
   }));
 });
