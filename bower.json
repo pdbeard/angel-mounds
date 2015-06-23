@@ -9,7 +9,8 @@
     "angular-ui-router": "~0.2.13",
     "angular": "~1.3.4",
     "hammer-touchemulator": "~0.0.2",
-    "angulartics": "~0.18.0"
+    "angulartics-ga": "https://raw.githubusercontent.com/luisfarzati/angulartics/master/src/angulartics-ga.js",
+    "angulartics": "https://raw.githubusercontent.com/luisfarzati/angulartics/master/src/angulartics.js"
   },
   "devDependencies": {
     "angular-mocks": "~1.3.4"
