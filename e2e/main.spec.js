@@ -51,3 +51,37 @@ describe('The first site', function () {
     expect(mediaOnScreen.count()).toBe(0);
   });
 });
+
+/*describe('The first media item', function () {
+  var page, driver;
+
+  beforeEach(function () {
+    browser.get('http://localhost:3000/index.html');
+    driver = browser.driver;
+    page = require('./main.po');
+  });
+  
+  it('should move when dragged', function () {
+    var mediaOnScreen,
+      firstItem,
+      style0 = 'transform: translate(150px, 0px) rotate(-90deg) scale(1);',
+      style1 = 'transform: translate(150px, 100px) rotate(-90deg) scale(1);';
+    
+    page.firstSite.click();
+    
+    mediaOnScreen = element.all(by.repeater('item in filteredMedia'));
+    firstItem = mediaOnScreen.first();
+    
+    expect(mediaOnScreen.count()).toBe(4);
+    expect(firstItem).toBeTruthy();
+    expect(firstItem.getAttribute('style')).toEqual(style0);
+    
+    driver.actions()
+      .mouseDown(firstItem)
+      .mouseMove(page.firstSite)
+      .mouseUp(firstItem)
+      .perform();
+    
+    expect(firstItem.getAttribute('style')).toEqual(style1);
+  });
+});*/
