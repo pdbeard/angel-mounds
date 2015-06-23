@@ -74,6 +74,7 @@ describe('MainController', function () {
     $httpBackend = _$httpBackend_;
     $httpBackend.expectGET('assets/sites.json').respond(mockSites);
     $httpBackend.expectGET('assets/media.json').respond(mockMedia);
+    $httpBackend.expectGET('app/main/main.html').respond(); // analytics request?
     scope = $rootScope.$new();
   }));
 
