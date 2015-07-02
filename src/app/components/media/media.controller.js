@@ -3,6 +3,7 @@
 angular.module('angelMounds')
   .controller('MediaController', ['$scope', function ($scope) {
     var oldTransform,
+      START_SCALE = ($scope.site.radius - 50) / $scope.item.width,
       START_ANGLE = 360 * ($scope.$index / $scope.filteredMedia.length),
       START_X = $scope.site.radius * Math.cos(START_ANGLE * (Math.PI / 180)),
       START_Y = $scope.site.radius * Math.sin(START_ANGLE * (Math.PI / 180));
@@ -13,7 +14,7 @@ angular.module('angelMounds')
         x: START_X,
         y: START_Y
       },
-      scale: 1,
+      scale: START_SCALE,
       angle: START_ANGLE
     };
     

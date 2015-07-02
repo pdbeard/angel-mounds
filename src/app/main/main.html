@@ -11,8 +11,7 @@
     <ul ng-if="active"
         ng-controller="SitesController"
         class ="items"
-        style="opacity:1; transition:.2s;"
-         >
+        style="opacity:1; transition:.2s;">
       <li analytics-on="click"
           analytics-label="{{item.url}}"
           class="item"
@@ -33,7 +32,13 @@
           hm-panend="cantTouchThis"
           hm-pinchend="cantTouchThis"
           hm-rotateend="cantTouchThis">
-        <img ng-src="assets/images/{{item.url}}" ondragstart="return false"/>
+        <div ng-switch on="item.type">
+          <img ng-switch-when="img" ng-src="assets/images/{{item.url}}" ondragstart="return false"/>
+          <div ng-switch-when="iframe">
+            <h1>{{item.title}}</h1>
+            <iframe ng-src="{{item.url | trusted}}" frameborder="no"></iframe>
+          </div>
+        </div>
       </li>
     </ul>
   </li>

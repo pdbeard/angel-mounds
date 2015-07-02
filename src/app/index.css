@@ -25,7 +25,6 @@ li {
   position: absolute;
   left: 0px;
   top: 0px;
-
 }
 
 .site {
@@ -46,6 +45,8 @@ li {
 .item {
   background: gray;
   padding: 15px;
+  /*width: 100%;
+  height: 100%;*/
 }
 
 .items {
@@ -69,6 +70,11 @@ li {
 .items.ng-leave.ng-leave-active{
   transform: scale(0.2,0.2) translate(0px,0px) !important;
   opacity: 0 !important;
+}
+
+iframe {
+  width: 500px;
+  height: 500px;
 }
 
 
