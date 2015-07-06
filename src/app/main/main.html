@@ -18,7 +18,7 @@
           class="item"
           ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
           ng-controller="MediaController"
-          style="transform: translate({{transform.translate.x}}px, {{transform.translate.y}}px)
+          style="transform: translate3d({{transform.translate.x}}px, {{transform.translate.y}}px,0px)
                  rotate({{transform.angle - 90}}deg)
                  scale({{transform.scale}});
                  z-index: {{grabbed ? 1 : auto}}"
