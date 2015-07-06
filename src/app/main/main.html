@@ -37,24 +37,11 @@
         <div ng-switch on="item.type" class="switch_div">
           <img ng-switch-when="img" ng-src="assets/images/{{item.url}}" ondragstart="return false" />
           <iframe ng-switch-when="iframe" ng-src="{{item.url | trusted}}" frameborder="no"></iframe>
+          <video ng-switch-when="video" controls preload="auto">
+            <source ng-src="{{item.url | trusted}}" />
+          </video>
         </div>
       </li>
     </ul>
   </li>
 </ul>
-
-
-
-
-<!-- Random Bits
-////
-ng-class="variableToEvaluate ? 'class-if-true' : 'class-if-false'"
-ng-class="active ? 'siteOn' : 'siteOff"
-////
-////
-ng-class="{'classtoadd': True}
-ng-class="{'siteOn': active}"
-////
-
-ng-animate="'item'"
--->
