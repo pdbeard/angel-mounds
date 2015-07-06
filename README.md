@@ -37,8 +37,8 @@ More information on the gulp tasks in [this README.md](https://github.com/Swiip/
 ### Chrome Flag Settings
 open *chrome://flags*
 
-Disable swipe gesture control of history navigation :
--`overscroll history navigation` to `Disabled`
+Disable swipe gesture control of history navigation:
+- `overscroll history navigation` to `Disabled`
 
 Disable browser zooming with the pinch gesture in desktop Chrome do one of the following:
 - Enable the `Enable viewport meta tag` setting (preferred)
