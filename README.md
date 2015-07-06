@@ -1,9 +1,9 @@
 angel-mounds
 ============
 
-A multi-touch exhibit which encourages users to explore the Angel Mounds State Historic Site. 
+A multi-touch exhibit which encourages users to explore the Angel Mounds State Historic Site.
 
-Generated with [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular). 
+Generated with [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular).
 
 ## Getting Started
 
@@ -33,3 +33,14 @@ bower install
 * `gulp protractor:dist` to launch your e2e tests with Protractor on the dist files
 
 More information on the gulp tasks in [this README.md](https://github.com/Swiip/generator-gulp-angular/blob/master/app/templates/gulp/README.md).
+
+### Chrome Flag Settings
+open *chrome://flags*
+
+Disable swipe gesture control of history navigation:
+- `overscroll history navigation` to `Disabled`
+
+Disable browser zooming with the pinch gesture in desktop Chrome do one of the following:
+- Enable the `Enable viewport meta tag` setting (preferred)
+- Set `Enable pinch scale` to `Disabled`
+

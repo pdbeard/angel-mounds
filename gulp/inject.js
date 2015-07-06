@@ -24,9 +24,18 @@ module.exports = function(options) {
       addRootSlash: false
     };
 
+
+    var injectEmulator = gulp.src('bower_components/hammer-touchemulator/*.js', {read: false});
+    var emulatorOptions= {
+        starttag: '<!-- inject:emulator -->',
+        ignorePath: [options.src, options.tmp + '/serve'],
+        addRootSlash: false,
+    };
+
     return gulp.src(options.src + '/*.html')
       .pipe($.inject(injectStyles, injectOptions))
       .pipe($.inject(injectScripts, injectOptions))
+      .pipe($.inject(injectEmulator, emulatorOptions))
       .pipe(wiredep(options.wiredep))
       .pipe(gulp.dest(options.tmp + '/serve'));
 
