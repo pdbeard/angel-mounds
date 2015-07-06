@@ -1,26 +1,28 @@
 <ul>
   <li analytics-on="click"
       analytics-label="{{site.logo}}"
-      style="left: {{site.x}}px; top: {{site.y}}px;"
+      style="left: {{site.x}}px; top: {{site.y}}px; width: {{site.width}}px; height: {{site.height}}px"
       ng-repeat="site in sites"
       ng-click="active = !active"
       ng-class="active ? 'site on' : 'site'"
       class="shadow-1">
-    <img ng-src="assets/images/{{site.logo}}" />
+    <img ng-src="assets/images/{{site.logo}}"/>
 
     <ul ng-if="active"
         ng-controller="SitesController"
         class ="items"
-        style="opacity:1; transition:.2s;">
+        style="opacity:1; transition:.2s; top: {{site.height / 2}}px; left: {{site.width / 2}}px;">
       <li analytics-on="click"
           analytics-label="{{item.url}}"
           class="item"
           ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
           ng-controller="MediaController"
-          style="transform: translate({{transform.translate.x}}px, {{transform.translate.y}}px)
+          style="transform: translate({{transform.translate.x - ((item.width * transform.scale) / 2)}}px, {{transform.translate.y - ((item.height * transform.scale) / 2)}}px)
                  rotate({{transform.angle - 90}}deg)
-                 scale({{transform.scale}});
-                 z-index: {{grabbed ? 1 : auto}}"
+                 scale({{1}});
+                 z-index: {{grabbed ? 1 : auto}};
+                 width: {{item.width * transform.scale}}px;
+                 height: {{item.height * transform.scale}}px"
           ng-repeat="item in filteredMedia"
           ng-click="$event.stopPropagation();"
           hm-panstart="grabThis"
@@ -32,12 +34,9 @@
           hm-panend="cantTouchThis"
           hm-pinchend="cantTouchThis"
           hm-rotateend="cantTouchThis">
-        <div ng-switch on="item.type">
-          <img ng-switch-when="img" ng-src="assets/images/{{item.url}}" ondragstart="return false"/>
-          <div ng-switch-when="iframe">
-            <h1>{{item.title}}</h1>
-            <iframe ng-src="{{item.url | trusted}}" frameborder="no"></iframe>
-          </div>
+        <div ng-switch on="item.type" class="switch_div">
+          <img ng-switch-when="img" ng-src="assets/images/{{item.url}}" ondragstart="return false" />
+          <iframe ng-switch-when="iframe" ng-src="{{item.url | trusted}}" frameborder="no"></iframe>
         </div>
       </li>
     </ul>

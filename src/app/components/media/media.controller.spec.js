@@ -12,6 +12,9 @@ describe('MediaController', function () {
     scope.site = {
       'radius': 1
     };
+    scope.item = {
+      'width': 1
+    };
   }));
 
   it('should calculate first position', inject(function ($controller) {
@@ -112,7 +115,7 @@ describe('MediaController', function () {
         x: 2,
         y: 1
       },
-      scale: 2,
+      scale: -98,
       angle: 90
     });
     
@@ -129,7 +132,7 @@ describe('MediaController', function () {
         x: 1,
         y: 0
       },
-      scale: 1,
+      scale: -49,
       angle: 0
     });
   }));
