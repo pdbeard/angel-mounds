@@ -17,7 +17,7 @@ var options = {
   },
   wiredep: {
     directory: 'bower_components',
-    exclude: [/jquery/]
+    exclude: [/jquery/, 'bower_components/hammer-touchemulator/touch-emulator.js']
   }
 };
 

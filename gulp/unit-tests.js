@@ -13,7 +13,7 @@ module.exports = function(options) {
   function listFiles(callback) {
     var wiredepOptions = _.extend({}, options.wiredep, {
       dependencies: true,
-      devDependencies: true
+      devDependencies: true,
     });
     var bowerDeps = wiredep(wiredepOptions);
 
