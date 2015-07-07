@@ -32,9 +32,14 @@ module.exports = function(options) {
     browserSync.instance = browserSync.init({
       startPath: '/',
       server: server,
-      browser: browser
+      browser: browser,
+      port:'9000',
+      ui:{
+          port:9090
+      }
     });
   }
+
 
   browserSync.use(browserSyncSpa({
     selector: '[ng-app]'// Only needed for angular apps
