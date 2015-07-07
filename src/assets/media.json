@@ -62,5 +62,13 @@
     "description": "The web's scaffolding tool for modern webapps",
     "width": 500,
     "height": 500
+  },
+  {
+    "type": "video",
+    "url": "http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v", 
+    "title": "Yeoman",
+    "description": "Big Buck Bunny",
+    "width": 500,
+    "height": 500
   }
 ]
