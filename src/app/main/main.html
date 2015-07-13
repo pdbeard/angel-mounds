@@ -1,12 +1,12 @@
 <ul>
   <li analytics-on="click"
       analytics-label="{{site.logo}}"
-      style="left: {{site.x}}px; top: {{site.y}}px; width: {{site.width}}px; height: {{site.height}}px"
+      style="left: {{site.x - site.width/2}}px; top: {{site.y - site.height/2}}px; width: {{site.width}}px; height: {{site.height}}px"
       ng-repeat="site in sites"
       ng-click="active = !active"
       ng-class="active ? 'site on' : 'site'"
       class="mdl-js-button mdl-js-ripple-effect shadow-1">
-    <img ng-src="assets/images/{{site.logo}}"/>
+    <img class="site_img" ng-src="assets/images/{{site.logo}}"/>
 
     <ul ng-if="active"
         ng-controller="SitesController"
@@ -17,12 +17,9 @@
           class="item"
           ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
           ng-controller="MediaController"
-          style="transform: translate3d({{transform.translate.x - ((item.width * transform.scale) / 2)}}px, {{transform.translate.y - ((item.height * transform.scale) / 2)}}px, 0px)
-                 rotate({{transform.angle - 90}}deg)
-                 scale({{1}});
-                 z-index: {{grabbed ? 1 : auto}};
-                 width: {{item.width * transform.scale}}px;
-                 height: {{item.height * transform.scale}}px"
+          style="transform: translate3d({{transform.translate.x - ((transform.width) / 2)}}px, {{transform.translate.y - ((transform.width * (item.height / item.width)) / 2)}}px, 0px)
+                 rotate({{transform.angle - 90}}deg);
+                 z-index: {{grabbed ? 1 : auto}};"
           ng-repeat="item in filteredMedia"
           ng-click="$event.stopPropagation();"
           hm-panstart="grabThis"
@@ -35,18 +32,20 @@
           hm-pinchend="cantTouchThis"
           hm-rotateend="cantTouchThis">
         <div ng-switch on="item.type" class="switch_div">
-          <img ng-switch-when="img" ng-src="assets/images/{{item.url}}" ondragstart="return false" />
-          <iframe ng-switch-when="iframe" ng-src="{{item.url | trusted}}" frameborder="no"></iframe>
-          <video ng-switch-when="video" controls preload="auto">
+          <img ng-switch-when="img" ng-src="assets/images/{{item.url}}" ondragstart="return false" style="width: {{transform.width}}px;" />
+          <iframe ng-switch-when="iframe" ng-src="{{item.url | trusted}}" frameborder="no" style="width: {{transform.width}}px; height: {{transform.width}}px;"></iframe>
+          <video ng-switch-when="video" controls preload="auto" style="width: {{transform.width}}px;">
             <source ng-src="{{item.url | trusted}}" />
           </video>
-
-
-              <x3d  ng-init="initX3D();"
-     ng-switch-when="x3d"  id='x3d'showStat='false' showLog='false' x='0px' y='0px' width = '{{item.width}}px' height ='{{item.height}}px'>
-              <scene>
-                <inline url='assets/x3d/{{item.url}}' ></inline>
-              <scene>
+          <x3d ng-switch-when="x3d"  
+               ng-init="initX3D();"
+               id="x3d" 
+               showStat="false" 
+               showLog="false" 
+               style="width: {{transform.width}}px; height: {{transform.width}}px;">
+            <scene>
+              <inline url="assets/x3d/{{item.url}}" ></inline>
+            <scene>
           </x3d>
 
         </div>
