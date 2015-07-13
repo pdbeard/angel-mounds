@@ -33,7 +33,7 @@ module.exports = function(options) {
     });
     
     gulp.watch(options.src + '/assets/*.json', function(event) {
-+      browserSync.reload(event.path);
-+    });
+      browserSync.reload(event.path);
+    });
   });
 };

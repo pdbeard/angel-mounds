@@ -1,27 +1,25 @@
 <ul>
-  <li analytics-on="click"
-      analytics-label="{{site.logo}}"
-      style="left: {{site.x - site.width/2}}px; top: {{site.y - site.height/2}}px; width: {{site.width}}px; height: {{site.height}}px"
-      ng-repeat="site in sites"
-      ng-click="active = !active"
+  <li ng-repeat="site in sites"
+      class="mdl-js-button mdl-js-ripple-effect shadow-1"
       ng-class="active ? 'site on' : 'site'"
-      class="mdl-js-button mdl-js-ripple-effect shadow-1">
+      style="left: {{site.x - site.width/2}}px; top: {{site.y - site.height/2}}px; width: {{site.width}}px; height: {{site.height}}px"
+      ng-click="active = !active"
+      analytics-on="click"
+      analytics-label="{{site.logo}}">
     <img class="site_img" ng-src="assets/images/{{site.logo}}"/>
 
     <ul ng-if="active"
-        ng-controller="SitesController"
         class ="items"
-        style="opacity:1; transition:.2s; top: {{site.height / 2}}px; left: {{site.width / 2}}px;">
-      <li analytics-on="click"
-          analytics-label="{{item.url}}"
+        style="opacity:1; transition:.2s; top: {{site.height / 2}}px; left: {{site.width / 2}}px;"
+        ng-controller="SitesController">
+      <li ng-repeat="item in filteredMedia"
           class="item"
           ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
-          ng-controller="MediaController"
           style="transform: translate3d({{transform.translate.x - ((transform.width) / 2)}}px, {{transform.translate.y - ((transform.width * (item.height / item.width)) / 2)}}px, 0px)
                  rotate({{transform.angle - 90}}deg);
                  z-index: {{grabbed ? 1 : auto}};"
-          ng-repeat="item in filteredMedia"
           ng-click="$event.stopPropagation();"
+          ng-controller="MediaController"
           hm-panstart="grabThis"
           hm-pinchstart="grabThis"
           hm-rotatestart="grabThis"
@@ -30,11 +28,22 @@
           hm-rotatemove="touchThis"
           hm-panend="cantTouchThis"
           hm-pinchend="cantTouchThis"
-          hm-rotateend="cantTouchThis">
+          hm-rotateend="cantTouchThis"
+          analytics-on="click"
+          analytics-label="{{item.url}}">
         <div ng-switch on="item.type" class="switch_div">
-          <img ng-switch-when="img" ng-src="assets/images/{{item.url}}" ondragstart="return false" style="width: {{transform.width}}px;" />
-          <iframe ng-switch-when="iframe" ng-src="{{item.url | trusted}}" frameborder="no" style="width: {{transform.width}}px; height: {{transform.width}}px;"></iframe>
-          <video ng-switch-when="video" controls preload="auto" style="width: {{transform.width}}px;">
+          <img ng-switch-when="img" 
+               ng-src="assets/images/{{item.url}}" 
+               style="width: {{transform.width}}px;"
+               ondragstart="return false" />
+          <iframe ng-switch-when="iframe" 
+                  ng-src="{{item.url | trusted}}" 
+                  style="width: {{transform.width}}px; height: {{transform.width}}px;"
+                  frameborder="no"></iframe>
+          <video ng-switch-when="video"  
+                 style="width: {{transform.width}}px;"
+                 controls 
+                 preload="auto">
             <source ng-src="{{item.url | trusted}}" />
           </video>
           <x3d ng-switch-when="x3d"  

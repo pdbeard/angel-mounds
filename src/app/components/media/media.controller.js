@@ -1,12 +1,15 @@
 'use strict';
 
 angular.module('angelMounds')
-  .controller('MediaController', ['$scope', function ($scope) {
+  .controller('MediaController', ['$scope', '$window', function ($scope, $window) {
     var oldTransform,
-      START_SCALE = ($scope.site.radius / 2) / $scope.item.width,
       START_ANGLE = 360 * ($scope.$index / $scope.filteredMedia.length),
       START_X = $scope.site.radius * Math.cos(START_ANGLE * (Math.PI / 180)),
-      START_Y = $scope.site.radius * Math.sin(START_ANGLE * (Math.PI / 180));
+      START_Y = $scope.site.radius * Math.sin(START_ANGLE * (Math.PI / 180)),
+      MIN_WIDTH = $scope.site.radius / 2,
+      MAX_WIDTH = $window.innerWidth / 2;
+    
+    
 
     // the current state of the media item
     $scope.transform = {
@@ -14,9 +17,8 @@ angular.module('angelMounds')
         x: START_X,
         y: START_Y
       },
-      scale: 1,
       angle: START_ANGLE,
-      width: $scope.site.radius / 2
+      width: MIN_WIDTH
     };
 
     // new transforms are applied relative to the old one
@@ -29,14 +31,23 @@ angular.module('angelMounds')
 
     // update the item's transform based on the touch event
     $scope.touchThis = function ($event) {
+      var width, newWidth = oldTransform.width * $event.scale;
+      
+      if (newWidth < MIN_WIDTH) {
+        width = MIN_WIDTH; 
+      } else if (newWidth > MAX_WIDTH) {
+        width = MAX_WIDTH;
+      } else {
+        width = newWidth;
+      }
+        
       $scope.transform = {
         translate: {
           x: oldTransform.translate.x + $event.deltaX,
           y: oldTransform.translate.y + $event.deltaY
         },
-        scale: oldTransform.scale * $event.scale,
         angle: oldTransform.angle + $event.rotation,
-        width: oldTransform.width * $event.scale
+        width: width
       };
     };
 
