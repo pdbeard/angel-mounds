@@ -5,7 +5,7 @@
       ng-repeat="site in sites"
       ng-click="active = !active"
       ng-class="active ? 'site on' : 'site'"
-      class="shadow-1">
+      class="mdl-js-button mdl-js-ripple-effect shadow-1">
     <img ng-src="assets/images/{{site.logo}}"/>
 
     <ul ng-if="active"
@@ -42,7 +42,8 @@
           </video>
 
 
-          <x3d ng-switch-when="x3d" id='x3d' showStat='false' showLog='false' x='0px' y='0px' width = '{{item.width}}px' height ='{{item.height}}px'>
+              <x3d  ng-init="initX3D();"
+     ng-switch-when="x3d"  id='x3d'showStat='false' showLog='false' x='0px' y='0px' width = '{{item.width}}px' height ='{{item.height}}px'>
               <scene>
                 <inline url='assets/x3d/{{item.url}}' ></inline>
               <scene>

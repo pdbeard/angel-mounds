@@ -90,6 +90,10 @@ video {
   object-fit: contain;
 }
 
+#x3d{
+width:100%;
+height:100%;
+}
 
 
 /* shadow CSS from http://timnew.me/blog/2014/08/16/material-design-shadow-in-html/ */
