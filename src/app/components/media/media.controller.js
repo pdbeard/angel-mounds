@@ -44,11 +44,9 @@ angular.module('angelMounds')
       $scope.grabbed = false;
     };
 
-    // Checks to see if
+    // Force loads X3D content
     $scope.initX3D = function(){
             x3dom.reload();
-
     };
-
 
   }]);
