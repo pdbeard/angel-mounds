@@ -1,29 +1,29 @@
 [
   {
-    "logo": "angular.png", 
+    "logo": "../icons/flagw.png",
     "y": "100",
     "x": "500",
     "width": "100",
     "height": "100",
-    "radius": "150",
+    "radius": "200",
     "filterObject": { "title": "AngularJS" }
   },
   {
-    "logo": "yeoman.png", 
+    "logo": "../icons/flagw.png",
     "y": "400",
     "x": "300",
     "width": "100",
     "height": "100",
-    "radius": "300",
+    "radius": "200",
     "filterObject": { "title": "Yeoman" }
   },
   {
-    "logo": "gulp.png", 
+    "logo": "../icons/flagw.png",
     "y": "500",
     "x": "800",
-    "width": "200",
+    "width": "100",
     "height": "100",
-    "radius": "100",
+    "radius": "200",
     "filterObject": { "title": "Gulp" }
   }
 ]
