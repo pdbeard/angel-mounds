@@ -1,6 +1,6 @@
 <ul>
   <li ng-repeat="site in sites"
-      class="mdl-js-button mdl-js-ripple-effect shadow-1"
+      class="shadow-1"
       ng-class="active ? 'site on' : 'site'"
       style="left: {{site.x - site.width/2}}px; top: {{site.y - site.height/2}}px; width: {{site.width}}px; height: {{site.height}}px"
       ng-click="active = !active"
