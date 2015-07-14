@@ -33,9 +33,9 @@ module.exports = function(options) {
       startPath: '/',
       server: server,
       browser: browser,
-      port:'9000',
+      port:'3000',
       ui:{
-          port:9090
+          port:3030
       }
     });
   }

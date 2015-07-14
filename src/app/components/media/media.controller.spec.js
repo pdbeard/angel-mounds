@@ -109,13 +109,13 @@ describe('MediaController', function () {
       scale: 2,
       rotation: 90
     });
-  
+
     expect(scope.transform).toEqual({
       translate: {
         x: 2,
         y: 1
       },
-      scale: -98,
+      width: 1,
       angle: 90
     });
     
@@ -132,7 +132,24 @@ describe('MediaController', function () {
         x: 1,
         y: 0
       },
-      scale: -49,
+      width: 0.5,
+      angle: 0
+    });
+
+    scope.cantTouchThis();
+    scope.touchThis({ // check minimum size enforcement
+      deltaX: 0,
+      deltaY: 0,
+      scale: 0.001,
+      rotation: 0
+    });
+
+    expect(scope.transform).toEqual({
+      translate: {
+        x: 1,
+        y: 0
+      },
+      width: 0.5,
       angle: 0
     });
   }));
