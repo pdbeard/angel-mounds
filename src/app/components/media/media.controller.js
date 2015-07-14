@@ -47,7 +47,11 @@ angular.module('angelMounds')
           y: oldTransform.translate.y + $event.deltaY
         },
         angle: oldTransform.angle + $event.rotation,
-        width: width
+        width: width,
+
+        // adds shadow to scope
+        shadowX:shadowRotate((oldTransform.angle + $event.rotation))[0],
+        shadowY:shadowRotate((oldTransform.angle + $event.rotation))[1]
       };
     };
 
@@ -56,6 +60,17 @@ angular.module('angelMounds')
       oldTransform = $scope.transform;
       $scope.grabbed = false;
     };
+
+    // Define shadow angle from media's angle
+    function shadowRotate(angle){
+        var offset = 5,
+            a_offset = -45,
+            x = Math.round(Math.sin((angle + a_offset) * (Math.PI/180)) * offset, 2),
+            y = Math.round(Math.cos((angle + a_offset) * (Math.PI/180)) * offset, 2);
+
+        console.log("X:" + x + " Y:" + y);
+        return [x,y];
+    }
 
     // Force loads X3D content
     $scope.initX3D = function(){

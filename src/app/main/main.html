@@ -17,7 +17,8 @@
           ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
           style="transform: translate3d({{transform.translate.x - ((transform.width) / 2)}}px, {{transform.translate.y - ((transform.width * (item.height / item.width)) / 2)}}px, 0px)
                  rotate({{transform.angle - 90}}deg);
-                 z-index: {{grabbed ? 1 : auto}};"
+                 z-index: {{grabbed ? 1 : auto}};
+                 box-shadow:{{transform.shadowX}}px {{transform.shadowY}}px 5px rgba(0, 0, 0, 0.3);"
           ng-click="$event.stopPropagation();"
           ng-controller="MediaController"
           hm-panstart="grabThis"
