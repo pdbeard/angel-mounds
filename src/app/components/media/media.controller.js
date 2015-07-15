@@ -34,18 +34,9 @@ angular.module('angelMounds')
     oldTransform = $scope.transform;
 
     // a grabbed item is raised above the other items
-    $scope.grabThis = function ($event) {
+    $scope.grabThis = function () {
       $scope.grabbed = true;
-      
       $scope.transform.zIndex = zIndex.getNextZIndex();
-      
-      //console.log(angular.element($event.element[0])[0]);
-      //angular.element(angular.element($event.element[0])).css('z-index', zIndex.getNextZIndex());
-      
-      //$scope.zIndex = $scope.zIndex + 1;
-      //angular.element($event.element[0]).css('z-index', $scope.zIndex);
-      //console.log(angular.element($event.element[0]).css('z-index'));
-      //console.log($scope.zIndex);
     };
 
     // update the item's transform based on the touch event
@@ -59,10 +50,6 @@ angular.module('angelMounds')
       } else {
         width = newWidth;
       }
-      
-      /*$scope.transform.translate.x = oldTransform.translate.x + $event.deltaX;
-      $scope.transform.translate.y = oldTransform.translate.y + $event.deltaY;
-      $scope.transform.angle = oldTransform.angle + $event.rotation;*/
 
       $scope.transform = {
         translate: {

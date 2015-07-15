@@ -8,7 +8,7 @@ describe('MediaController', function () {
   beforeEach(inject(function ($rootScope) {
     scope = $rootScope.$new();
     scope.$index = 0;
-    scope.filteredMedia = [0,1,2,3];
+    scope.filteredMedia = [0, 1, 2, 3];
     scope.site = {
       'radius': 1
     };
@@ -84,14 +84,18 @@ describe('MediaController', function () {
       $scope: scope
     });
     
+    expect(scope.transform.zIndex).toEqual('auto');
+    
     scope.grabThis();
     
     expect(scope.grabbed).toBeDefined();
     expect(scope.grabbed).toEqual(true);
+    expect(scope.transform.zIndex).toEqual(1);
     
     scope.cantTouchThis();
     
     expect(scope.grabbed).toEqual(false);
+    expect(scope.transform.zIndex).toEqual(1);
   }));
   
   it('should touch this', inject(function ($controller) {
@@ -116,7 +120,10 @@ describe('MediaController', function () {
         y: 1
       },
       width: 1,
-      angle: 90
+      angle: 90,
+      zIndex: 'auto',
+      shadowX: 4,
+      shadowY: 4
     });
     
     scope.cantTouchThis();
@@ -133,7 +140,10 @@ describe('MediaController', function () {
         y: 0
       },
       width: 0.5,
-      angle: 0
+      angle: 0,
+      zIndex: 'auto',
+      shadowX: -4,
+      shadowY: 4
     });
 
     scope.cantTouchThis();
@@ -150,7 +160,10 @@ describe('MediaController', function () {
         y: 0
       },
       width: 0.5,
-      angle: 0
+      angle: 0,
+      zIndex: 'auto',
+      shadowX: -4,
+      shadowY: 4
     });
   }));
 });
