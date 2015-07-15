@@ -1,5 +1,5 @@
 <ul>
-  <li ng-repeat="site in sites"
+  <li ng-repeat="site in ::sites"
       class="shadow-1"
       ng-class="active ? 'site on' : 'site'"
       style="left: {{site.x - site.width/2}}px; top: {{site.y - site.height/2}}px; width: {{site.width}}px; height: {{site.height}}px"
@@ -12,7 +12,7 @@
         class ="items"
         style="opacity:1; transition:.2s; top: {{site.height / 2}}px; left: {{site.width / 2}}px;"
         ng-controller="SitesController">
-      <li ng-repeat="item in filteredMedia"
+      <li ng-repeat="item in ::filteredMedia"
           class="item"
           ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
           style="transform: translate3d({{transform.translate.x - ((transform.width) / 2)}}px, 

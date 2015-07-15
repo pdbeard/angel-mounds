@@ -41,7 +41,9 @@ angular.module('angelMounds')
 
     // update the item's transform based on the touch event
     $scope.touchThis = function ($event) {
-      var width, newWidth = oldTransform.width * $event.scale;
+      var width,
+        newWidth = oldTransform.width * $event.scale,
+        shadow = shadowRotate((oldTransform.angle + $event.rotation));
 
       if (newWidth < MIN_WIDTH) {
         width = MIN_WIDTH;
@@ -61,8 +63,8 @@ angular.module('angelMounds')
         zIndex: $scope.transform.zIndex,
 
         // adds shadow to scope
-        shadowX: shadowRotate((oldTransform.angle + $event.rotation))[0],
-        shadowY: shadowRotate((oldTransform.angle + $event.rotation))[1]
+        shadowX: shadow[0],
+        shadowY: shadow[1]
       };
     };
 
