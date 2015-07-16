@@ -46,7 +46,7 @@ li {
 
 .site.on {
   background: rgba(54, 135, 45, .8);
-  border-radius: 00%;
+  border-radius: 0%;
   transition: .15s;
 }
 

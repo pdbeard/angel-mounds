@@ -1,7 +1,7 @@
 'use strict';
 
 describe('MediaController', function () {
-  var mockWindow, mockWindowScale, scope;
+  var mockWindowScale, scope;
   
   beforeEach(module('angelMounds'));
 
@@ -114,7 +114,7 @@ describe('MediaController', function () {
     });
     
     expect(scope.transform).toBeDefined();
-    console.log(windowScale.getWindowScale());
+   
     scope.touchThis({
       deltaX: 1 * windowScale.getWindowScale(),
       deltaY: 1 * windowScale.getWindowScale(),
