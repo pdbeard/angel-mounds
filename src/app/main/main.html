@@ -1,9 +1,12 @@
-<div id="bg" ng-style="{ 'transform': 'scale3d(' + scale + ', ' + scale + ', 1)' }">
+<div id="bg" ng-style="{ transform: 'scale3d(' + scale + ', ' + scale + ', 1)' }">
   <ul>
     <li ng-repeat="site in ::sites"
         class="shadow-1"
         ng-class="active ? 'site on' : 'site'"
-        style="left: {{site.x - site.width/2}}px; top: {{site.y - site.height/2}}px; width: {{site.width}}px; height: {{site.height}}px"
+        ng-style="{ width: site.width + 'px', 
+                  height: site.height + 'px', 
+                  left: (site.x - site.width / 2) + 'px', 
+                  top: (site.y - site.height / 2) + 'px' }"
         ng-click="active = !active"
         analytics-on="click"
         analytics-label="{{site.logo}}">
@@ -11,17 +14,20 @@
 
       <ul ng-if="active"
           class ="items"
-          style="opacity:1; transition:.2s; top: {{site.height / 2}}px; left: {{site.width / 2}}px;"
+          ng-style="{ left: (site.width / 2) + 'px', 
+                    top: (site.height / 2) + 'px',
+                    opacity: 1,
+                    transition: '0.2s' }"
           ng-controller="SitesController">
         <li ng-repeat="item in ::filteredMedia"
             class="item"
             ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
-            style="transform: translate3d({{transform.translate.x - ((transform.width) / 2)}}px, 
-                   {{transform.translate.y - ((transform.width * (item.height / item.width)) / 2)}}px, 
-                   0px)
-                   rotate({{transform.angle - 90}}deg);
-                   z-index: {{transform.zIndex}};
-                   box-shadow:{{transform.shadowX}}px {{transform.shadowY}}px 5px rgba(0, 0, 0, 0.3);"
+            ng-style="{ transform: 'translate3d(' + (transform.translate.x - transform.width / 2) + 'px, ' + 
+                          (transform.translate.y - transform.width * item.height / item.width / 2) + 'px, 
+                          0px) 
+                        rotate(' + (transform.angle - 90) + 'deg)',
+                      'z-index': transform.zIndex,
+                      'box-shadow': transform.shadowX + 'px ' + transform.shadowY + 'px 5px rgba(0, 0, 0, 0.3)' }"
             ng-click="$event.stopPropagation();"
             ng-controller="MediaController"
             hm-panstart="grabThis"
@@ -35,17 +41,17 @@
             hm-rotateend="cantTouchThis"
             analytics-on="click"
             analytics-label="{{item.url}}">
-          <div ng-switch on="item.type" class="switch_div">
+          <div ng-switch on="item.type">
             <img ng-switch-when="img"
                  ng-src="assets/images/{{item.url}}"
-                 style="width: {{transform.width}}px;"
+                 ng-style="{ width: transform.width + 'px' }"
                  ondragstart="return false" />
             <iframe ng-switch-when="iframe"
                     ng-src="{{item.url | trusted}}"
-                    style="width: {{transform.width}}px; height: {{transform.width}}px;"
+                    ng-style="{ width: transform.width + 'px', height: transform.width + 'px' }"
                     frameborder="no"></iframe>
             <video ng-switch-when="video"
-                   style="width: {{transform.width}}px;"
+                   ng-style="{ width: transform.width + 'px' }"
                    controls
                    preload="auto">
               <source ng-src="{{item.url | trusted}}" />
@@ -55,7 +61,7 @@
                  id="x3d"
                  showStat="false"
                  showLog="false"
-                 style="width: {{transform.width}}px; height: {{transform.width}}px;">
+                 ng-style="{ width: transform.width + 'px', height: transform.width + 'px' }"
               <scene>
                 <inline url="assets/x3d/{{item.url}}" ></inline>
               <scene>
