@@ -1,24 +1,17 @@
 'use strict';
 
 angular.module('angelMounds')
-  .controller('MediaController', ['$scope', '$window', 'windowScale', 'zIndex', function ($scope, $window, windowScale, zIndex) {
+  .controller('MediaController', ['$scope', '$window', 'windowScale', 'zIndex', 'layout', function ($scope, $window, windowScale, zIndex, layout) {
     var oldTransform,
       WINDOW_SCALE = windowScale.getWindowScale(),
-      START_ANGLE = 360 * ($scope.$index / $scope.filteredMedia.length),
-      START_X = $scope.site.radius * Math.cos(START_ANGLE * (Math.PI / 180)),
-      START_Y = $scope.site.radius * Math.sin(START_ANGLE * (Math.PI / 180)),
-      MIN_WIDTH = $scope.site.radius / 2,
-      MAX_WIDTH = $window.innerWidth / 2 / WINDOW_SCALE;
-    
-    // linear layout
-    /*var oldTransform,
-      WINDOW_SCALE = windowScale.getWindowScale(),
-      START_ANGLE = 0,
       MIN_WIDTH = $scope.site.radius / 2,
       MAX_WIDTH = $window.innerWidth / 2 / WINDOW_SCALE,
-      START_X = 2 * MIN_WIDTH + (MIN_WIDTH * $scope.$index) + (25 * $scope.$index),
-      START_Y = 0;*/
-
+      init = layout.getInit($scope.site.layout,
+                            $scope.site.layoutOptions,
+                            $scope.site.radius,
+                            $scope.$index,
+                            $scope.filteredMedia.length);
+    
     // Define shadow angle from media's angle
     function shadowRotate(angle) {
       var offset = 5,
@@ -32,10 +25,10 @@ angular.module('angelMounds')
     // the current state of the media item
     $scope.transform = {
       translate: {
-        x: START_X,
-        y: START_Y
+        x: init.x,
+        y: init.y
       },
-      angle: START_ANGLE,
+      angle: init.angle,
       width: MIN_WIDTH,
       zIndex: 'auto'
     };

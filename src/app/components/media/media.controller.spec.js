@@ -25,66 +25,6 @@ describe('MediaController', function () {
     });
   });
 
-  it('should calculate first position', inject(function ($controller) {
-    expect(scope.transform).toBeUndefined();
-    scope.$index = 0;
-
-    $controller('MediaController', {
-      $scope: scope
-    });
-    
-    expect(scope.transform).toBeDefined();
-    
-    // 0 deg
-    expect(scope.transform.translate.x).toEqual(1);
-    expect(scope.transform.translate.y).toEqual(0);
-  }));
-  
-  it('should calculate second position', inject(function ($controller) {
-    expect(scope.transform).toBeUndefined();
-    scope.$index = 1;
-
-    $controller('MediaController', {
-      $scope: scope
-    });
-    
-    expect(scope.transform).toBeDefined();
-    
-    // 90 deg
-    expect(Math.floor(scope.transform.translate.x)).toEqual(0);
-    expect(scope.transform.translate.y).toEqual(1);
-  }));
-  
-  it('should calculate third position', inject(function ($controller) {
-    expect(scope.transform).toBeUndefined();
-    scope.$index = 2;
-
-    $controller('MediaController', {
-      $scope: scope
-    });
-    
-    expect(scope.transform).toBeDefined();
-    
-    // 180 deg
-    expect(scope.transform.translate.x).toEqual(-1);
-    expect(Math.floor(scope.transform.translate.y)).toEqual(0);
-  }));
-  
-  it('should calculate fourth position', inject(function ($controller) {
-    expect(scope.transform).toBeUndefined();
-    scope.$index = 3;
-
-    $controller('MediaController', {
-      $scope: scope
-    });
-    
-    expect(scope.transform).toBeDefined();
-    
-    // 270 deg
-    expect(Math.abs(Math.ceil(scope.transform.translate.x))).toEqual(0);
-    expect(scope.transform.translate.y).toEqual(-1);
-  }));
-  
   it('should grab and release', inject(function ($controller) {
     expect(scope.grabbed).toBeUndefined();
 
@@ -124,7 +64,7 @@ describe('MediaController', function () {
 
     expect(scope.transform).toEqual({
       translate: {
-        x: 2,
+        x: 1,
         y: 1
       },
       width: 1,
@@ -144,7 +84,7 @@ describe('MediaController', function () {
     
     expect(scope.transform).toEqual({
       translate: {
-        x: 1,
+        x: 0,
         y: 0
       },
       width: 0.5,
@@ -164,7 +104,7 @@ describe('MediaController', function () {
 
     expect(scope.transform).toEqual({
       translate: {
-        x: 1,
+        x: 0,
         y: 0
       },
       width: 0.5,

@@ -25,7 +25,7 @@
             ng-style="{ transform: 'translate3d(' + (transform.translate.x - transform.width / 2) + 'px, ' + 
                           (transform.translate.y - transform.width * item.height / item.width / 2) + 'px, 
                           0px) 
-                        rotate(' + (transform.angle - 90) + 'deg)',
+                        rotate(' + (transform.angle) + 'deg)',
                       'z-index': transform.zIndex,
                       'box-shadow': transform.shadowX + 'px ' + transform.shadowY + 'px 5px rgba(0, 0, 0, 0.3)' }"
             ng-click="$event.stopPropagation();"
