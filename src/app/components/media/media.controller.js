@@ -10,7 +10,14 @@ angular.module('angelMounds')
       MIN_WIDTH = $scope.site.radius / 2,
       MAX_WIDTH = $window.innerWidth / 2 / WINDOW_SCALE;
     
-    
+    // linear layout
+    /*var oldTransform,
+      WINDOW_SCALE = windowScale.getWindowScale(),
+      START_ANGLE = 0,
+      MIN_WIDTH = $scope.site.radius / 2,
+      MAX_WIDTH = $window.innerWidth / 2 / WINDOW_SCALE,
+      START_X = 2 * MIN_WIDTH + (MIN_WIDTH * $scope.$index) + (25 * $scope.$index),
+      START_Y = 0;*/
 
     // Define shadow angle from media's angle
     function shadowRotate(angle) {
