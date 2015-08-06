@@ -1,11 +1,11 @@
 <div id="bg" ng-style="{ transform: 'scale3d(' + scale + ', ' + scale + ', 1)' }">
   <ul>
-    <li ng-repeat="site in ::sites"
+    <li ng-repeat="site in sites"
         class="shadow-1"
         ng-class="active ? 'site on' : 'site'"
-        ng-style="{ width: site.width + 'px', 
-                  height: site.height + 'px', 
-                  left: (site.x - site.width / 2) + 'px', 
+        ng-style="{ width: site.width + 'px',
+                  height: site.height + 'px',
+                  left: (site.x - site.width / 2) + 'px',
                   top: (site.y - site.height / 2) + 'px' }"
         ng-click="active = !active"
         analytics-on="click"
@@ -14,17 +14,17 @@
 
       <ul ng-if="active"
           class ="items"
-          ng-style="{ left: (site.width / 2) + 'px', 
+          ng-style="{ left: (site.width / 2) + 'px',
                     top: (site.height / 2) + 'px',
                     opacity: 1,
                     transition: '0.2s' }"
           ng-controller="SitesController">
-        <li ng-repeat="item in ::filteredMedia"
+        <li ng-repeat="item in filteredMedia"
             class="item"
             ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
-            ng-style="{ transform: 'translate3d(' + (transform.translate.x - transform.width / 2) + 'px, ' + 
-                          (transform.translate.y - transform.width * item.height / item.width / 2) + 'px, 
-                          0px) 
+            ng-style="{ transform: 'translate3d(' + (transform.translate.x - transform.width / 2) + 'px, ' +
+                          (transform.translate.y - transform.width * item.height / item.width / 2) + 'px,
+                          0px)
                         rotate(' + (transform.angle) + 'deg)',
                       'z-index': transform.zIndex,
                       'box-shadow': transform.shadowX + 'px ' + transform.shadowY + 'px 5px rgba(0, 0, 0, 0.3)' }"
@@ -40,9 +40,12 @@
             hm-pinchend="cantTouchThis"
             hm-rotateend="cantTouchThis"
             analytics-on="click"
-            analytics-label="{{item.url}}">
-          <div ng-switch on="item.type">
-            <img ng-switch-when="img"
+            analytics-label="{{item.url}}"
+            layout="column">
+
+           <md-card ng-switch on="item.type">
+            <md-card-content>
+                <img ng-switch-when="img"
                  ng-src="assets/images/{{item.url}}"
                  ng-style="{ width: transform.width + 'px' }"
                  ondragstart="return false" />
@@ -66,8 +69,18 @@
                 <inline url="assets/x3d/{{item.url}}" ></inline>
               <scene>
             </x3d>
+           </md-card-content>
 
-          </div>
+           <md-card-footer >
+            <div class ="md-actions" layout= "row" layout-align="center">
+               <md-button ng-click="isVisible = !isVisible" class="md-raised">Button</md-button>
+               <md-button class="md-fab md-primary" aria-label="fab button">
+                  <md-icon md-svg-src="/assets/icons/toolw.png">fab</md-icon>
+               </md-button>
+            </div>
+            <h1 layout ="column"ng-show="isVisible">{{item.url}}</h1>
+           </md-card-footer>
+          </md-card>
         </li>
       </ul>
     </li>

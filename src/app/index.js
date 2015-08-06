@@ -2,6 +2,7 @@
 
 angular.module('angelMounds',
                ['ngAnimate',
+                'ngMaterial',
                 'ngSanitize',
                 'ngResource',
                 'ui.router',
