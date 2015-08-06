@@ -71,14 +71,21 @@
             </x3d>
            </md-card-content>
 
-           <md-card-footer >
+           <md-card-footer>
             <div class ="md-actions" layout= "row" layout-align="center">
-               <md-button ng-click="isVisible = !isVisible" class="md-raised">Button</md-button>
+               <md-button ng-click="isVisible = !isVisible"
+                          class="md-raised md-primary"
+                          ng-style="{'font-size':12 * ((transform.width)/(site.radius/2))+'px', 'padding':'5%'}">
+                          Button</md-button>
+<!--
                <md-button class="md-fab md-primary" aria-label="fab button">
                   <md-icon md-svg-src="/assets/icons/toolw.png">fab</md-icon>
                </md-button>
+-->
             </div>
-            <h1 layout ="column"ng-show="isVisible">{{item.url}}</h1>
+            <p ng-style="{'font-size':12 * ((transform.width)/(site.radius/2))+'px' }"
+               layout="column"
+               ng-show="isVisible">{{item.url}}</p>
            </md-card-footer>
           </md-card>
         </li>

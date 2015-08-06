@@ -23,6 +23,8 @@ body {
   transform-origin: top left;
 }
 
+h1{font-size 4vw}
+
 ul {
   position: absolute;
   list-style: none;
