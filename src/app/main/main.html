@@ -26,8 +26,8 @@
                           (transform.translate.y - transform.width * item.height / item.width / 2) + 'px,
                           0px)
                         rotate(' + (transform.angle) + 'deg)',
-                      'z-index': transform.zIndex,
-                      'box-shadow': transform.shadowX + 'px ' + transform.shadowY + 'px 5px rgba(0, 0, 0, 0.3)' }"
+                        'z-index': transform.zIndex,
+                        'box-shadow': transform.shadowX + 'px ' + transform.shadowY + 'px 5px rgba(0, 0, 0, 0.3)'}"
             ng-click="$event.stopPropagation();"
             ng-controller="MediaController"
             hm-panstart="grabThis"
@@ -41,10 +41,13 @@
             hm-rotateend="cantTouchThis"
             analytics-on="click"
             analytics-label="{{item.url}}"
-            layout="column">
+            >
 
-           <md-card ng-switch on="item.type">
-            <md-card-content>
+           <div id="card" ng-switch on="item.type" layout="column" >
+
+
+
+            <div id="card-content" layout-align="center">
                 <img ng-switch-when="img"
                  ng-src="assets/images/{{item.url}}"
                  ng-style="{ width: transform.width + 'px' }"
@@ -69,27 +72,50 @@
                 <inline url="assets/x3d/{{item.url}}" ></inline>
               <scene>
             </x3d>
-           </md-card-content>
 
-            <md-card-footer>
-            <div class ="md-actions" layout= "row" layout-align="center">
+
+
+           </div>
+
+            <div id ="card-footer">
+            <div class ="md-actions" layout= "row" layout-alight="left">
+
                <md-button slide-toggle="#item{{$index}}"
                           class="md-raised md-primary"
                           ng-style="{'font-size':12 * ((transform.width)/(site.radius/2))+'px', 'padding':'5%'}">
-                          Button
+                         ^
                </md-button>
 <!--
                <md-button class="md-fab md-primary" aria-label="fab button">
                   <md-icon md-svg-src="/assets/icons/toolw.png">fab</md-icon>
                </md-button>
 -->
+
+                         <h1 ng-style="{'font-size':12 * ((transform.width)/(site.radius/2))+'px' }" >{{item.url}}</h1>
+
             </div>
-            <div id ="item{{$index}}" class="slideable">
-                <p ng-style="{'font-size':12 * ((transform.width)/(site.radius/2))+'px' }"
-                   layout="column">{{item.url}}</p>
+            <div ng-style = "{height: slideHeight+'%', width: transform.width +'px'}"
+                 id ="item{{$index}}"
+                 class="slideable"
+                 layout="column">
+
+               <md-button slide-toggle="#item{{$index}}"
+                          class="md-raised md-primary"
+                          ng-style="{'font-size':12 * ((transform.width)/(site.radius/2))+'px', 'padding':'5%'}">
+                         v
+               </md-button>
+
+
+
+                <h1 ng-style="{'font-size':12 * ((transform.width)/(site.radius/2))+'px' }">
+                    {{item.url}}
+                </h1>
+                <p ng-style="{'font-size':12 * ((transform.width)/(site.radius/2))+'px' }">
+                    fdafdadfasdf
+                </p>
             </div>
-           </md-card-footer>
-          </md-card>
+           </div>
+          </div>
         </li>
       </ul>
     </li>

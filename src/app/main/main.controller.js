@@ -8,11 +8,11 @@ angular.module('angelMounds')
     $scope.media = media.query();
 
 
-    // I toggle the value of isVisible.
-    $scope.toggle = function(event) {
-        $scope.isVisible = ! $scope.isVisible;
-    };
-    // Default the blocks to be visible.
-    $scope.isVisible = false;
+//    // I toggle the value of isVisible.
+//    $scope.toggle = function(event) {
+//        $scope.isVisible = ! $scope.isVisible;
+//    };
+//    // Default the blocks to be visible.
+//    $scope.isVisible = false;
 
   }]);
