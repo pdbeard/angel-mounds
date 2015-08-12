@@ -48,7 +48,7 @@ li {
 
 .site.on {
   background: rgba(54, 135, 45, .8);
-  border-radius: 0%;
+  border-radius: 50%;
   transition: .15s;
 }
 
@@ -93,6 +93,9 @@ x3d{
 
 #card{
 background-color:white;
+}
+
+#card-footer{
 }
 
 /* shadow CSS from http://timnew.me/blog/2014/08/16/material-design-shadow-in-html/ */

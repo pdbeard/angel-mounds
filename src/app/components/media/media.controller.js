@@ -11,7 +11,7 @@ angular.module('angelMounds')
                             $scope.site.radius,
                             $scope.$index,
                             $scope.filteredMedia.length);
-    
+
     // Define shadow angle from media's angle
     function shadowRotate(angle) {
       var offset = 5,
@@ -67,7 +67,10 @@ angular.module('angelMounds')
 
         // adds shadow to scope
         shadowX: shadow[0],
-        shadowY: shadow[1]
+        shadowY: shadow[1],
+
+        contentScale: width/MIN_WIDTH
+
       };
     };
 

@@ -16,7 +16,7 @@ angular.module('angelMounds')
                 element.css({
                     'overflow': 'hidden',
 //                    'overflow-y':'auto',
-                    'height': '20px',
+                    'height': '25%',
                     'position':'absolute',
                     'top':'100%',
                     'background-color':'#fff',
@@ -41,7 +41,8 @@ angular.module('angelMounds')
 
             var target, content;
             attrs.expanded = false;
-            scope.slideHeight =0;
+//            target.style.height = '20px';
+            scope.slideHeight =25;
 
             element.bind('click', function() {
 
@@ -52,8 +53,8 @@ angular.module('angelMounds')
                     content.style.border = 0;
                     scope.slideHeight = 100;
                 } else {
-                    //target.style.height = '0px';
-                    scope.slideHeight=0;
+//                    target.style.height = '20px';
+                    scope.slideHeight=25;
                 }
                 attrs.expanded = !attrs.expanded;
 

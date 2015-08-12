@@ -23,11 +23,10 @@
             class="item"
             ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
             ng-style="{ transform: 'translate3d(' + (transform.translate.x - transform.width / 2) + 'px, ' +
-                          (transform.translate.y - transform.width * item.height / item.width / 2) + 'px,
-                          0px)
-                        rotate(' + (transform.angle) + 'deg)',
-                        'z-index': transform.zIndex,
-                        'box-shadow': transform.shadowX + 'px ' + transform.shadowY + 'px 5px rgba(0, 0, 0, 0.3)'}"
+                      (transform.translate.y - transform.width * item.height / item.width / 2) + 'px, 0px)
+                      rotate(' + (transform.angle) + 'deg)',
+                      'z-index': transform.zIndex,
+                      'box-shadow': transform.shadowX + 'px ' + transform.shadowY + 'px 5px rgba(0, 0, 0, 0.3)'}"
             ng-click="$event.stopPropagation();"
             ng-controller="MediaController"
             hm-panstart="grabThis"
@@ -42,77 +41,54 @@
             analytics-on="click"
             analytics-label="{{item.url}}"
             >
+        <div id="card" layout="column">
+            <div ng-switch on="item.type">
 
-           <div id="card" ng-switch on="item.type" layout="column" >
-
-
-
-            <div id="card-content" layout-align="center">
                 <img ng-switch-when="img"
-                 ng-src="assets/images/{{item.url}}"
-                 ng-style="{ width: transform.width + 'px' }"
-                 ondragstart="return false" />
-            <iframe ng-switch-when="iframe"
-                    ng-src="{{item.url | trusted}}"
-                    ng-style="{ width: transform.width + 'px', height: transform.width + 'px' }"
-                    frameborder="no"></iframe>
-            <video ng-switch-when="video"
-                   ng-style="{ width: transform.width + 'px' }"
-                   controls
-                   preload="auto">
-              <source ng-src="{{item.url | trusted}}" />
-            </video>
-            <x3d ng-switch-when="x3d"
-                 ng-init="initX3D();"
-                 id="x3d"
-                 showStat="false"
-                 showLog="false"
-                 ng-style="{ width: transform.width + 'px', height: transform.width + 'px' }"
-              <scene>
-                <inline url="assets/x3d/{{item.url}}" ></inline>
-              <scene>
-            </x3d>
-
-
-
+                     ng-src="assets/images/{{item.url}}"
+                     ng-style="{ width: transform.width + 'px' }"
+                     ondragstart="return false" />
+                <iframe ng-switch-when="iframe"
+                        ng-src="{{item.url | trusted}}"
+                        ng-style="{ width: transform.width + 'px', height: transform.width + 'px' }"
+                        frameborder="no"></iframe>
+                <video ng-switch-when="video"
+                       ng-style="{ width: transform.width + 'px' }"
+                       controls
+                       preload="auto">
+                  <source ng-src="{{item.url | trusted}}" />
+                </video>
+                <x3d ng-switch-when="x3d"
+                     ng-init="initX3D();"
+                     id="x3d"
+                     showStat="false"
+                     showLog="false"
+                     ng-style="{ width: transform.width + 'px', height: transform.width + 'px' }"
+                  <scene>
+                    <inline url="assets/x3d/{{item.url}}" ></inline>
+                  <scene>
+                </x3d>
            </div>
 
-            <div id ="card-footer">
-            <div class ="md-actions" layout= "row" layout-alight="left">
-
-               <md-button slide-toggle="#item{{$index}}"
-                          class="md-raised md-primary"
-                          ng-style="{'font-size':12 * ((transform.width)/(site.radius/2))+'px', 'padding':'5%'}">
-                         ^
-               </md-button>
-<!--
-               <md-button class="md-fab md-primary" aria-label="fab button">
-                  <md-icon md-svg-src="/assets/icons/toolw.png">fab</md-icon>
-               </md-button>
--->
-
-                         <h1 ng-style="{'font-size':12 * ((transform.width)/(site.radius/2))+'px' }" >{{item.url}}</h1>
-
-            </div>
-            <div ng-style = "{height: slideHeight+'%', width: transform.width +'px'}"
+           <div ng-style = "{height:30*transform.contentScale+'px', width:transform.width +'px'}"></div>
+           <div id ="card-footer">
+            <div ng-style = "{height:slideHeight+'%', width:transform.width +'px'}"
                  id ="item{{$index}}"
-                 class="slideable"
-                 layout="column">
+                 class="slideable" duration=".3s">
+                 <div layout = "row">
+                   <md-button slide-toggle="#item{{$index}}"
+                              class="md-raised md-primary"
+                              ng-style="{'padding':'3%',
+                                         'font-size':12*transform.contentScale+'px'}">
+                             v
+                   </md-button>
+                   <h1 ng-style="{'font-size':10 *transform.contentScale+'px' }">{{item.url}}</h1>
+                </div>
+                <div layout ="column">
 
-               <md-button slide-toggle="#item{{$index}}"
-                          class="md-raised md-primary"
-                          ng-style="{'font-size':12 * ((transform.width)/(site.radius/2))+'px', 'padding':'5%'}">
-                         v
-               </md-button>
-
-
-
-                <h1 ng-style="{'font-size':12 * ((transform.width)/(site.radius/2))+'px' }">
-                    {{item.url}}
-                </h1>
-                <p ng-style="{'font-size':12 * ((transform.width)/(site.radius/2))+'px' }">
-                    fdafdadfasdf
-                </p>
+                    <p ng-style="{'font-size':8 *transform.contentScale+'px' }">
+                        Test Description</p>
+                </div>
             </div>
            </div>
           </div>
