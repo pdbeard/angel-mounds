@@ -71,14 +71,7 @@
     "width": 640,
     "height": 360
   },
-  {
-    "type": "x3d",
-    "url": "AVL.x3d",
-    "title": "Mound2",
-    "description": "3D AVL font",
-    "width": 500,
-    "height": 500
-  },
+
   {
     "type": "img",
     "url": "8.jpg",
