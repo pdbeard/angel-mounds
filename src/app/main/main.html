@@ -1,99 +1,104 @@
 <div id="bg" ng-style="{ transform: 'scale3d(' + scale + ', ' + scale + ', 1)' }">
   <ul>
-    <li ng-repeat="site in sites"
-        class="shadow-1"
-        ng-class="active ? 'site on' : 'site'"
-        ng-style="{ width: site.width + 'px',
-                  height: site.height + 'px',
-                  left: (site.x - site.width / 2) + 'px',
-                  top: (site.y - site.height / 2) + 'px' }"
-        ng-click="active = !active"
-        analytics-on="click"
-        analytics-label="{{site.logo}}">
-      <img class="site_img" ng-src="assets/images/{{site.logo}}"/>
+	<li ng-repeat="site in sites"
+		class="shadow-1"
+		ng-class="active ? 'site on' : 'site'"
+		ng-style="{ width: site.width + 'px',
+				  height: site.height + 'px',
+				  left: (site.x - site.width / 2) + 'px',
+				  top: (site.y - site.height / 2) + 'px'}"
+		ng-click="active = !active"
+		analytics-on="click"
+		analytics-label="{{site.logo}}">
+	  <img class="site_img" ng-src="assets/images/{{site.logo}}"/>
 
-      <ul ng-if="active"
-          class ="items"
-          ng-style="{ left: (site.width / 2) + 'px',
-                    top: (site.height / 2) + 'px',
-                    opacity: 1,
-                    transition: '0.2s' }"
-          ng-controller="SitesController">
-        <li ng-repeat="item in filteredMedia"
-            class="item"
-            ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
-            ng-style="{ transform: 'translate3d(' + (transform.translate.x - transform.width / 2) + 'px, ' +
-                      (transform.translate.y - transform.width * item.height / item.width / 2) + 'px, 0px)
-                      rotate(' + (transform.angle) + 'deg)',
-                      'z-index': transform.zIndex,
-                      'box-shadow': transform.shadowX + 'px ' + transform.shadowY + 'px 5px rgba(0, 0, 0, 0.3)'}"
-            ng-click="$event.stopPropagation();"
-            ng-controller="MediaController"
-            hm-panstart="grabThis"
-            hm-pinchstart="grabThis"
-            hm-rotatestart="grabThis"
-            hm-panmove="touchThis"
-            hm-pinchmove="touchThis"
-            hm-rotatemove="touchThis"
-            hm-panend="cantTouchThis"
-            hm-pinchend="cantTouchThis"
-            hm-rotateend="cantTouchThis"
-            analytics-on="click"
-            analytics-label="{{item.url}}"
-            >
-        <div id="card" layout="column">
-            <div ng-switch on="item.type">
+	  <ul ng-if="active"
+		  class ="items"
+		  ng-style="{ left: (site.width / 2) + 'px',
+					top: (site.height / 2) + 'px',
+					opacity: 1,
+					transition: '0.2s' }"
+		  ng-controller="SitesController">
+		<li ng-repeat="item in filteredMedia"
+			class="item"
+			ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
+			ng-style="{ transform: 'translate3d(' + (transform.translate.x - transform.width / 2) + 'px, ' +
+					  (transform.translate.y - transform.width * item.height / item.width / 2) + 'px, 0px)
+					  rotate(' + (transform.angle) + 'deg)',
+					  'z-index': transform.zIndex,
+					  'box-shadow': transform.shadowX + 'px ' + transform.shadowY + 'px 5px rgba(0, 0, 0, 0.3)'}"
+			ng-click="$event.stopPropagation();"
+			ng-controller="MediaController"
+			hm-panstart="grabThis"
+			hm-pinchstart="grabThis"
+			hm-rotatestart="grabThis"
+			hm-panmove="touchThis"
+			hm-pinchmove="touchThis"
+			hm-rotatemove="touchThis"
+			hm-panend="cantTouchThis"
+			hm-pinchend="cantTouchThis"
+			hm-rotateend="cantTouchThis"
+			analytics-on="click"
+			analytics-label="{{item.url}}"
+			>
+		<div id="card" layout="column">
+			<div ng-switch on="item.type">
 
-                <img ng-switch-when="img"
-                     ng-src="assets/images/{{item.url}}"
-                     ng-style="{ width: transform.width + 'px' }"
-                     ondragstart="return false" />
-                <iframe ng-switch-when="iframe"
-                        ng-src="{{item.url | trusted}}"
-                        ng-style="{ width: transform.width + 'px', height: transform.width + 'px' }"
-                        frameborder="no"></iframe>
-                <video ng-switch-when="video"
-                       ng-style="{ width: transform.width + 'px' }"
-                       controls
-                       preload="auto">
-                  <source ng-src="{{item.url | trusted}}" />
-                </video>
-                <x3d ng-switch-when="x3d"
-                     ng-init="initX3D();"
-                     id="x3d"
-                     showStat="false"
-                     showLog="false"
-                     ng-style="{ width: transform.width + 'px', height: transform.width + 'px' }"
-                  <scene>
-                    <inline url="assets/x3d/{{item.url}}" ></inline>
-                  <scene>
-                </x3d>
-           </div>
+				<img ng-switch-when="img"
+					 ng-src="assets/rt_collection/images/{{item.url}}"
+					 ng-style="{ width: transform.width + 'px' }"
+					 ondragstart="return false" />
+				<iframe ng-switch-when="iframe"
+						ng-src="{{item.url | trusted}}"
+						ng-style="{ width: transform.width + 'px', height: transform.width + 'px' }"
+						frameborder="no"></iframe>
+				<video ng-switch-when="video"
+					   ng-style="{ width: transform.width + 'px' }"
+					   controls
+					   preload="auto">
+				  <source ng-src="{{item.url | trusted}}" />
+				</video>
+				<x3d ng-switch-when="x3d"
+					 ng-init="initX3D();"
+					 id="x3d"
+					 showStat="false"
+					 showLog="false"
+					 ng-style="{ width: transform.width + 'px', height: transform.width + 'px' }"
+				  <scene>
+					<inline url="assets/x3d/{{item.url}}" ></inline>
+				  <scene>
+				</x3d>
+		   </div>
 
-           <div ng-style = "{height:20*transform.contentScale+'px', width:transform.width +'px'}"></div>
-           <div id ="card-footer">
-            <div ng-style = "{height:slideHeight+'%', width:transform.width +'px'}"
-                 id ="item{{$index}}"
-                 class="slideable" duration=".3s">
-                 <div layout = "row">
-                   <md-button slide-toggle="#item{{$index}}"
-                              class="md-raised md-primary"
-                              ng-style="{'padding':'3%',
-                                         'font-size':12*transform.contentScale+'px'}">
-                             v
-                   </md-button>
-                   <h1 ng-style="{'font-size':10 *transform.contentScale+'px' }">{{item.url}}</h1>
-                </div>
-                <div layout ="column">
+		   <div id ="card-footer"
+				style="border-top:2px solid #c3c3c3"
+			 ng-style="{ width: transform.width + 'px', height:(.2*transform.height)+'px' }">
 
-                    <p ng-style="{'font-size':8 *transform.contentScale+'px' }">
-                        Test Description</p>
-                </div>
-            </div>
-           </div>
-          </div>
-        </li>
-      </ul>
-    </li>
+
+			<div ng-style = "{height:slideHeight*(transform.height)+'px', width:transform.width +'px'}"
+				 id ="item{{$index}}"
+				 class="slideable" duration=".3s">
+
+				 <div class ="shadow-1" layout = "row" ng-style ="{height:.2*transform.height+'px', width:transform.width+'px'}">
+
+				   <p style="margin-top:0px;" layout-style="center center" ng-style="{'font-size':8 *transform.contentScale+'px' }">{{item.title}}</p>
+				   <ng-md-icon  icon="{{clickIcon}}"  size="100%" options='{"duration": 400, "rotation": "none", "easing":"sine-in-out"}' ng-click="clickIconMorph()" slide-toggle="#item{{$index}}"></ng-md-icon>
+
+
+				</div>
+
+				<div layout ="column">
+
+					<p ng-style="{'font-size':5.5 *transform.contentScale+'px' }">
+{{item.description}}
+					</p>
+				</div>
+			</div>
+
+		   </div>
+		  </div>
+		</li>
+	  </ul>
+	</li>
   </ul>
 </div>

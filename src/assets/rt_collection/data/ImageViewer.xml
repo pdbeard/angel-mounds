@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImageViewer>
+ <Content>
+<Source id = '1'>
+	<url>library/images/Filename</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Title</title><!-- Sets the image title -->
+		<description>Description</description><!-- Sets the image description-->
+		<author>Grouping</author><!-- Sets the image author data -->
+		<publish>Label</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Grouping</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Grouping</year> 
+		<location>Grouping</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '2'>
+	<url>library/images/</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title></title><!-- Sets the image title -->
+		<description></description><!-- Sets the image description-->
+		<author></author><!-- Sets the image author data -->
+		<publish></publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection></collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year></year> 
+		<location></location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '3'>
+	<url>library/images/GISDay-Demo.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>EOT: GIS Day at Indiana University</title><!-- Sets the image title -->
+		<description>IU hosts the annual GIS Day as an “international forum for users of Geographical Information Systems (GIS) technology to demonstrate real-world applications that are making a difference in our society.” GIS connects people with the geo-intelligence to work more efficiently and make better decisions. GIS supports a geographic approach to problem-solving. From Google and Bing Maps technology, to systems that monitor the spread of disease and manage environmental emergencies, GIS technologies are tools that help people do a better job and make a difference.</description><!-- Sets the image description-->
+		<author>EOT Highlights</author><!-- Sets the image author data -->
+		<publish>GIS</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>EOT Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>EOT Highlights</year> 
+		<location>EOT Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '4'>
+	<url>library/images/ReadySetRobots-sc13-robots1-HiRes_downsized.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>EOT: Ready, Set, Robots! at Supercomputing 2013</title><!-- Sets the image title -->
+		<description>UITS Research Technologies highlighted the success of the Indiana University Pervasive Technology Institute “Ready, Set, Robots!” camp at The International Conference for High Performance Computing, Networking, Storage and Analysis (SC13) in Denver, Colorado with an informal presentation in the IU booth. In conjunction with staff from IU who spoke about the camps there was a miniature robot arena and two robots that students had programmed during the summer camp.  </description><!-- Sets the image description-->
+		<author>EOT Highlights</author><!-- Sets the image author data -->
+		<publish>K-12 STEM</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>EOT Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>EOT Highlights</year> 
+		<location>EOT Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '5'>
+	<url>library/images/SOSWeek_highlight_Sep2013.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>EOT: SOS Week with WorldProcessor</title><!-- Sets the image title -->
+		<description>IU’s Advanced Visualization Lab hosted a week of activities centered around the new Science on a Sphere display. SOS is a six-foot sphere illuminated by high-definition projectors and capable of displaying a wide range of data, including oceanographic, atmospheric, astronomical, political, and economic data. IU’s SOS is installed in the atrium of the Cyberinfrastructure Building (CIB) and is now available for demonstrations and use by IU faculty, students, and staff. The event took place Sep 16-20, 2013 and featured presentations, demonstrations, and interactive sessions with local experts as well as internationally renowned journalist and artist Ingo Gunther. Mr. Gunther temporarily installed his WorldProcessor exhibit to provide additional background and inspiration for new ways to interact with and create spherical visualizations. </description><!-- Sets the image description-->
+		<author>EOT Highlights</author><!-- Sets the image author data -->
+		<publish>Science on a Sphere</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>EOT Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>EOT Highlights</year> 
+		<location>EOT Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '6'>
+	<url>library/images/HoosierGirlz-2-HiRes_downsized.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>EOT: Hoosier Girlz First Lego League season sponsored by Research Technologies</title><!-- Sets the image title -->
+		<description>With the use of a laptop from IU’s Research Technologies (RT) division of University Information Technology Services (UITS), the Hoosier Girlz First Lego League (FLL) completed their 2013 season by winning two trophies at the Indiana FLL Championship Tournament. They competed against 51 qualifying teams to take home the “Robot Reliability Traveling Trophy,” which is given to the team with the lowest standard deviation for the three robot runs. They also earned the “1st Place Project Innovation Solution” trophy for the most innovative solution to the project portion of the team challenge. The team secured its spot at the championship level by winning three 1st place awards at the local level: Robot Score, Highest Robot Score Average, and Overall (out of 32 teams). </description><!-- Sets the image description-->
+		<author>EOT Highlights</author><!-- Sets the image author data -->
+		<publish>K-12 Girls STEM</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>EOT Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>EOT Highlights</year> 
+		<location>EOT Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '7'>
+	<url>library/images/AVLStaffParticipateinDOEComputerGraphicsForum_downsized.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>EOT: AVL Staff Participate in DOE Computer Graphics Forum</title><!-- Sets the image title -->
+		<description>Staff from IU’s Advanced Visualization  participated in the panel presentation “The Trials and Tribulations of a Visualization Laboratory” at the Department of Energy Computer Graphics Forum. They presented along with Laura Monroe from Los Alamos National Lab, Ken Moreland from Sandia National Lab, and Sean Ahern from the University of Tennessee. Attending the forum were a host of experts working in computer graphics for high-performance computing systems, including many from the DOE National Labs, plus collaborators working in US Military HPC installations as well as university collaborators. DOE Office of Science program manager Lucy Nowell was also a participant in the forum. The panel was organized by Jamison Daniel of Oak Ridge National Lab.</description><!-- Sets the image description-->
+		<author>EOT Highlights</author><!-- Sets the image author data -->
+		<publish>Computer graphics</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>EOT Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>EOT Highlights</year> 
+		<location>EOT Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '8'>
+	<url>library/images/BigRedII-Large.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>EOT: Big Red II Workshop @ IUPUI</title><!-- Sets the image title -->
+		<description>The workshop was an excellent opportunity for Research Technologies to showcase Indiana University's flagship supercomputer Big Red II. The workshop built understanding of its design, architecture, and usage policies, and presented an opportunity to discuss various advanced topics in detail and in person. </description><!-- Sets the image description-->
+		<author>EOT Highlights</author><!-- Sets the image author data -->
+		<publish>Big Red II</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>EOT Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>EOT Highlights</year> 
+		<location>EOT Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '9'>
+	<url>library/images/Leveraging-Research.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>EOT: Leveraging the national cyberinfrastructure for biomedical research</title><!-- Sets the image title -->
+		<description>Big Red II is a Cray XE6/XK7 hybrid supercomputer, with both CPUs and GPUs. </description><!-- Sets the image description-->
+		<author>EOT Highlights</author><!-- Sets the image author data -->
+		<publish>Biomedical research</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>EOT Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>EOT Highlights</year> 
+		<location>EOT Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '10'>
+	<url>library/images/makevention-hires.JPG</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>EOT: Makevention 2014 </title><!-- Sets the image title -->
+		<description>UITS Research Technologies sponsored Makevention, a STEM learning event. Parents encourage their children to participate in all activities which fosters an interest and curiosity in how things work, much like an interactive museum. By being free and open to the public, everyone is welcome and able to participate. </description><!-- Sets the image description-->
+		<author>EOT Highlights</author><!-- Sets the image author data -->
+		<publish>Maker</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>EOT Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>EOT Highlights</year> 
+		<location>EOT Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '11'>
+	<url>library/images/NCGASVirtualInternsleverageXSEDEexperiencetogainindustryemployment_downsized.JPG</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>EOT: Virtual Interns leverage XSEDE experience to gain industry employment</title><!-- Sets the image title -->
+		<description>Virtual internships were offered by Indiana University’s UITS Research Technologies division for the first time in the fall 2013 semester. Potential intern candidates visited Indiana University for one week in the summer, to get first-hand experience and a behind the scenes look at IU’s data center and cyberinfrastructure. During their visit they were trained on software installation on various high performance computing systems across the country, which are part of the national cyberinfrastructure known as the Extreme Science and Engineering Discovery Environment. After completion of the internships, the interns were hired full-time by defense employer in Ohio.</description><!-- Sets the image description-->
+		<author>EOT Highlights</author><!-- Sets the image author data -->
+		<publish>Internship</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>EOT Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>EOT Highlights</year> 
+		<location>EOT Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '12'>
+	<url>library/images/VisualizationAfterDark-SOSWeek.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>EOT: Visualization After Dark: Snow Ice and Olympic Gold</title><!-- Sets the image title -->
+		<description>At Visualization After Dark on February 20, visitors experienced the 2014 Winter Olympics held in Sochi, Russia, as a series of interpreted and visualized datasets on the Science on a Sphere technology. Hosted by the Advanced Visualization Lab, the February 20, 2014 event broadened some 50 visitor’s appreciation of the global reach of the Winter Olympic Games as they have unfolded over their 90-year history. The technology conveyed the worldwide effects of the 2013-14 winter, which has resulted in polar vortices in the United States and warmer than usual conditions on the other side of the globe. </description><!-- Sets the image description-->
+		<author>EOT Highlights</author><!-- Sets the image author data -->
+		<publish>Engaging the public</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>EOT Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>EOT Highlights</year> 
+		<location>EOT Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '13'>
+	<url>library/images/</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title></title><!-- Sets the image title -->
+		<description></description><!-- Sets the image description-->
+		<author></author><!-- Sets the image author data -->
+		<publish></publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection></collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year></year> 
+		<location></location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '14'>
+	<url>library/images/ForwardObserver-OperationIceBridge_downsized.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Scholarly: Operation Ice Bridge</title><!-- Sets the image title -->
+		<description>Researchers using data collected by NASA Operation IceBridge flights have discovered that under the Greenland Ice Sheet is a massive, 460-mile-long continuous canyon with the characteristics of a river channel. It begins around the center of the island and runs northward to the fjord of the Petermann glacier, and is thought to predate the ice sheet itself, which has covered Greenland for the last few million years. The feature is longer than the Grand Canyon, and as deep in some places as 2,600 feet.</description><!-- Sets the image description-->
+		<author>Scholarly Highlights</author><!-- Sets the image author data -->
+		<publish>Climate Change</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Scholarly Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Scholarly Highlights</year> 
+		<location>Scholarly Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '15'>
+	<url>library/images/bio-blood-markers-higher-res.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Scholarly: Blood Biomarkers for Mood Disorders</title><!-- Sets the image title -->
+		<description>Clinicians today do not have a reliable test to detect inclination or propensity towards suicide. They rely on indirect tests such as patient reported symptoms and feelings to decide whether someone requires immediate help and care. A quantitative test would be clinically useful for predicting and tracking suicidal tendencies and could allow clinicians to treat patients earlier. Dr. Niculescu, at the Dept. of Psychiatry, IU School of Medicine, has discovered that SAT1 mRNA levels may serve as a biomarker for suicidality when used in conjunction with other tests.</description><!-- Sets the image description-->
+		<author>Scholarly Highlights</author><!-- Sets the image author data -->
+		<publish>Biomarker</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Scholarly Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Scholarly Highlights</year> 
+		<location>Scholarly Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '16'>
+	<url>library/images/ContributingtotheAnnotationoftheLoblollyPineGenome.JPG</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Scholarly: Contributing to the Annotation of the Loblolly Pine Genome</title><!-- Sets the image title -->
+		<description>A critical component of a successful genome sequencing project is to discover the genes contained within the genome. This step, called gene annotation, is particularly difficult. One approach to gene annotation is to sequence the RNA molecules found in the organism, and map these assembled transcripts back onto the newly assembled genome. This is what was done, with help from NCGAS, for the loblolly pine, which is at the center of a major multi-site sequencing effort. A paper detailing this work, “Unique Features of the Loblolly Pine (Pinus taeda L.) Megagenome Revealed Through Sequence Annotation,” was recently published in Genetics:http://www.genetics.org/content/196/3/891. UITS Research Technologies' bioinformatician Le-Shin Wu, working in close partnership with Indiana University faculty member Keithanne Mockaitis, provided bioinformatic assistance in running de novo RNA-sequence assemblies.</description><!-- Sets the image description-->
+		<author>Scholarly Highlights</author><!-- Sets the image author data -->
+		<publish>Genome</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Scholarly Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Scholarly Highlights</year> 
+		<location>Scholarly Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '17'>
+	<url>library/images/togaf.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Scholarly: Enterprise Architecture for Indiana University File Storage</title><!-- Sets the image title -->
+		<description>University Information Technology Services (UITS) has employed The Open Group Architecture Framework (TOGAF) as an enterprise architecture methodology and framework to architect a new university file storage service (IUFS). This process has produced a complete architecture definition that specifies the technical implementation for the service. Using this methodology has ensured that IUFS ties directly into the business processes and cases driving the need for such a service.</description><!-- Sets the image description-->
+		<author>Scholarly Highlights</author><!-- Sets the image author data -->
+		<publish>File Storage</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Scholarly Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Scholarly Highlights</year> 
+		<location>Scholarly Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '18'>
+	<url>library/images/LDEO.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Scholarly: Lamont-Doherty Earth Observatory: Exploring Phytoplankton use of Nitrogen and Phosphorus</title><!-- Sets the image title -->
+		<description>Staff at the National Center for Genome Analysis Support provided bioinformatic and computational resources to assist faculty and students from the Lamont-Doherty Earth Observatory to examine the bottom-up controls on phytoplankton growth. They accomplished this by investigating the nutrient physiology of phytoplankton in a species-specific way. The experimental design combined environmental sampling with nutrient-amended incubations to drive the population towards different states of nutrient starvation/repletion. </description><!-- Sets the image description-->
+		<author>Scholarly Highlights</author><!-- Sets the image author data -->
+		<publish>Earth Observatory</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Scholarly Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Scholarly Highlights</year> 
+		<location>Scholarly Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '19'>
+	<url>library/images/TheDigitalScroll-JackKerouacsOntheRoadManuscript.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Scholarly: The Digital Scroll: Jack Kerouac's On the Road Manuscript</title><!-- Sets the image title -->
+		<description>Staff at the National Center for Genome Analysis Support provided bioinformatic and computational resources to assist faculty and students from the Lamont-Doherty Earth Observatory to examine the bottom-up controls on phytoplankton growth. They accomplished this by investigating the nutrient physiology of phytoplankton in a species-specific way. The experimental design combined environmental sampling with nutrient-amended incubations to drive the population towards different states of nutrient starvation/repletion.</description><!-- Sets the image description-->
+		<author>Scholarly Highlights</author><!-- Sets the image author data -->
+		<publish>Manuscript</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Scholarly Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Scholarly Highlights</year> 
+		<location>Scholarly Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '20'>
+	<url>library/images/TraumaticBrainInjuryRegistry-HiRes.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Scholarly: Traumatic Brain Injury Registry</title><!-- Sets the image title -->
+		<description>In 2010, approximately 2.5 million patients were treated for or hospitalized with Traumatic Brain Injury (TBI). More than 50,000 died. To improve TBI care and outcomes, information about injury, care, and outcome must be captured and analyzed. Dr. Rodgers and his staff have captured and organized these data into a REDCap registry that can be used to tease out the best ways to treat various types of TBI. In addition, the registry uses a standardized vocabulary, making the data easy to interpret and share with other researchers.</description><!-- Sets the image description-->
+		<author>Scholarly Highlights</author><!-- Sets the image author data -->
+		<publish>Brain</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Scholarly Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Scholarly Highlights</year> 
+		<location>Scholarly Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '21'>
+	<url>library/images/fruit-fly-hires.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Scholarly: Uncovering Unprecedented Complexity in Fruit Fly</title><!-- Sets the image title -->
+		<description>Indiana University scientists are part of a consortium that has described the transcriptome (complete collection of RNAs produced by a genome) of the fruit fly Drosophila melanogaster in unprecedented detail, identifying thousands of new genes, transcripts, and proteins. The project, conducted by a consortium of over 40 researchers, discovered 1,468 new genes. IU’s National Center for Genome Analysis Support (NCGAS) provided bioinformatic software installation and support, and access to the Mason large RAM cluster, which is needed for de novo sequence assembly. IU’s High Performance File System (HPFS) group provided the file systems used to store sequence data. </description><!-- Sets the image description-->
+		<author>Scholarly Highlights</author><!-- Sets the image author data -->
+		<publish>Fruit Fly</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Scholarly Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Scholarly Highlights</year> 
+		<location>Scholarly Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '22'>
+	<url>library/images/WholeGenomeSequencing-HiRes_downsized.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Scholarly: Whole Genome Sequencing</title><!-- Sets the image title -->
+		<description>Data analysis and storage have been bottlenecks to using whole genome data to interrogate the entire coding region of a genome and analyze the entire 3 billion base pair. The computational capabilities of Big Red II, used in concert with a large, high-speed, parallel file system and reliable high-speed archive storage has permitted a breakthrough for whole genome research. This project will provide a path for recognizing disease-causing mutations as well as evaluating non-coding variations. In the long term, it will make personalized medicine possible.</description><!-- Sets the image description-->
+		<author>Scholarly Highlights</author><!-- Sets the image author data -->
+		<publish>Genome</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Scholarly Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Scholarly Highlights</year> 
+		<location>Scholarly Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '23'>
+	<url>library/images/HTRC-UnCamp2012-IMG_1274_downsized.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Scholarly: Living cyberinfrastructures and their impact on scientific research</title><!-- Sets the image title -->
+		<description>There are multiple impacts of living cyberinfrastructure (CI) on researchers and the science/research process itself. Free cycles mean researchers can accomplish a lot of work. In exchange, to get time on the resource, they may be required to fit into the resource’s computational model, take part in an allocations process, and justify their science. This can cut down on early experimentation. They may have to adapt their software to work on the system, share the system (and possibly their data) with other researchers, agree to provide attribution for the center, or participate in surveys or other feedback mechanisms. Centers themselves face challenges. They exist in a cooperative-competitive tension, lack adequate funding, face scaling issues that come with exascale computing, and need to attract larger communities. Thus, living CI can claim part of the scientific process.  </description><!-- Sets the image description-->
+		<author>Scholarly Highlights</author><!-- Sets the image author data -->
+		<publish>Scientific Research</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Scholarly Highlights</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Scholarly Highlights</year> 
+		<location>Scholarly Highlights</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '24'>
+	<url>library/images/</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title></title><!-- Sets the image title -->
+		<description></description><!-- Sets the image description-->
+		<author></author><!-- Sets the image author data -->
+		<publish></publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection></collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year></year> 
+		<location></location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '25'>
+	<url>library/images/rt-gateways-800px.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Science gateways</title><!-- Sets the image title -->
+		<description>Researchers and instructors benefit greatly from web interfaces to supercomputers, massive storage, and shared workflows.  IU develops user-friendly gateways for navigation of systems and software.  At IU, gateways include the Quarry Gateway Web Services Hosting where you can request a VM to host a science gatewary or web allocation, the IU Cyberinfrastructure Gateway which is the one stop shopping portal for all IU central cyberinfrastructure, and XSEDE Science Gateways which houses information on the NSF-funded XSEDE Science Gateway program.</description><!-- Sets the image description-->
+		<author>RT Services</author><!-- Sets the image author data -->
+		<publish>http://researchtech.iu.edu/science-gateways.php</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>RT Services</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>RT Services</year> 
+		<location>RT Services</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '26'>
+	<url>library/images/rt-storage-800px.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Data storage</title><!-- Sets the image title -->
+		<description>Research Technologies delivers HIPAA-aligned secure file management, data storage, and archiving via high-quality storage services for fast access or large datasets.  Data storage on disk includes Data Capacitor II, Data Capacitor Wide Area Network (WAN) II, and the Research File System.  Data storage on tape for longevity use includes the Scholarly Data Archive.</description><!-- Sets the image description-->
+		<author>RT Services</author><!-- Sets the image author data -->
+		<publish>http://researchtech.iu.edu/data-storage.php</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>RT Services</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>RT Services</year> 
+		<location>RT Services</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '27'>
+	<url>library/images/rt-hps-800px.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Computation</title><!-- Sets the image title -->
+		<description>In order to perform fast calculations, advanced simulations, and big data analysis, Research Technologies provides an array of supercomputers including Big Red II for big data research and simulations, Karst for parallel and high-throughput computing, and Mason for computing jobs with large memory requirements (especially applicable to genomics researchers).  Rockhopper is our "cluster as a service" computer through a partnership with Penguin on Demand and the Research Datbase Complex hosts research databases and data applications.</description><!-- Sets the image description-->
+		<author>RT Services</author><!-- Sets the image author data -->
+		<publish>http://researchtech.iu.edu/computation.php</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>RT Services</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>RT Services</year> 
+		<location>RT Services</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '28'>
+	<url>library/images/rt-software-800px.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Analysis and software delivery and support</title><!-- Sets the image title -->
+		<description>Analysis and software delivery and support, big data, and parallel computing have given rise to a need for high performing applicaions.  Research techologies provides services to improve the performance of systems and software which includes:  High performance computing software optimization, genome analysis, particularly genome comparison and assembly, analytics and statistical analysis software, geographical analysis, and mathematical software.</description><!-- Sets the image description-->
+		<author>RT Services</author><!-- Sets the image author data -->
+		<publish>http://researchtech.iu.edu/analysis-software.php</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>RT Services</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>RT Services</year> 
+		<location>RT Services</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '29'>
+	<url>library/images/rt-biomed-800px.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Services for biomedical, biological, and health-related research</title><!-- Sets the image title -->
+		<description>There are special considerations in health-related research because of legal guidelines about privacy of electronic protected health information.  Research Technologies delivers HIPAA-aligned services for computing and storage, including survey tools, databases, data management tools, and data repositories, IndianaCTSIhub - the core collaboration tool for the Indiana Clinical and Translational Science Institute, and genomic science workflows through the National Center for Genome Analysis Support.</description><!-- Sets the image description-->
+		<author>RT Services</author><!-- Sets the image author data -->
+		<publish>http://researchtech.iu.edu/biomedical.php</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>RT Services</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>RT Services</year> 
+		<location>RT Services</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '30'>
+	<url>library/images/rt-tools-800px.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Cyberinfrastructure for Digital Humanitites</title><!-- Sets the image title -->
+		<description>Creates consultative and technological bridges between the needs of IU humanists and the existing cyberinfrastructure and service resources within UITS, IU, and the national research cyberinfrastructure.  Connects to UITS Research Technologies' resources including high-performance computing, advanced visualization, research storage, and gateways technologies.  Strives for sustainability by prioritizing solutions through an "adopt first, adapt second, and create third" approach.</description><!-- Sets the image description-->
+		<author>RT Services</author><!-- Sets the image author data -->
+		<publish>http://researchtech.iu.edu/arts-humanities.php</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>RT Services</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>RT Services</year> 
+		<location>RT Services</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '31'>
+	<url>library/images/rt-viz-800px.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Visualization facilities and services</title><!-- Sets the image title -->
+		<description>Visualization improves comprehention of complex data and supercomputer simulations.  Research Technologies provides consulting and development services in areas which include scientific and information visualization and simulation, virtual reality and other advanced interface techniques, 3D data acquisition and computer graphics manipulation services, stereoscopic 3D video and ultra-high resolution photography, and geographic visualizations.</description><!-- Sets the image description-->
+		<author>RT Services</author><!-- Sets the image author data -->
+		<publish>http://researchtech.iu.edu/advanced-visualization.php</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>RT Services</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>RT Services</year> 
+		<location>RT Services</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '32'>
+	<url>library/images/rt-bridging-800px.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Campus bridging: connecting to local and national cyberinfrastructure</title><!-- Sets the image title -->
+		<description>Research Technologies provides consultants who can help you realize how to make powerful resources as easy to use as your computer's peripheral devices.  Campus Bridging helps you connect via condominium clusters you own but Research Technologies administers for you in the Data Center, cycles from commercial services like Penguin Computing, and information, training, and tools to help you use national facilities.</description><!-- Sets the image description-->
+		<author>RT Services</author><!-- Sets the image author data -->
+		<publish>http://researchtech.iu.edu/bridging-resources.php</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>RT Services</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>RT Services</year> 
+		<location>RT Services</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '33'>
+	<url>library/images/rt-eot-800px.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Education and outreach</title><!-- Sets the image title -->
+		<description>Not sure which Research Technologies' services could benefit your research or classroom experience or just want to become involved with RT education and outreach?  RT arranges education and outreach to all 128,000 faculty, staff, and students on all IU campuses as well as to local K-12 schools and organizations.  We give workshops and presentations tailored to the needs of a school/department/organization/class, arraange one-on-one meetings or online consultation about any of the RT services, partner with community and other IU entities to engage youth interest in going to college, and arrange tours of IU facilities like the IQ-Wall and Science on a Sphere at the Cyberinfrastructure Building or any of the visualization facilities at IUPUI.</description><!-- Sets the image description-->
+		<author>RT Services</author><!-- Sets the image author data -->
+		<publish>http://researchtech.iu.edu/education-outreach.php</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>RT Services</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>RT Services</year> 
+		<location>RT Services</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '34'>
+	<url>library/images/rt-grant-800px.png</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Grant support</title><!-- Sets the image title -->
+		<description>Research Technologies can help develop a successful grant proposal by incorporating facilities statements about IU's cyberinfrastructure, consulting on data management plans, providing letters of support for IU's resource commitment, and can provide custom programming and application development for a fee which could get you more bang for your award buck.</description><!-- Sets the image description-->
+		<author>RT Services</author><!-- Sets the image author data -->
+		<publish>http://researchtech.iu.edu/grant-support.php</publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>RT Services</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>RT Services</year> 
+		<location>RT Services</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '35'>
+	<url>library/images/</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title></title><!-- Sets the image title -->
+		<description></description><!-- Sets the image description-->
+		<author></author><!-- Sets the image author data -->
+		<publish></publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection></collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year></year> 
+		<location></location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '36'>
+	<url>library/images/IMG_7091_downsized.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Collaboration Cafe</title><!-- Sets the image title -->
+		<description>Located in the Union Street Residence Center at IU Bloomington, the Collaboration Cafe uses soft furnishings, bistro-style tables, and booths equipped with PCs to encourage student-centered collaborative learning. The informal setting breaks down the traditional classroom hierarchy and enables the instructor to move freely across the room, engaging and interacting with students. Technology supports the innovative classroom layout, with projection to the main screen and to the booths, a whiteboard camera and interactive whiteboard, a document camera, and DVD/VCR/Blu-ray. </description><!-- Sets the image description-->
+		<author>Classroom Technology</author><!-- Sets the image author data -->
+		<publish></publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Classroom Technology</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Classroom Technology</year> 
+		<location>Classroom Technology</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '37'>
+	<url>library/images/IMG_2266_downsized.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Steelcase Learn Labs</title><!-- Sets the image title -->
+		<description>Located in the Union Street Residence Center at IU Bloomington, the Learn Lab is configured to take into account the ways instructors and students move between lecture mode, discussion, and collaboration. Three projection screens assure an easy view of materials from anywhere in the room, and eight-person tables and numerous whiteboards encourage collaboration. The room also includes a whiteboard camera and interactive whiteboard, a document camera, and DVD/VCR/Blu-ray. </description><!-- Sets the image description-->
+		<author>Classroom Technology</author><!-- Sets the image author data -->
+		<publish></publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Classroom Technology</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Classroom Technology</year> 
+		<location>Classroom Technology</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '38'>
+	<url>library/images/ES1117_003_downsized.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Global Crossroads Classroom</title><!-- Sets the image title -->
+		<description>Located in the Education/Social Work Building at IUPUI, the Global Crossroads classroom is equipped with the latest high-definition video conferencing technology, using sensitive microphones suspended from the ceiling and EagleEye Director for voice and facial recognition to personalize live classes and meetings. </description><!-- Sets the image description-->
+		<author>Classroom Technology</author><!-- Sets the image author data -->
+		<publish></publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Classroom Technology</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Classroom Technology</year> 
+		<location>Classroom Technology</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '39'>
+	<url>library/images/2014_04_17__SB015_Tessa_Bent_054_downsized.jpg</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Collaborative Learning Studios</title><!-- Sets the image title -->
+		<description>Located on both the Bloomington and IUPUI campuses, Collaborative Learning Studios are innovative classroom spaces designed to leverage advanced technologies in support of collaborative learning in large classes. Students can work in teams at technology-enhanced tables and display their work on a large video wall for sharing with the larger class. </description><!-- Sets the image description-->
+		<author>Classroom Technology</author><!-- Sets the image author data -->
+		<publish></publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Classroom Technology</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Classroom Technology</year> 
+		<location>Classroom Technology</location> 
+		<type>Image</type>
+	</Source>
+
+<Source id = '40'>
+	<url>library/images/2014__LE104_GEOG_001_downsized.JPG</url>
+		<qrCodeTag></qrCodeTag><!-- Sets and creates the QR Code tag.  Can be text or url.  If left empty, QR Code Tag is not created. -->
+		<title>Lecture Hall 104</title><!-- Sets the image title -->
+		<description>Located in the Lecture Hall Building at IUPUI, Room 104 is a technology-enhanced collaborative work space. The room includes a whiteboard camera, a document camera, and DVD/VCR.</description><!-- Sets the image description-->
+		<author>Classroom Technology</author><!-- Sets the image author data -->
+		<publish></publish><!-- Sets the copyright information. Note: The code for the copyright symbol is " &#169; " so you will want to leave that in the tag if you wish to use the copyright symbol-->
+		<collection>Classroom Technology</collection><!-- must match collection buttons. to include multiple collections, separate values with commas -->
+		<year>Classroom Technology</year> 
+		<location>Classroom Technology</location> 
+		<type>Image</type>
+	</Source>
+
+    		
+
+		<!--
+		
+		Note: You can override the global InfoText style for a source by inserting local style tags as shown below.
+		
+		<InfoText>
+			<TitleText>
+				<fontColor>0xFF0000</fontColor>
+				<fontSize>50</fontSize>
+			</TitleText>
+			<DescriptionText>
+				<fontColor>0xFF0000</fontColor>
+				<fontSize>50</fontSize>
+			</DescriptionText>
+			<AuthorText>
+				<fontColor>0xFF0000</fontColor>
+				<fontSize>50</fontSize>
+			</AuthorText>
+			<PublishText>
+				<fontColor>0xFF0000</fontColor>
+				<fontSize>50</fontSize>
+			</PublishText>
+		</InfoText>
+		
+		-->
+
+</Content>
+
+	
+		
+	<GlobalSettings><!-- Sets the initial, min and max scale values for the video objects. !!Important: Either <scale> or <imagesNormalize> should be used. Not both !! --
+		<!-- <scale></scale> --><!-- Sets the images's full size (the size at which the control buttons appear) as relative to the images's actual size. So, for instance, if an image is 500px x 400px, setting <scale> to 1 would mean its full size equals its actual size. Setting scale to 2 would make it twice as large. -->
+		
+		<amountToShow>0</amountToShow>
+		
+		<globalScale>0.25</globalScale><!-- The size images start at before they are double-tapped or zoomed to their full size, which is the size at which the control buttons appear. This variable modulates either <scale> or <imageNormalize>, depending on whether the user wants to set the full size relative to the actual size or as an absolute value-->
+		<imagesNormalize></imagesNormalize><!-- Sets the full size as an absolute pixel width; the height of the images are adjusted accordingly. If left blank, will be calculated automatically. -->
+		<maxScale>2.5</maxScale><!-- The maximum size the images can zoom to, set relative to their full size within the application (set by <scale> or <imagesNormalize>). For instance, setting maxScale to 2.5 will allow the user to zoom the videos to 2.5 times their full size. -->
+		<minScale>.1</minScale><!-- The minimum size the images can zoom to, set relative to their full size within the application (set by <scale> or <imagesNormalize>). For instance, setting minScale to .5 will allow the user to shrink the images to half their full size. -->
+		<infoPadding>18</infoPadding><!-- Sets the padding around the description information when the info button is selected, and the spacing between the thumbnail, the main description box, and author info. -->
+	</GlobalSettings>
+	
+	<Gestures><!-- Sets whether or not the named gesture can be used in the application. Value must be either true or false. -->
+		<rotate>true</rotate>
+		<scale>true</scale>
+		<drag>true</drag>
+		<doubleTap>true</doubleTap>
+		<flick>true</flick>
+	</Gestures>
+
+	<ControlBtns>
+		<fillColor1>0x333333</fillColor1><!-- Sets the color of the bar behind the control buttons. The preceding Ox ensures that the program changes hexadecimal colors to integers -->
+		<outlineColor>0xFFFFFF</outlineColor><!-- Sets the color of the border that surrounds the button control bar. -->
+		<cornerRadius>18</cornerRadius>
+		<outlineStroke>1</outlineStroke><!-- Sets the width of the border that surrounds the button control bar.. -->
+
+		<buttonRadius>21</buttonRadius><!-- Sets the button radius in pixels. NB: Radius is one-half of total button size (diameter) -->
+		<buttonPadding>5</buttonPadding><!-- Sets the padding in pixels on all four sides of each button -->
+		<buttonOutlineStroke>1</buttonOutlineStroke><!-- Sets the width of the button outline in pixels -->
+		<buttonOutlineColor>0x009966</buttonOutlineColor><!-- Sets the color of the button outline -->
+		<buttonColorPassive>0x999999</buttonColorPassive><!-- Sets the background color of the buttons when they aren't active (haven't been selected). -->
+		<buttonColorActive>0x555555</buttonColorActive><!-- Sets the background color of the buttons when they are active (have been selected). -->
+		<buttonSymbolColor>0x000000</buttonSymbolColor><!-- Sets the color of the symbol or text on each button -->
+	</ControlBtns>
+	
+	<BackgroundGraphic><!-- Sets the application background to be either a solid color (if only <fillColor1> is given a value) or a two-color horizontal gradient (if both color values are filled in).   -->
+		<fillColor1>0xFFFFFF</fillColor1>
+		<fillColor2>0xCCCCCC</fillColor2>
+	</BackgroundGraphic>
+	
+	<BackgroundOutline><!-- Sets the style of the outline that surrounds each image object -->
+		<outlineColor>0xFFFFFF</outlineColor><!-- Sets the color of the outline surrounding each image object. -->
+		<outlineStroke>1</outlineStroke><!-- Sets the width of the border around each image object in pixels -->
+	</BackgroundOutline>
+		
+	<InfoText><!-- Sets the font size and color for each metadata field. -->
+		<TitleText>
+			<fontColor>0x000000</fontColor>
+			<fontSize></fontSize>
+		</TitleText>
+		<DescriptionText>
+			<fontColor>0x000000</fontColor>
+			<fontSize></fontSize>
+		</DescriptionText>
+		<AuthorText>
+			<fontColor>0x222222</fontColor>
+			<fontSize></fontSize>
+		</AuthorText>
+		<PublishText>
+			<fontColor>0x333333</fontColor>
+			<fontSize></fontSize>
+		</PublishText>
+	</InfoText>
+	
+</ImageViewer>
+    
+    
