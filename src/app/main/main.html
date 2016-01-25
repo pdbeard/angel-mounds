@@ -42,6 +42,12 @@
             analytics-label="{{item.url}}"
             >
         <div id="card" layout="column">
+          <img ng-src="assets/images/{{site.logo}}"
+               style="border-radius: 50%; position:absolute;"
+               ng-style="{ width: transform.width/5 + 'px', 
+                         height: transform.width/5 + 'px',
+                         top: -transform.width/10 + 'px',
+                         right: -transform.width/10 + 'px'}" />
             <div ng-switch on="item.type">
 
                 <img ng-switch-when="img"

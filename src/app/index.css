@@ -41,15 +41,17 @@ li {
 }
 
 .site {
-  background: rgba(54, 25, 25, .5);
+/*  background: rgba(54, 25, 25, .5);*/
   border-radius: 50%;
   transition: .3s;
+  transform:scale(2,2);
 }
 
 .site.on {
-  background: rgba(54, 135, 45, .8);
+/*  background: rgba(54, 135, 45, .8);*/
   border-radius: 50%;
   transition: .15s;
+  transform:scale(1,1);
 }
 
 .site_img {

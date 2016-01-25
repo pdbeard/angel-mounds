@@ -1,6 +1,6 @@
 [
   {
-    "logo": "../icons/flagw.png",
+    "logo": "../icons/Agriculture.png",
     "y": 700,
     "x": 1600,
     "width": 100,
@@ -10,7 +10,7 @@
     "layout": "circle"
   },
   {
-    "logo": "../icons/flagw.png",
+    "logo": "../icons/Ceremonial.png",
     "y": 1100,
     "x": 2000,
     "width": 100,
@@ -20,7 +20,7 @@
     "layout": "circle"
   },
   {
-    "logo": "../icons/flagw.png",
+    "logo": "../icons/Daily-Life.png",
     "y": 1575,
     "x": 1200,
     "width": 100,
@@ -30,7 +30,7 @@
     "layout": "circle"
   },
   {
-    "logo": "../icons/photow.png",
+    "logo": "../icons/Landscape.png",
     "y": 380,
     "x": 400,
     "width": 100,
@@ -40,7 +40,7 @@
     "layout": "line"
   },
   {
-    "logo": "../icons/toolw.png",
+    "logo": "../icons/Protection.png",
     "y": 1080,
     "x": 400,
     "width": 100,
@@ -50,7 +50,7 @@
     "layout": "line"
   },
   {
-    "logo": "../icons/homew.png",
+    "logo": "../icons/River.png",
     "y": 1780,
     "x": 400,
     "width": 100,
