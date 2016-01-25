@@ -15,14 +15,22 @@ angular.module('angelMounds',
                 'mediaFilter',
                 'trustedUrlFilter',
                 'angulartics',
-                'angulartics.google.analytics'])
-  .config(function ($stateProvider, $urlRouterProvider) {
+                'angulartics.google.analytics',
+                'ngIdle'])
+  .config(function ($stateProvider, $urlRouterProvider, IdleProvider) {
     $stateProvider
       .state('home', {
         url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainController'
       });
-
+  
     $urlRouterProvider.otherwise('/');
+  
+    // configure idle settings
+    IdleProvider.idle(60);
+    IdleProvider.timeout(20);
+  })
+  .run(function (Idle) {
+    Idle.watch();
   });
