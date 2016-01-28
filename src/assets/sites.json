@@ -1,32 +1,62 @@
 [
   {
-	"logo": "../rt_collection/sites/eot.png",
-	"y": 1100,
-	"x": 150,
-	"width": 300,
-	"height": 100,
-	"radius": 300,
-	"filterObject": { "category": "EOT" },
-	"layout": "line"
+    "logo": "../icons/Agriculture.png",
+    "y": 700,
+    "x": 1600,
+    "width": 100,
+    "height": 100,
+    "radius": 200,
+    "filterObject": { "title": "Mound1" },
+    "layout": "circle"
   },
   {
-	"logo": "../rt_collection/sites/sh.png",
-	"y": 1500,
-	"x": 150,
-	"width": 300,
-	"height": 100,
-	"radius": 300,
-	"filterObject": { "category": "SH" },
-	"layout": "line"
+    "logo": "../icons/Ceremonial.png",
+    "y": 1100,
+    "x": 2000,
+    "width": 100,
+    "height": 100,
+    "radius": 200,
+    "filterObject": { "title": "Mound2" },
+    "layout": "circle"
   },
   {
-	"logo": "../rt_collection/sites/rt.png",
-	"y": 1900,
-	"x": 150,
-	"width": 300,
-	"height": 100,
-	"radius": 300,
-	"filterObject": { "category": "RT" },
-	"layout": "line"
+    "logo": "../icons/Daily-Life.png",
+    "y": 1575,
+    "x": 1200,
+    "width": 100,
+    "height": 100,
+    "radius": 200,
+    "filterObject": { "title": "Mound3" },
+    "layout": "circle"
+  },
+  {
+    "logo": "../icons/Landscape.png",
+    "y": 380,
+    "x": 400,
+    "width": 100,
+    "height": 100,
+    "radius": 200,
+    "filterObject": { "description": "photo" },
+    "layout": "line"
+  },
+  {
+    "logo": "../icons/Protection.png",
+    "y": 1080,
+    "x": 400,
+    "width": 100,
+    "height": 100,
+    "radius": 200,
+    "filterObject": { "description": "tool" },
+    "layout": "line"
+  },
+  {
+    "logo": "../icons/River.png",
+    "y": 1780,
+    "x": 400,
+    "width": 100,
+    "height": 100,
+    "radius": 200,
+    "filterObject": { "description": "home" },
+    "layout": "line"
   }
 ]
