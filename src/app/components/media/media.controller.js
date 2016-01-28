@@ -4,7 +4,7 @@ angular.module('angelMounds')
   .controller('MediaController', ['$scope', '$window', 'windowScale', 'zIndex', 'layout', function ($scope, $window, windowScale, zIndex, layout) {
 	var oldTransform,
 	  WINDOW_SCALE = windowScale.getWindowScale(),
-	  MIN_WIDTH = $scope.site.radius / 2,
+	  MIN_WIDTH = $scope.site.radius / 1.25,
 	  MAX_WIDTH = $window.innerWidth / 2 / WINDOW_SCALE,
 	  init = layout.getInit($scope.site.layout,
 							$scope.site.layoutOptions,
