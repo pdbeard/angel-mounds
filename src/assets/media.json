@@ -1,192 +1,131 @@
 [
   {
 	"type": "img",
-	"url": "rt-1.png",
-	"title": "Grant support",
-	"description": "Research Technologies can help develop a successful grant proposal by incorporating facilities statements about IU's cyberinfrastructure, consulting on data management plans, providing letters of support for IU's resource commitment, and can provide custom programming and application development for a fee which could get you more bang for your award buck.",
-	"category": "RT",
-	"width": 880,
-	"height": 640
+	"url": "1.jpg",
+	"title": "Mound1",
+	"description": "tool",
+	"width": 600,
+	"height": 405
   },
   {
 	"type": "img",
-	"url": "rt-2.png",
-	"title": "Cyberinfrastructure for Digital Humanitites",
-	"description": "Creates consultative and technological bridges between the needs of IU humanists and the existing cyberinfrastructure and service resources within UITS, IU, and the national research cyberinfrastructure.  Connects to UITS Research Technologies' resources including high-performance computing, advanced visualization, research storage, and gateways technologies.  Strives for sustainability by prioritizing solutions through an adopt first, adapt second, and create third approach.",
-	"category": "RT",
-	"width": 880,
-	"height": 640
+	"url": "2.jpg",
+	"title": "Mound2",
+	"description": "tool",
+	"width": 600,
+	"height": 405
   },
   {
 	"type": "img",
-	"url": "rt-3.png",
-	"title": "Education and outreach",
-	"description": "Not sure which Research Technologies' services could benefit your research or classroom experience or just want to become involved with RT education and outreach?  RT arranges education and outreach to all 128,000 faculty, staff, and students on all IU campuses as well as to local K-12 schools and organizations.  We give workshops and presentations tailored to the needs of a school/department/organization/class, arraange one-on-one meetings or online consultation about any of the RT services, partner with community and other IU entities to engage youth interest in going to college, and arrange tours of IU facilities like the IQ-Wall and Science on a Sphere at the Cyberinfrastructure Building or any of the visualization facilities at IUPUI.",
-	"category": "RT",
-	"width": 880,
-	"height": 640
+	"url": "3.jpg",
+	"title": "Valley",
+	"description": "photo",
+	"width": 1920,
+	"height": 1080
   },
   {
 	"type": "img",
-	"url": "rt-4.png",
-	"title": "Services for biomedical, biological, and health-related research",
-	"description": "There are special considerations in health-related research because of legal guidelines about privacy of electronic protected health information.  Research Technologies delivers HIPAA-aligned services for computing and storage, including survey tools, databases, data management tools, and data repositories, IndianaCTSIhub - the core collaboration tool for the Indiana Clinical and Translational Science Institute, and genomic science workflows through the National Center for Genome Analysis Support.",
-	"category": "RT",
-	"width": 880,
-	"height": 640
+	"url": "4.jpg",
+	"title": "Mound1",
+	"description": "home",
+	"width": 349,
+	"height": 480
   },
   {
 	"type": "img",
-	"url": "rt-5.png",
-	"title": "RT Services",
-	"description": "Analysis and software delivery and support, big data, and parallel computing have given rise to a need for high performing applicaions.  Research techologies provides services to improve the performance of systems and software which includes:  High performance computing software optimization, genome analysis, particularly genome comparison and assembly, analytics and statistical analysis software, geographical analysis, and mathematical software.",
-	"category": "RT",
-	"width": 880,
-	"height": 640
+	"url": "5.jpg",
+	"title": "Mound1",
+	"description": "photo",
+	"width": 2304,
+	"height": 1728
   },
   {
 	"type": "img",
-	"url": "rt-6.png",
-	"title": "Campus bridging",
-	"description": "Research Technologies provides consultants who can help you realize how to make powerful resources as easy to use as your computer's peripheral devices.  Campus Bridging helps you connect via condominium clusters you own but Research Technologies administers for you in the Data Center, cycles from commercial services like Penguin Computing, and information, training, and tools to help you use national facilities.",
-	"category": "RT",
-	"width": 880,
-	"height": 640
+	"url": "6.jpg",
+	"title": "Mound1",
+	"description": "tool",
+	"width": 1610,
+	"height": 854
   },
   {
 	"type": "img",
-	"url": "rt-7.png",
-	"title": "Visualization facilities and services",
-	"description": "Visualization improves comprehention of complex data and supercomputer simulations.  Research Technologies provides consulting and development services in areas which include scientific and information visualization and simulation, virtual reality and other advanced interface techniques, 3D data acquisition and computer graphics manipulation services, stereoscopic 3D video and ultra-high resolution photography, and geographic visualizations.",
-	"category": "RT",
-	"width": 880,
-	"height": 640
-  },
-  {
-	"type": "img",
-	"url": "rt-8.png",
-	"title": "Data Storage",
-	"description": "Research Technologies delivers HIPAA-aligned secure file management, data storage, and archiving via high-quality storage services for fast access or large datasets.  Data storage on disk includes Data Capacitor II, Data Capacitor Wide Area Network (WAN) II, and the Research File System.  Data storage on tape for longevity use includes the Scholarly Data Archive.",
-	"category": "RT",
-	"width": 880,
-	"height": 640
-  },
-  {
-	"type": "img",
-	"url": "rt-9.png",
-	"title": "Computation",
-	"description": "In order to perform fast calculations, advanced simulations, and big data analysis, Research Technologies provides an array of supercomputers including Big Red II for big data research and simulations, Karst for parallel and high-throughput computing, and Mason for computing jobs with large memory requirements (especially applicable to genomics researchers).  Rockhopper is our cluster as a service computer through a partnership with Penguin on Demand and the Research Datbase Complex hosts research databases and data applications.",
-	"category": "RT",
-	"width": 880,
-	"height": 640
-  },
-  {
-	"type": "img",
-	"url": "rt-10.png",
-	"title": "Science gateways",
-	"description": "Researchers and instructors benefit greatly from web interfaces to supercomputers, massive storage, and shared workflows.  IU develops user-friendly gateways for navigation of systems and software.  At IU, gateways include the Quarry Gateway Web Services Hosting where you can request a VM to host a science gatewary or web allocation, the IU Cyberinfrastructure Gateway which is the one stop shopping portal for all IU central cyberinfrastructure, and XSEDE Science Gateways which houses information on the NSF-funded XSEDE Science Gateway program.",
-	"category": "RT",
-	"width": 880,
-	"height": 640
-  },
-  {
-	"type": "img",
-	"url": "HoosierGirlz-2-HiRes_downsized.jpg",
-	"title": "Hoosier Girlz First Lego League",
-	"description": "With the use of a laptop from IUs Research Technologies (RT) division of University Information Technology Services (UITS), the Hoosier Girlz First Lego League (FLL) completed their 2013 season by winning two trophies at the Indiana FLL Championship Tournament. They competed against 51 qualifying teams to take home the Robot Reliability Traveling Trophy, which is given to the team with the lowest standard deviation for the three robot runs. They also earned the 1st Place Project Innovation Solution trophy for the most innovative solution to the project portion of the team challenge. The team secured its spot at the championship level by winning three 1st place awards at the local level: Robot Score, Highest Robot Score Average, and Overall (out of 32 teams).",
-	"category": "EOT",
+	"url": "7.jpg",
+	"title": "Mound3",
+	"description": "home",
 	"width": 1200,
-	"height": 1056
+	"height": 1073
   },
   {
-	"type": "img",
-	"url": "AVLStaffParticipateinDOEComputerGraphicsForum_downsized.jpg",
-	"title": "DOE Computer Graphics Forum",
-	"description": "Staff from IUs Advanced Visualization Lab participated in the panel presentation The Trials and Tribulations of a Visualization Laboratory at the Department of Energy Computer Graphics Forum. They presented along with Laura Monroe from Los Alamos National Lab, Ken Moreland from Sandia National Lab, and Sean Ahern from the University of Tennessee. Attending the forum were a host of experts working in computer graphics for high-performance computing systems, including many from the DOE National Labs, plus collaborators working in US Military HPC installations as well as university collaborators. DOE Office of Science program manager Lucy Nowell was also a participant in the forum. The panel was organized by Jamison Daniel of Oak Ridge National Lab.",
-	"category": "EOT",
-	"width": 1250,
-	"height": 937
+	"type": "iframe",
+	"url": "https://en.wikipedia.org/wiki/Angel_Mounds",
+	"title": "Mound2",
+	"description": "Angel Mounds State Historic Site is nationally recognized as one of the best-preserved prehistoric Native American sites in the United States.",
+	"width": 500,
+	"height": 500
   },
   {
-	"type": "img",
-	"url": "BigRedII-Large_downsized.jpg",
-	"title": "Big Red II Workshop @ IUPUI",
-	"description": "The workshop was an excellent opportunity for Research Technologies to showcase Indiana University's flagship supercomputer Big Red II. The workshop built understanding of its design, architecture, and usage policies, and presented an opportunity to discuss various advanced topics in detail and in person.",
-	"category": "EOT",
-	"width": 1150,
-	"height": 647
+	"type": "video",
+	"url": "http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v",
+	"title": "Mound2",
+	"description": "Big Buck Bunny",
+	"width": 640,
+	"height": 360
   },
-  {
-	"type": "img",
-	"url": "Leveraging-Research.png",
-	"title": "National cyberinfrastructure for biomedical research",
-	"description": "Big Red II is a Cray XE6/XK7 hybrid supercomputer, with both CPUs and GPUs.",
-	"category": "EOT",
-	"width": 1063,
-	"height": 797
-  },
-  {
-	"type": "img",
-	"url": "makevention-crowd_downsized.jpg",
-	"title": "Makevention 2014",
-	"description": "UITS Research Technologies sponsored Makevention, a STEM learning event. Parents encourage their children to participate in all activities which fosters an interest and curiosity in how things work, much like an interactive museum. By being free and open to the public, everyone is welcome and able to participate.",
-	"category": "EOT",
-	"width": 1100,
-	"height": 825
-  },
-  {
-	"type": "img",
-	"url": "NCGASVirtualInternsleverageXSEDEexperiencetogainindustryemployment_downsized.jpg",
-	"title": "Virtual Interns leverage XSEDE",
-	"description": "Virtual internships were offered by Indiana University's UITS Research Technologies division for the first time in the fall 2013 semester. Potential intern candidates visited Indiana University for one week in the summer, to get first-hand experience and a behind the scenes look at IUs data center and cyberinfrastructure. During their visit they were trained on software installation on various high performance computing systems across the country, which are part of the national cyberinfrastructure known as the Extreme Science and Engineering Discovery Environment. After completion of the internships, the interns were hired full-time by defense employer in Ohio.",
-	"category": "EOT",
-	"width": 1072,
-	"height": 712
-  },
-  {
-	"type": "img",
-	"url": "ForwardObserver-OperationIceBridge_downsized.jpg",
-	"title": "Operation Ice Bridge",
-	"description": "Researchers using data collected by NASA Operation IceBridge flights have discovered that under the Greenland Ice Sheet is a massive, 460-mile-long continuous canyon with the characteristics of a river channel. It begins around the center of the island and runs northward to the fjord of the Petermann glacier, and is thought to predate the ice sheet itself, which has covered Greenland for the last few million years. The feature is longer than the Grand Canyon, and as deep in some places as 2,600 feet.",
-	"category": "SH",
-	"width": 975,
-	"height": 650
-  },
-  {
-	"type": "img",
-	"url": "TheDigitalScroll-JackKerouacsOntheRoadManuscript.png",
-	"title": "The Digital Scroll",
-	"description": "A Digital Version of Jack Kerouac's On the Road Manuscript was created for the Lily Library by the Advanced Visualization Lab. It was displayed on a touch screen and allowed users to explore freely around the scroll.",
-	"category": "SH",
-	"width": 966,
-	"height": 554
-  },
-  {
-	"type": "img",
-	"url": "TraumaticBrainInjuryRegistry-HiRes.jpg",
-	"title": "Traumatic Brain Injury Registry",
-	"description": "In 2010, approximately 2.5 million patients were treated for or hospitalized with Traumatic Brain Injury (TBI). More than 50,000 died. To improve TBI care and outcomes, information about injury, care, and outcome must be captured and analyzed. Dr. Rodgers and his staff have captured and organized these data into a REDCap registry that can be used to tease out the best ways to treat various types of TBI. In addition, the registry uses a standardized vocabulary, making the data easy to interpret and share with other researchers.",
-	"category": "SH",
-	"width": 1063,
-	"height": 797
-  },
-  {
-	"type": "img",
-	"url": "fruit-fly.jpg",
-	"title": "Uncovering Unprecedented Complexity in Fruit Fly",
-	"description": "Indiana University scientists are part of a consortium that has described the transcriptome (complete collection of RNAs produced by a genome) of the fruit fly Drosophila melanogaster in unprecedented detail, identifying thousands of new genes, transcripts, and proteins. The project, conducted by a consortium of over 40 researchers, discovered 1,468 new genes. IUs National Center for Genome Analysis Support (NCGAS) provided bioinformatic software installation and support, and access to the Mason large RAM cluster, which is needed for de novo sequence assembly. IUs High Performance File System (HPFS) group provided the file systems used to store sequence data.",
-	"category": "SH",
-	"width": 546,
-	"height": 424
-  },
-  {
-	"type": "img",
-	"url": "WholeGenomeSequencing-HiRes_downsized.jpg",
-	"title": "Whole Genome Sequencing",
-	"description": "Data analysis and storage have been bottlenecks to using whole genome data to interrogate the entire coding region of a genome and analyze the entire 3 billion base pair. The computational capabilities of Big Red II, used in concert with a large, high-speed, parallel file system and reliable high-speed archive storage has permitted a breakthrough for whole genome research. This project will provide a path for recognizing disease-causing mutations as well as evaluating non-coding variations. In the long term, it will make personalized medicine possible.",
-	"category": "SH",
-	"width": 1720,
-	"height": 967
-  }
 
+  {
+	"type": "img",
+	"url": "8.jpg",
+	"title": "Mound3",
+	"description": "tool",
+	"width": 1500,
+	"height": 802
+  },
+  {
+	"type": "img",
+	"url": "9.jpg",
+	"title": "Mound3",
+	"description": "home",
+	"width": 1478,
+	"height": 899
+  },
+  {
+	"type": "img",
+	"url": "10.jpg",
+	"title": "Mound3",
+	"description": "tool",
+	"width": 3072,
+	"height": 2304
+  },
+  {
+	"type": "img",
+	"url": "11.jpg",
+	"title": "Mound3",
+	"description": "home",
+	"width": 960,
+	"height": 881
+  },
+  {
+	"type": "img",
+	"url": "12.jpg",
+	"title": "Mound3",
+	"description": "tool",
+	"width": 1000,
+	"height": 1000
+  },
+  {
+	"type": "img",
+	"url": "13.jpg",
+	"title": "Mound2",
+	"description": "photo",
+	"width": 3042,
+	"height": 2088
+  },
+  {
+	"type": "img",
+	"url": "14.jpg",
+	"title": "Mound2",
+	"description": "tool",
+	"width": 973,
+	"height": 1544
+  }
 ]
