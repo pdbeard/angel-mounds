@@ -59,15 +59,15 @@ li {
 .site {
 /*  background: rgba(54, 25, 25, .5);*/
   border-radius: 50%;
-  transition: .3s;
-  transform:scale(2,2);
+  transition: .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transform: scale(2,2);
 }
 
 .site.on {
 /*  background: rgba(54, 135, 45, .8);*/
   border-radius: 50%;
-  transition: .15s;
-  transform:scale(1,1);
+  transition: .25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(1,1);
 }
 
 .site_img {
