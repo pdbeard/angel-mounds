@@ -12,7 +12,8 @@
                   height: site.height + 'px',
                   left: (site.x - site.width / 2) + 'px',
                   top: (site.y - site.height / 2) + 'px' }"
-        ng-click="active = !active"
+        hm-tap="active = !active"
+        hm-recognizer-options='{"preventDefault":true}'
         analytics-on="click"
         analytics-label="{{site.logo}}">
       <img class="site_img" ng-src="assets/images/{{site.logo}}"/>

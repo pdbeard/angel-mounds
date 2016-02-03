@@ -27,6 +27,7 @@ body {
   background-image: url("../assets/background/bg.jpg");
   background-size: 100%;
   transform-origin: top left;
+  touch-action: none;
 }
 
 h1, p{
