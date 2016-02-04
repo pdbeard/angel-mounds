@@ -12,7 +12,7 @@
                   height: site.height + 'px',
                   left: (site.x - site.width / 2) + 'px',
                   top: (site.y - site.height / 2) + 'px' }"
-        hm-tap="active = !active"
+        hm-tap="active = !active;"
         hm-recognizer-options='{"preventDefault":true}'
         analytics-on="click"
         analytics-label="{{site.logo}}">
@@ -33,8 +33,8 @@
                       rotate(' + (transform.angle) + 'deg)',
                       'z-index': transform.zIndex,
                       'box-shadow': transform.shadowX + 'px ' + transform.shadowY + 'px 5px rgba(0, 0, 0, 0.3)'}"
-            ng-click="$event.stopPropagation();"
             ng-controller="MediaController"
+            hm-tap="tapThis"
             hm-panstart="grabThis"
             hm-pinchstart="grabThis"
             hm-rotatestart="grabThis"

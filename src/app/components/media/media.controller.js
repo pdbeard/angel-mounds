@@ -34,6 +34,11 @@ angular.module('angelMounds')
 
 	// new transforms are applied relative to the old one
 	oldTransform = $scope.transform;
+    
+    // stop tap events from bubbling up to the sites
+    $scope.tapThis = function ($event) {
+      $event.srcEvent.stopImmediatePropagation();
+	};
 
 	// a grabbed item is raised above the other items
 	$scope.grabThis = function () {
