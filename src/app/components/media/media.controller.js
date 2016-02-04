@@ -38,6 +38,7 @@ angular.module('angelMounds')
     // stop tap events from bubbling up to the sites
     $scope.tapThis = function ($event) {
       $event.srcEvent.stopImmediatePropagation();
+      $scope.transform.zIndex = zIndex.getNextZIndex();
 	};
 
 	// a grabbed item is raised above the other items
