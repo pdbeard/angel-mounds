@@ -25,7 +25,8 @@
                     opacity: 1,
                     transition: '0.2s' }"
           ng-controller="SitesController">
-        <li ng-repeat="item in filteredMedia"
+        <media-item ng-repeat="item in filteredMedia" thing="item"></media-item>
+        <!--<li ng-repeat="item in filteredMedia"
             class="item"
             ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
             ng-style="{ transform: 'translate3d(' + (transform.translate.x - transform.width / 2) + 'px, ' +
@@ -109,7 +110,7 @@
 
 		   </div>
 		  </div>
-		</li>
+		</li>-->
 	  </ul>
 	</li>
   </ul>

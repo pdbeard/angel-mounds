@@ -73,9 +73,7 @@ li {
   object-fit: contain;
 }
 
-.item {
-  padding: 0px;
-}
+
 
 .items {
   width: 0px;
@@ -106,12 +104,8 @@ x3d{
 
 
 
-#card{
-background-color:white;
-}
 
-#card-footer{
-}
+
 
 /* shadow CSS from http://timnew.me/blog/2014/08/16/material-design-shadow-in-html/ */
 .shadow-0 {

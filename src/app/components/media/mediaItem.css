@@ -1,0 +1,17 @@
+md-card {
+  position: absolute;
+}
+
+.item {
+  padding: 0px;
+  width: 1980px;
+}
+
+#card {
+  background-color:white;
+  width: 100%;
+}
+
+.itemImg {
+ width: 100%;
+}
