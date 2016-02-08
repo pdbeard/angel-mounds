@@ -11,7 +11,10 @@
       restrict: 'E',
       templateUrl: 'app/components/media/mediaItem.html',
       scope: {
-          thing: '='
+        hub: '=',
+        thing: '=',
+        index: '=',
+        items: '='
       },
       controller: MediaItemController,
       controllerAs: 'item',
@@ -42,9 +45,13 @@
           transform.scale + ') ';
         transformString += 'rotate(' + transform.angle + 'deg)'; 
         
-        shadowString = '0px 0px ' + 5/transform.scale + 'px rgba(0, 0, 0, 0.54)';
+//        shadowString = '0px 0px ' + 5/transform.scale + 'px rgba(0, 0, 0, 0.54)';
+        shadowString = '0px 0px 5px rgba(0, 0, 0, 0.54)';
+        
         
         element.children().css({
+          left: '-960px',
+          top: '-' + scope.item.thing.height/(scope.item.thing.width/1920)/2 + 'px',
           transform: transformString,
           'box-shadow': shadowString,
           'z-index': transform.zIndex
@@ -100,27 +107,23 @@
      */ 
     /** @ngInject */
     function MediaItemController($window, windowScale, layout, $scope) {
-      var item = this;
-      
-      /*init = layout.getInit($scope.site.layout,
-							$scope.site.layoutOptions,
-							$scope.site.radius,
-							$scope.$index,
-							$scope.filteredMedia.length)*/
-      
-      console.log($scope);
+      var item = this,
+          init = layout.getInit(item.hub.layout,
+                                item.hub.radius,
+                                item.index, 
+                                item.items.length);
       
       item.SCALE_MIN = 0.1;
       item.SCALE_MAX = 1.0;
-      item.WINDOW_SCALE = windowScale.getWindowScale()
+      item.WINDOW_SCALE = windowScale.getWindowScale();
       
       item.transform = {
         translate: {
-          x: Math.random() * $window.innerWidth,
-          y: Math.random() * $window.innerHeight
+          x: init.x,
+          y: init.y
         },
         scale: item.SCALE_MIN,
-        angle: Math.random() * 360,
+        angle: init.angle,
         zIndex: 'auto'
       };
     }

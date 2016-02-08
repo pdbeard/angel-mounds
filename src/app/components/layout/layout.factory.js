@@ -4,7 +4,7 @@ var layoutFactory = angular.module('layoutFactory', []);
 
 layoutFactory.factory('layout', function () {
   return {
-    getInit: function (type, options, radius, index, numItems) {
+    getInit: function (type, radius, index, numItems) {
       var init = {
         x: 0,
         y: 0,

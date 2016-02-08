@@ -20,12 +20,16 @@
 
       <ul ng-if="active"
           class ="items"
-          ng-style="{ left: (site.width / 4) + 'px',
-                    top: (site.height / 4) + 'px',
+          ng-style="{ left: (site.width / 8) + 'px',
+                    top: (site.height / 8) + 'px',
                     opacity: 1,
                     transition: '0.2s' }"
           ng-controller="SitesController">
-        <media-item ng-repeat="item in filteredMedia" thing="item"></media-item>
+        <media-item ng-repeat="item in filteredMedia" 
+                    hub="site" 
+                    thing="item" 
+                    index="$index" 
+                    items="filteredMedia"></media-item>
         <!--<li ng-repeat="item in filteredMedia"
             class="item"
             ng-class="grabbed ? 'shadow-2' : 'shadow-1'"
