@@ -1,62 +1,68 @@
 [
   {
     "logo": "../icons/Agriculture.png",
-    "y": 700,
-    "x": 1600,
+    "y": 900,
+    "x": 1400,
     "width": 200,
     "height": 200,
+    "angle": "160deg",
     "radius": 200,
     "filterObject": { "category": "Agriculture" },
     "layout": "circle"
   },
   {
     "logo": "../icons/Ceremonial.png",
-    "y": 1100,
-    "x": 2000,
+    "y": 1600,
+    "x": 950,
     "width": 200,
     "height": 200,
+    "angle": "0deg",
     "radius": 200,
     "filterObject": { "category": "Ceremonial" },
     "layout": "circle"
   },
   {
     "logo": "../icons/Daily-Life.png",
-    "y": 1575,
-    "x": 1200,
+    "y": 1000,
+    "x": 3000,
     "width": 200,
     "height": 200,
+    "angle": "-90deg",
     "radius": 200,
     "filterObject": { "category": "Daily Life" },
     "layout": "circle"
   },
   {
     "logo": "../icons/Landscape.png",
-    "y": 380,
-    "x": 400,
+    "y": 600,
+    "x": 500,
     "width": 200,
     "height": 200,
+    "angle": "90deg",
     "radius": 200,
     "filterObject": { "category": "Landscape" },
-    "layout": "line"
+    "layout": "circle"
   },
   {
     "logo": "../icons/Protection.png",
-    "y": 1080,
-    "x": 400,
+    "y": 400,
+    "x": 2200,
     "width": 200,
     "height": 200,
+    "angle": "0deg",
     "radius": 200,
     "filterObject": { "category": "Protection" },
-    "layout": "line"
+    "layout": "circle"
   },
   {
     "logo": "../icons/River.png",
-    "y": 1780,
-    "x": 400,
+    "y": 1750,
+    "x": 3300,
     "width": 200,
     "height": 200,
+    "angle": "-40deg",
     "radius": 200,
     "filterObject": { "category": "River" },
-    "layout": "line"
+    "layout": "circle"
   }
 ]

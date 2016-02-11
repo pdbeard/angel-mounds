@@ -16,7 +16,9 @@
         hm-recognizer-options='{"preventDefault":true}'
         analytics-on="click"
         analytics-label="{{site.logo}}">
-      <img class="site_img" ng-src="assets/images/{{site.logo}}"/>
+      <img class="site_img" 
+           ng-src="assets/images/{{site.logo}}"
+           ng-style="{ transform: 'rotate(' + site.angle + ')' };" />
 
       <ul ng-if="active"
           class ="items"
