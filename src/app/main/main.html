@@ -70,7 +70,8 @@
                        ng-style="{ width: transform.width + 'px' }"
                        controls
                        preload="auto">
-                  <source ng-src="{{item.url | trusted}}" />
+                  <source ng-src="{{'assets/images/' + item.url}}" 
+                          type="video/webm" />
                 </video>
                 <x3d ng-switch-when="x3d"
                      ng-init="initX3D();"
