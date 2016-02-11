@@ -6,7 +6,7 @@
     "width": 200,
     "height": 200,
     "angle": "160deg",
-    "color": "#eda92c",
+    "color": "#ffffb3",
     "radius": 200,
     "filterObject": { "category": "Agriculture" },
     "layout": "circle"
@@ -18,7 +18,7 @@
     "width": 200,
     "height": 200,
     "angle": "0deg",
-    "color": "#f42422",
+    "color": "#fb8072",
     "radius": 200,
     "filterObject": { "category": "Ceremonial" },
     "layout": "circle"
@@ -30,7 +30,7 @@
     "width": 200,
     "height": 200,
     "angle": "-90deg",
-    "color": "#e25329",
+    "color": "#fdb462",
     "radius": 200,
     "filterObject": { "category": "Daily Life" },
     "layout": "circle"
@@ -42,7 +42,7 @@
     "width": 200,
     "height": 200,
     "angle": "90deg",
-    "color": "#39bc81",
+    "color": "#8dd3c7",
     "radius": 200,
     "filterObject": { "category": "Landscape" },
     "layout": "circle"
@@ -54,7 +54,7 @@
     "width": 200,
     "height": 200,
     "angle": "0deg",
-    "color": "#1169a9",
+    "color": "#bebada",
     "radius": 200,
     "filterObject": { "category": "Protection" },
     "layout": "circle"
@@ -66,7 +66,7 @@
     "width": 200,
     "height": 200,
     "angle": "-40deg",
-    "color": "#46aab9",
+    "color": "#80b1d3",
     "radius": 200,
     "filterObject": { "category": "River" },
     "layout": "circle"
