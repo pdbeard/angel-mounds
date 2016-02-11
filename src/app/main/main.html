@@ -1,17 +1,19 @@
 <div id="bg" ng-style="{ transform: 'scale3d(' + scale + ', ' + scale + ', 1)' }">
   <ul>
     <li ng-repeat="site in sites"
-        class="shadow-1"
+        class="shadow-3"
         ng-class="active ? 'site on' : 'site'"
         ng-style="active ? 
                   { width: site.width/2 + 'px',
                   height: site.height/2 + 'px',
                   left: (site.x - site.width / 4) + 'px',
-                  top: (site.y - site.height / 4) + 'px' } :
+                  top: (site.y - site.height / 4) + 'px',
+                  background: site.color} :
                   { width: site.width + 'px',
                   height: site.height + 'px',
                   left: (site.x - site.width / 2) + 'px',
-                  top: (site.y - site.height / 2) + 'px' }"
+                  top: (site.y - site.height / 2) + 'px',
+                  background: site.color }"
         hm-tap="active = !active;"
         hm-recognizer-options='{"preventDefault":true}'
         analytics-on="click"
