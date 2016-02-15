@@ -1,75 +1,82 @@
 <li class="item"
-    hm-tap="item.touchThis"
-    hm-panstart="item.touchThis"
-    hm-pinchstart="item.touchThis"
-    hm-rotatestart="item.touchThis"
-    hm-panmove="item.manipulateThis"
-    hm-pinchmove="item.manipulateThis"
-    hm-rotatemove="item.manipulateThis"
-    hm-panend="item.cantTouchThis"
-    hm-pinchend="item.cantTouchThis"
-    hm-rotateend="item.cantTouchThis"
-    analytics-on="click"
-    analytics-label="{{item.thing.url}}">
+	hm-tap="item.touchThis"
+	hm-panstart="item.touchThis"
+	hm-pinchstart="item.touchThis"
+	hm-rotatestart="item.touchThis"
+	hm-panmove="item.manipulateThis"
+	hm-pinchmove="item.manipulateThis"
+	hm-rotatemove="item.manipulateThis"
+	hm-panend="item.cantTouchThis"
+	hm-pinchend="item.cantTouchThis"
+	hm-rotateend="item.cantTouchThis"
+	analytics-on="click"
+	analytics-label="{{item.thing.url}}">
   <div id="card" layout="column">
-    <!--<img ng-src="assets/images/{{item.thing.url}}"
-         style="border-radius: 50%; position:absolute;" />-->
-    <div ng-switch on="item.thing.type">
+	<!--<img ng-src="assets/images/{{item.thing.url}}"
+		 style="border-radius: 50%; position:absolute;" />-->
+	<div ng-switch on="item.thing.type">
 
-        <img ng-switch-when="img"
-             class="itemImg"
-             ng-src="assets/images/{{item.thing.url}}"
-             ondragstart="return false" />
-        <iframe ng-switch-when="iframe"
-                ng-src="{{item.thing.url | trusted}}"
-                frameborder="no"></iframe>
-        <video ng-switch-when="video"
-               controls
-               preload="auto">
-          <source ng-src="{{item.thing.url | trusted}}" />
-        </video>
-        <x3d ng-switch-when="x3d"
-             ng-init="initX3D();"
-             id="x3d"
-             showStat="false"
-             showLog="false"
-          <scene>
-            <inline url="assets/x3d/{{item.thing.url}}" ></inline>
-          <scene>
-        </x3d>
+		<img ng-switch-when="img"
+			 class="itemImg"
+			 ng-src="assets/images/{{item.thing.url}}"
+			 ondragstart="return false"  />
+		<iframe ng-switch-when="iframe"
+				ng-src="{{item.thing.url | trusted}}"
+				frameborder="no"></iframe>
+		<video ng-switch-when="video"
+			   controls
+			   preload="auto">
+		  <source ng-src="{{item.thing.url | trusted}}" />
+		</video>
+		<x3d ng-switch-when="x3d"
+			 ng-init="initX3D();"
+			 id="x3d"
+			 showStat="false"
+			 showLog="false"
+		  <scene>
+			<inline url="assets/x3d/{{item.thing.url}}" ></inline>
+		  <scene>
+		</x3d>
    </div>
 
+<div class="buffer" style="height:359px;" ></div>
    <div id="card-footer"
-        style="border-top:2px solid #c3c3c3">
-     <div id ="item{{$index}}"
-         style="width: 100%"
-         class="slideable" duration=".3s">
-       <div class ="shadow-1" layout = "row">
-         <h1 style="margin-top:0px; font-size: 13em;" layout-style="center center">
-           {{item.thing.title}}
-         </h1>
-         <ng-md-icon icon="{{clickIcon}}"  
-                     size="100%" 
-                     options='{"duration": 400, "rotation": "none", "easing":"sine-in-out"}' 
-                     ng-click="clickIconMorph()" 
-                     slide-toggle="#item{{$index}}"></ng-md-icon>
-       </div>
-       
-       <div layout ="column">
-         <p style="font-size: 13em;">{{item.thing.description}}</p>
-       </div>
-     </div>
+		style=" solid #c3c3c3">
+	 <div id ="item{{$index}}"
+		 style="width: 100%"
+		 class="slideable" duration=".3s">
+	   <div layout = "row">
+		 <h1 class="titleFont" layout-style="center center">
+		 {{item.thing.title}}
+		 </h1>
+		 <ng-md-icon icon="{{clickIcon}}"
+					 size="100%"
+					 options='{"duration": 400, "rotation": "none", "easing":"sine-in-out"}'
+					 ng-click="clickIconMorph()"
+					 slide-toggle="#item{{$index}}"></ng-md-icon>
+		<!-- <div class="titlebox"
+		ng-style="{'background-image':'url(assets/icons/Agriculture.png)'}"
+				></div> -->
+		<div class="titlebox"></div>
+
+
+	   </div>
+
+	   <div class="descbox" layout ="column">
+		 <p style="font-size:8em;">{{item.thing.description}}</p>
+	   </div>
+	 </div>
    </div>
   </div>
 </li>
 
 <!--<md-card hm-panmove="item.touchThis"
-         hm-pinchmove="item.touchThis"
-         hm-rotatemove="item.touchThis"
-         hm-panend="item.cantTouchThis"
-         hm-rotateend="item.cantTouchThis"
-         hm-pinchend="item.cantTouchThis">
-  <img ng-src="assets/images/{{ item.thing.src }}" 
-       alt="{{ item.thing.title }}"
-       ondragstart="return false" />
+		 hm-pinchmove="item.touchThis"
+		 hm-rotatemove="item.touchThis"
+		 hm-panend="item.cantTouchThis"
+		 hm-rotateend="item.cantTouchThis"
+		 hm-pinchend="item.cantTouchThis">
+  <img ng-src="assets/images/{{ item.thing.src }}"
+	   alt="{{ item.thing.title }}"
+	   ondragstart="return false" />
 </md-card>-->
