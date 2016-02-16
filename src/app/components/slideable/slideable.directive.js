@@ -13,7 +13,7 @@ angular.module('angelMounds')
 				// Default properties
 				attrs.duration = (!attrs.duration) ? '1s' : attrs.duration;
 				attrs.easing = (!attrs.easing) ? 'ease-in-out' : attrs.easing;
-				var titleSize = element[0].firstChild.querySelector(".titlebox").scrollHeight;
+				var titleSize = element[0].firstChild.querySelector(".titlebox").clientHeight;
 
 				console.log(titleSize); //returns correct size if more text is added, wrong size if one line
 
