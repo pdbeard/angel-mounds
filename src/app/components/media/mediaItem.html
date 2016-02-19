@@ -26,7 +26,7 @@
 		<video ng-switch-when="video"
 			   controls
 			   preload="auto">
-		  <source ng-src="{{item.thing.url | trusted}}" />
+		  <source ng-src="{{'assets/images/'+item.thing.url}}"     		type="video/webm" />
 		</video>
 		<x3d ng-switch-when="x3d"
 			 ng-init="initX3D();"
