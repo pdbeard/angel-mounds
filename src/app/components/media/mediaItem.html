@@ -57,7 +57,7 @@
 		<!-- <div class="titlebox"
 		ng-style="{'background-image':'url(assets/icons/Agriculture.png)'}"
 				></div> -->
-		   <div class="titlebox"></div>
+		   <div class="titlebox" ng-style="{'background-color': item.hub.color}"></div>
 	   </div>
 	   <div class="descbox" layout ="column">
 		 <p style="font-size:8em;">{{item.thing.description}}</p>
@@ -66,7 +66,7 @@
    </div>
   </div>
 </li>
-hi
+
 
 <!--<md-card hm-panmove="item.touchThis"
 		 hm-pinchmove="item.touchThis"
