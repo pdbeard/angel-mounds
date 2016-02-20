@@ -26,17 +26,13 @@
 		<video ng-switch-when="video"
 			   controls
 			   preload="auto">
-		  <source ng-src="{{'assets/images/'+item.thing.url}}"     		type="video/webm" />
+		  <source ng-src="{{'assets/images/'+item.thing.url}}"     		
+                  type="video/webm" />
 		</video>
-		<x3d ng-switch-when="x3d"
-			 ng-init="initX3D();"
-			 id="x3d"
-			 showStat="false"
-			 showLog="false"
-		  <scene>
-			<inline url="assets/x3d/{{item.thing.url}}" ></inline>
-		  <scene>
-		</x3d>
+		<div ng-switch-when="html" 
+             ng-class="item.thing.category === 'FAQ' ? 'itemHtmlFaq' : 'itemHtml'">
+          <div ng-include="'assets/templates/' + item.thing.url"></div>
+		</div>
    </div>
 
 <div class="buffer" style="height:359px;" ></div>
@@ -53,7 +49,8 @@
 					 size="100%"
 					 options='{"duration": 400, "rotation": "none", "easing":"sine-in-out"}'
 					 ng-click="clickIconMorph()"
-					 slide-toggle="#item{{$index}}"></ng-md-icon>
+					 slide-toggle="#item{{$index}}"
+                     ng-if="item.thing.description != 'null'"></ng-md-icon>
 		<!-- <div class="titlebox"
 		ng-style="{'background-image':'url(assets/icons/Agriculture.png)'}"
 				></div> -->

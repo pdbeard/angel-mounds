@@ -15,3 +15,13 @@ md-card {
 .itemImg {
  width: 100%;
 }
+
+.itemHtml {
+  font-size: 5em; 
+  height: 1920px;
+}
+
+.itemHtmlFaq {
+  font-size: 6em; 
+  height: 960px;
+}
