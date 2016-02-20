@@ -70,5 +70,29 @@
     "radius": 200,
     "filterObject": { "category": "River" },
     "layout": "circle"
+  },
+  {
+    "logo": "../icons/ic_info_black_24dp.png",
+    "y": 880,
+    "x": 200,
+    "width": 200,
+    "height": 200,
+    "angle": "90deg",
+    "color": "#c4c4c4",
+    "radius": 200,
+    "filterObject": { "category": "About" },
+    "layout": "line"
+  },
+  {
+    "logo": "../icons/ic_help_black_24dp.png",
+    "y": 1280,
+    "x": 200,
+    "width": 200,
+    "height": 200,
+    "angle": "90deg",
+    "color": "#c4c4c4",
+    "radius": 200,
+    "filterObject": { "category": "FAQ" },
+    "layout": "line"
   }
 ]
