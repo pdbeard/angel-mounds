@@ -51,14 +51,6 @@ ul {
   top: 0px;
 }
 
-li {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
 .site_img {
   width: 100%;
   height: 100%;
@@ -200,4 +192,8 @@ ng-md-icon > svg {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.siteButton {
+  position: absolute;
 }

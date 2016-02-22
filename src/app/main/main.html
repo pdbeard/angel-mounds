@@ -1,28 +1,30 @@
 <div id="bg" ng-style="{ transform: 'scale3d(' + scale + ', ' + scale + ', 1)' }">
   <ul>
     <li ng-repeat="site in sites"
-        class="shadow-3"
-        ng-class="site.layout === 'circle' ? 'circle' : 'roundedRectangle'"
-        ng-style="active ? 
-                  { width: site.width/2 + 'px',
-                  height: site.height/2 + 'px',
-                  left: (site.x - site.width / 4) + 'px',
-                  top: (site.y - site.height / 4) + 'px',
-                  background: site.color,
-                  transition: 'all .5s cubic-bezier(0.6, -0.28, 0.735, 0.045)'} :
-                  { width: site.width + 'px',
-                  height: site.height + 'px',
-                  left: (site.x - site.width / 2) + 'px',
-                  top: (site.y - site.height / 2) + 'px',
-                  background: site.color,
-                  transition: 'all .25s cubic-bezier(0.175, 0.885, 0.32, 1.275)'}"
-        hm-tap="active = !active;"
-        hm-recognizer-options='{"preventDefault":true}'
-        analytics-on="click"
-        analytics-label="{{site.logo}}">
-      <img class="site_img" 
-           ng-src="assets/images/{{site.logo}}"
-           ng-style="{ transform: 'rotate(' + site.angle + ')' };" />
+        ng-style="{ position: 'absolute', left: site.x + 'px', top: site.y + 'px' }">
+      <div class="siteButton shadow-3"
+           ng-class="site.layout === 'circle' ? 'circle' : 'roundedRectangle'"
+           ng-style="active ? 
+                     { width: site.width/2 + 'px',
+                     height: site.height/2 + 'px',
+                     left: (0 - site.width / 4) + 'px',
+                     top: (0 - site.height / 4) + 'px',
+                     background: site.color,
+                     transition: 'all .5s cubic-bezier(0.6, -0.28, 0.735, 0.045)'} :
+                     { width: site.width + 'px',
+                     height: site.height + 'px',
+                     left: (0 - site.width / 2) + 'px',
+                     top: (0 - site.height / 2) + 'px',
+                     background: site.color,
+                     transition: 'all .25s cubic-bezier(0.175, 0.885, 0.32, 1.275)'}"
+           hm-tap="active = !active;"
+           hm-recognizer-options='{"preventDefault":true}'
+           analytics-on="click"
+           analytics-label="{{site.logo}}">
+        <img class="site_img" 
+             ng-src="assets/images/{{site.logo}}"
+             ng-style="{ transform: 'rotate(' + site.angle + ')' };" />      
+      </div>
 
       <ul ng-if="active"
           class ="items"

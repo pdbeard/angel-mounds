@@ -5,6 +5,7 @@ md-card {
 .item {
   padding: 0px;
   width: 1980px;
+  position: absolute;
 }
 
 #card {
