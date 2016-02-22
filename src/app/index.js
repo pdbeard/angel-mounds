@@ -17,7 +17,10 @@ angular.module('angelMounds',
 				'trustedUrlFilter',
 				'angulartics',
 				'angulartics.google.analytics',
-				'ngIdle'])
+				'ngIdle',
+                'com.2fdevs.videogular',
+                'com.2fdevs.videogular.plugins.controls',
+                'com.2fdevs.videogular.plugins.overlayplay'])
   .config(function ($stateProvider, $urlRouterProvider, IdleProvider) {
 	$stateProvider
 	  .state('home', {

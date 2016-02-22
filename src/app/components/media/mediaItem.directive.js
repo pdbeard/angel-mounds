@@ -112,7 +112,7 @@
      * initialize the item's transform
      */ 
     /** @ngInject */
-    function MediaItemController($window, windowScale, layout, $scope) {
+    function MediaItemController($window, windowScale, layout, $scope, $sce) {
       var item = this,
           init = layout.getInit(item.hub.layout,
                                 item.hub.radius,
@@ -132,6 +132,15 @@
         angle: init.angle,
         zIndex: 'auto'
       };
+      
+      // for video only
+      item.theme = "bower_components/videogular-themes-default/videogular.css";
+      item.sources = [
+        {
+          src: $sce.trustAsResourceUrl("assets/images/Drone443Unedited.webm"), 
+          type: "video/webm"
+        }
+      ];
     }
   }
 
