@@ -12,8 +12,6 @@
 	analytics-on="click"
 	analytics-label="{{item.thing.url}}">
   <div id="card" layout="column">
-	<!--<img ng-src="assets/images/{{item.thing.url}}"
-		 style="border-radius: 50%; position:absolute;" />-->
 	<div ng-switch on="item.thing.type">
 
 		<img ng-switch-when="img"
@@ -23,12 +21,20 @@
 		<iframe ng-switch-when="iframe"
 				ng-src="{{item.thing.url | trusted}}"
 				frameborder="no"></iframe>
-		<video ng-switch-when="video"
-			   controls
-			   preload="auto">
-		  <source ng-src="{{'assets/images/'+item.thing.url}}"     		
-                  type="video/webm" />
-		</video>
+        <div ng-switch-when="video" ng-click="console.log('lkjlkj')">
+          <videogular>
+            <vg-media vg-src="item.sources"></vg-media>
+            <vg-controls>
+              <vg-play-pause-button></vg-play-pause-button>
+              <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
+              <vg-scrub-bar>
+                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+              </vg-scrub-bar>
+              <vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>
+            </vg-controls>
+            <vg-overlay-play></vg-overlay-play>
+          </videogular>
+        </div>
 		<div ng-switch-when="html" 
              ng-class="item.thing.category === 'FAQ' ? 'itemHtmlFaq' : 'itemHtml'">
           <div ng-include="'assets/templates/' + item.thing.url"></div>
@@ -37,7 +43,7 @@
 
 <div class="buffer" style="height:359px;" ></div>
    <div id="card-footer"
-		style=" solid #c3c3c3">
+		style=" solid #c3c3c3; z-index:1000" >
 	 <div id ="item{{$index}}"
 		 style="width: 100%"
 		 class="slideable" duration=".3s">
@@ -63,15 +69,3 @@
    </div>
   </div>
 </li>
-
-
-<!--<md-card hm-panmove="item.touchThis"
-		 hm-pinchmove="item.touchThis"
-		 hm-rotatemove="item.touchThis"
-		 hm-panend="item.cantTouchThis"
-		 hm-rotateend="item.cantTouchThis"
-		 hm-pinchend="item.cantTouchThis">
-  <img ng-src="assets/images/{{ item.thing.src }}"
-	   alt="{{ item.thing.title }}"
-	   ondragstart="return false" />
-</md-card>-->
