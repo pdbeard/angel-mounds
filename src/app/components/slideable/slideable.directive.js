@@ -46,35 +46,25 @@ angular.module('angelMounds')
 		restrict: 'A',
 		link: function(scope, element, attrs)
 		{
+			var target;
+			var height=(element[0].parentElement.clientHeight);
+			if (!target) target = element[0].parentElement.parentElement.parentElement;
+			target.style.transitionProperty ="height";
+
 			scope.clickIcon = 'info_outline';
 			scope.clickIconMorph = function()
 			{
 				if (scope.clickIcon === 'close') {
 					scope.clickIcon = 'info_outline';
+					target.style.height = height +"px";
 				}
 				else {
 					scope.clickIcon = 'close';
-				}
-			};
-
-			var target;
-			element.bind('click', function()
-			{
-				var height=(element[0].parentElement.clientHeight);
-				if (!target) target = element[0].parentElement.parentElement.parentElement;
-
-				target.style.transitionProperty ="height";
-				console.log(height);
-
-				if(!attrs.expanded) {
 					target.style.height ="100%";
-				} else {
-					target.style.height = height +"px";
-
 				}
 				attrs.expanded = !attrs.expanded;
-				setTimeout(function(){target.style.transitionProperty="none"}, 300);
-			});
+				//setTimeout(function(){target.style.transitionProperty="none"}, 300);
+			};
 		}
 	};
 });
