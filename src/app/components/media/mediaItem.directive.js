@@ -37,7 +37,9 @@
        */ 
       function applyTransform(transform) {
         var transformString = '',
-            shadowString = '';
+            shadowString = '', 
+            topValue = 0,
+            footerHeight = 359; // magic number from slideable directive
         
         transformString = 'translate3d(' + transform.translate.x + 'px, ' + 
           transform.translate.y + 'px, 0px) ';
@@ -48,10 +50,14 @@
 //        shadowString = '0px 0px ' + 5/transform.scale + 'px rgba(0, 0, 0, 0.54)';
         shadowString = '0px 0px 5px rgba(0, 0, 0, 0.54)';
         
+        // compensate for item height because transform-origin is in the center
+        topValue = -1 * (scope.item.thing.height)/(scope.item.thing.width/1920)/2;
+        topValue -= footerHeight/2; // compensate for footer buffer
+        
         
         element.children().css({
           left: '-960px',
-          top: '-' + scope.item.thing.height/(scope.item.thing.width/1920)/2 + 'px',
+          top: topValue + 'px',
           transform: transformString,
           'box-shadow': shadowString,
           'z-index': transform.zIndex
