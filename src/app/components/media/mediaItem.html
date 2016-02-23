@@ -22,22 +22,22 @@
 				ng-src="{{item.thing.url | trusted}}"
 				frameborder="no"></iframe>
 		<div ng-switch-when="video" ng-click="console.log('lkjlkj')">
-          <videogular>
-            <vg-media vg-src="item.sources"></vg-media>
-            <vg-controls>
-              <vg-play-pause-button></vg-play-pause-button>
-              <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
-              <vg-scrub-bar>
-                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-              </vg-scrub-bar>
-              <vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>
-            </vg-controls>
-            <vg-overlay-play></vg-overlay-play>
-          </videogular>
-        </div>
-		<div ng-switch-when="html" 
-             ng-class="item.thing.category === 'FAQ' ? 'itemHtmlFaq' : 'itemHtml'">
-          <div ng-include="'assets/templates/' + item.thing.url"></div>
+		  <videogular>
+			<vg-media vg-src="item.sources"></vg-media>
+			<vg-controls>
+			  <vg-play-pause-button></vg-play-pause-button>
+			  <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
+			  <vg-scrub-bar>
+				<vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+			  </vg-scrub-bar>
+			  <vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>
+			</vg-controls>
+			<vg-overlay-play></vg-overlay-play>
+		  </videogular>
+		</div>
+		<div ng-switch-when="html"
+			 ng-class="item.thing.category === 'FAQ' ? 'itemHtmlFaq' : 'itemHtml'">
+		  <div ng-include="'assets/templates/' + item.thing.url"></div>
 		</div>
    </div>
 
@@ -65,7 +65,7 @@
 		   <div class="titlebox" ng-style="{'background-color': item.hub.color}"></div>
 	   </div>
 	   <div class="descbox" layout ="column">
-		 <p style="font-size:8em;">{{item.thing.description}}</p>
+		 <p style="font-size:5em;">{{item.thing.description}}</p>
 	   </div>
 	 </div>
    </div>
