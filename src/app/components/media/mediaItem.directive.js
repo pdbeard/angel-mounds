@@ -47,8 +47,8 @@
           transform.scale + ') ';
         transformString += 'rotate(' + transform.angle + 'deg)'; 
         
-//        shadowString = '0px 0px ' + 5/transform.scale + 'px rgba(0, 0, 0, 0.54)';
-        shadowString = '0px 0px 5px rgba(0, 0, 0, 0.54)';
+//        shadowString = '0px 0px ' + 50/transform.scale + 'px rgba(0, 0, 0, 0.99)';
+        shadowString = '0px 0px 50px rgba(0, 0, 0, 0.99)';
         
         // compensate for item height because transform-origin is in the center
         topValue = -1 * (scope.item.thing.height)/(scope.item.thing.width/1920)/2;
