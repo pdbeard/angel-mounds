@@ -117,7 +117,8 @@
           init = layout.getInit(item.hub.layout,
                                 item.hub.radius,
                                 item.index, 
-                                item.items.length);
+                                item.items.length,
+                                item.hub.layoutAngle);
       
       item.SCALE_MIN = 0.1;
       item.SCALE_MAX = 1.0;

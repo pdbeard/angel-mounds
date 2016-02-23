@@ -4,12 +4,13 @@ var layoutFactory = angular.module('layoutFactory', []);
 
 layoutFactory.factory('layout', function () {
   return {
-    getInit: function (type, radius, index, numItems) {
+    getInit: function (type, radius, index, numItems, theta) {
       var init = {
         x: 0,
         y: 0,
         angle: 0
-      };
+      },
+          thetaRad = theta * (Math.PI / 180);
       
       switch (type) {
         case 'circle':
@@ -19,7 +20,8 @@ layoutFactory.factory('layout', function () {
           init.angle = init.angle - 90; // angle for item rotation
           break;
         case 'line':
-          init.x = radius + (radius / 2 * index) + (radius / 10 * index);
+          init.x = (radius + index * (radius/2.5)) * Math.cos(thetaRad);
+          init.y = (radius + index * (radius/2.5)) * Math.sin(thetaRad);
           break;
       }
       
