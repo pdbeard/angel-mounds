@@ -35,10 +35,11 @@
        * Convert transform properties to string and apply to element's style
        * @param transform 
        */ 
-      function applyTransform(transform) {
+      function applyTransform(transform, type) {
         var transformString = '',
             shadowString = '', 
             topValue = 0,
+            styleObject = { },
             footerHeight = 359; // magic number from slideable directive
         
         transformString = 'translate3d(' + transform.translate.x + 'px, ' + 
@@ -54,23 +55,39 @@
         topValue = -1 * (scope.item.thing.height)/(scope.item.thing.width/1920)/2;
         topValue -= footerHeight/2; // compensate for footer buffer
         
-        
-        element.children().css({
+        styleObject = {
           left: '-960px',
           top: topValue + 'px',
           transform: transformString,
           'box-shadow': shadowString,
           'z-index': transform.zIndex
-        });
+        };
+        
+        /**
+         * Add transition for doubletap. Need to include tap because angular hammer
+         * doesn't yet have proper requireFailure support, meaning that a doubletap
+         * also triggers 2 single taps.
+         */ 
+        if (type === 'doubletap' | type === 'tap') {
+          styleObject.transition = 'all .25s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+        }
+        else {
+          styleObject.transition = ''; 
+        }
+        
+        element.children().css(styleObject);
       }
       
       // stop tap events from bubbling up to the sites
       scope.item.touchThis = function (event) {
         event.srcEvent.stopImmediatePropagation();
         
-        scope.item.transform.zIndex = zIndex.getNextZIndex();
-        applyTransform(scope.item.transform);
+        if (event.type === 'doubletap') {
+          scope.item.transform.scale = scope.item.SCALE_RESET;
+        }
         
+        scope.item.transform.zIndex = zIndex.getNextZIndex();
+        applyTransform(scope.item.transform, event.type);
       };
       
       /**
@@ -96,7 +113,7 @@
           scale: scaleNew
         };
         
-        applyTransform(newTransform);
+        applyTransform(newTransform, event.type);
       };
       
       /**
@@ -121,6 +138,7 @@
                                 item.hub.layoutAngle);
       
       item.SCALE_MIN = 0.1;
+      item.SCALE_RESET = 0.5;
       item.SCALE_MAX = 1.0;
       item.WINDOW_SCALE = windowScale.getWindowScale();
       
