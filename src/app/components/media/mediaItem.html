@@ -19,6 +19,7 @@
 			 ng-src="assets/images/{{item.thing.url}}"
 			 ondragstart="return false"  />
 		<iframe ng-switch-when="iframe"
+				class="itemIframe"
 				ng-src="{{item.thing.url | trusted}}"
 				frameborder="no"></iframe>
 		<div ng-switch-when="video" ng-click="console.log('lkjlkj')">
