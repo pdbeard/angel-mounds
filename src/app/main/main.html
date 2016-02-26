@@ -7,11 +7,15 @@
            ng-style="active ? 
                      { width: site.width + 'px',
                      height: site.height + 'px',
+                     left: (-site.width / 4) + 'px',
+                     top: (-site.height / 4) + 'px',
                      background: site.color,
                      transition: 'all .5s cubic-bezier(0.6, -0.28, 0.735, 0.045)'} :
                      { transform: 'scale3d(2, 2, 1)',
                      width: site.width + 'px',
                      height: site.height + 'px',
+                     left: (-site.width / 4) + 'px',
+                     top: (-site.height / 4) + 'px',
                      background: site.color,
                      transition: 'all .25s cubic-bezier(0.175, 0.885, 0.32, 1.275)'}"
            hm-tap="active = !active;"
@@ -24,11 +28,8 @@
       </div>
 
 	  <ul ng-if="active"
-		  class ="items"
-		  ng-style="{ left: (site.width / 8) + 'px',
-					top: (site.height / 8) + 'px',
-					opacity: 1,
-					transition: '0.2s' }"
+		  class ="items" 
+          ng-style="{ opacity: 1, transition: '0.2s' }"
 		  ng-controller="SitesController">
 		<media-item ng-repeat="item in filteredMedia"
 					hub="site"

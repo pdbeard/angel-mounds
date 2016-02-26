@@ -54,8 +54,8 @@ angular.module('angelMounds')
 			scope.clickIcon = 'info_outline';
 			scope.clickIconMorph = function(event)
 			{
-              console.log(event);
 			   event.srcEvent.stopImmediatePropagation();	
+              
               if (scope.clickIcon === 'close') {
 					scope.clickIcon = 'info_outline';
 					target.style.height = height +"px";

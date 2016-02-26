@@ -82,7 +82,7 @@ ul {
 }
 
 .items.ng-enter {
-  transform:scale(0.2,0.2) translate(0px,0px) !important;
+  transform:scale(0.2,0.2) translate3d(0px, 0px, 0px) !important;
   opacity: 0 !important;
 }
 
@@ -95,9 +95,11 @@ ul {
 }
 
 .items.ng-leave.ng-leave-active{
-  transform: scale(0.2,0.2) translate(0px,0px) !important;
+  transform: scale(0.2,0.2) translate3d(0px, 0px, 0px) !important;
   opacity: 0 !important;
 }
+
+
 
 x3d{
   border: 0px;
