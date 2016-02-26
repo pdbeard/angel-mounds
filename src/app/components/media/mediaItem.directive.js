@@ -64,11 +64,9 @@
         };
         
         /**
-         * Add transition for doubletap. Need to include tap because angular hammer
-         * doesn't yet have proper requireFailure support, meaning that a doubletap
-         * also triggers 2 single taps.
+         * Add transition for tap only
          */ 
-        if (type === 'doubletap' | type === 'tap') {
+        if (type === 'tap') {
           styleObject.transition = 'all .25s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
         }
         else {
@@ -82,7 +80,7 @@
       scope.item.touchThis = function (event) {
         event.srcEvent.stopImmediatePropagation();
         
-        if (event.type === 'doubletap') {
+        if (event.type === 'tap') {
           scope.item.transform.scale = scope.item.SCALE_RESET;
         }
         

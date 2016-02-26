@@ -1,6 +1,5 @@
 <li class="item"
 	hm-tap="item.touchThis"
-    hm-doubletap="item.touchThis"
 	hm-panstart="item.touchThis"
 	hm-pinchstart="item.touchThis"
 	hm-rotatestart="item.touchThis"
@@ -10,6 +9,10 @@
 	hm-panend="item.cantTouchThis"
 	hm-pinchend="item.cantTouchThis"
 	hm-rotateend="item.cantTouchThis"
+    hm-recognizer-options='[
+      {"type":"tap","pointers":1},
+      {"type":"pan","pointers":0}
+    ]'
 	analytics-on="click"
 	analytics-label="{{item.thing.url}}">
   <div id="card" layout="column">
@@ -55,7 +58,7 @@
 		 <ng-md-icon icon="{{clickIcon}}"
 					 size="100%"
 					 options='{"duration": 400, "rotation": "none", "easing":"sine-in-out"}'
-					 hm-tap="clickIconMorph()"
+					 hm-tap="clickIconMorph"
 					 hm-recognizer-options='{"preventDefault":true}'
 
 					 slide-toggle="#item{{$index}}"
