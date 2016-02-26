@@ -52,9 +52,11 @@ angular.module('angelMounds')
 			target.style.transitionProperty ="height";
 
 			scope.clickIcon = 'info_outline';
-			scope.clickIconMorph = function()
+			scope.clickIconMorph = function(event)
 			{
-				if (scope.clickIcon === 'close') {
+			   event.srcEvent.stopImmediatePropagation();	
+              
+              if (scope.clickIcon === 'close') {
 					scope.clickIcon = 'info_outline';
 					target.style.height = height +"px";
 				}
