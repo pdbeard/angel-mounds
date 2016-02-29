@@ -1,10 +1,11 @@
 <div id="bg" ng-style="{ transform: 'scale3d(' + scale + ', ' + scale + ', 1)' }">
   <ul>
 	<li ng-repeat="site in sites"
-        ng-style="{ position: 'absolute', left: site.x + 'px', top: site.y + 'px' }">
+        ng-style="{ position: 'absolute', left: site.x + 'px', top: site.y + 'px' }"
+		  ng-controller="SitesController as sc">
       <div class="siteButton shadow-site-button"
            ng-class="site.layout === 'circle' ? 'circle' : 'roundedRectangle'"
-           ng-style="active ? 
+           ng-style="sc.active ? 
                      { width: site.width + 'px',
                      height: site.height + 'px',
                      left: (-site.width / 4) + 'px',
@@ -18,24 +19,23 @@
                      top: (-site.height / 4) + 'px',
                      background: site.color,
                      transition: 'all .25s cubic-bezier(0.175, 0.885, 0.32, 1.275)'}"
-           hm-tap="active = !active;"
+           hm-tap="sc.analyticsLogSite"
            hm-recognizer-options='{"preventDefault":true}'
            analytics-on="click"
-           analytics-label="{{site.logo}}">
+           analytics-label="{{site.filterObject.category}}">
         <img class="site_img" 
              ng-src="assets/images/{{site.logo}}"
              ng-style="{ transform: 'rotate(' + site.angle + ')' };" />      
       </div>
 
-	  <ul ng-if="active"
+	  <ul ng-if="sc.active"
 		  class ="items" 
-          ng-style="{ opacity: 1, transition: '0.2s' }"
-		  ng-controller="SitesController">
-		<media-item ng-repeat="item in filteredMedia"
+          ng-style="{ opacity: 1, transition: '0.2s' }">
+		<media-item ng-repeat="item in sc.filteredMedia"
 					hub="site"
 					thing="item"
 					index="$index"
-					items="filteredMedia"></media-item>
+					items="sc.filteredMedia"></media-item>
 	  </ul>
 	</li>
   </ul>
@@ -45,4 +45,7 @@
 	 alt="idle"
 	 ng-show="showIdleOverlay"
 	 class="idleOverlay"
-	 ng-click="showIdleOverlay = false;" />
+	 ng-click="showIdleOverlay = false;"
+     analytics-on="click"
+     analytics-event="idle"
+     analytics-label="idleCancel" />

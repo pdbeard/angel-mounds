@@ -41,7 +41,7 @@ angular.module('angelMounds')
 		}
 	};
 })
-.directive('slideToggle', function() {
+.directive('slideToggle', ['$analytics', function($analytics) {
 	return {
 		restrict: 'A',
 		link: function(scope, element, attrs)
@@ -54,7 +54,7 @@ angular.module('angelMounds')
 			scope.clickIcon = 'info_outline';
 			scope.clickIconMorph = function(event)
 			{
-			   event.srcEvent.stopImmediatePropagation();	
+			  event.srcEvent.stopImmediatePropagation();	
               
               if (scope.clickIcon === 'close') {
 					scope.clickIcon = 'info_outline';
@@ -63,10 +63,11 @@ angular.module('angelMounds')
 				else {
 					scope.clickIcon = 'close';
 					target.style.height ="100%";
+                  $analytics.eventTrack('itemInfo', { label: scope.$parent.item.thing.title });
 				}
 				attrs.expanded = !attrs.expanded;
 				//setTimeout(function(){target.style.transitionProperty="none"}, 300);
 			};
 		}
 	};
-});
+}]);
