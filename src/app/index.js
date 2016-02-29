@@ -32,8 +32,8 @@ angular.module('angelMounds',
 	$urlRouterProvider.otherwise('/');
 
 	// configure idle settings
-	IdleProvider.idle(60);
-	IdleProvider.timeout(20);
+	IdleProvider.idle(120);
+	IdleProvider.timeout(30);
   })
   .run(function (Idle) {
 	Idle.watch();
