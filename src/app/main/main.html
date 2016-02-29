@@ -2,7 +2,7 @@
   <ul>
 	<li ng-repeat="site in sites"
         ng-style="{ position: 'absolute', left: site.x + 'px', top: site.y + 'px' }">
-      <div class="siteButton shadow-3"
+      <div class="siteButton shadow-site-button"
            ng-class="site.layout === 'circle' ? 'circle' : 'roundedRectangle'"
            ng-style="active ? 
                      { width: site.width + 'px',
