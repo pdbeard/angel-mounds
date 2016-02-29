@@ -8,10 +8,10 @@ angular.module('angelMounds')
 	$scope.media = media.query();
 	$scope.drabs = [
 		{
-			label: 'About',
+			label: 'ABOUT',
 			template: 'assets/templates/about/index.html',
 			bottom: '0%',
-			left: '5%'
+			left: '0%'
 		}
 	];
 

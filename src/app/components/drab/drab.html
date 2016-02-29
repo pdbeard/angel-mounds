@@ -1,15 +1,16 @@
 <div class="drab"
 	 ng-click="dc.activate()">
-  <h1 class="drabLabel">{{dc.config.label}}</h1>
-  <div ng-if="dc.active"
-	   class="drabPane fade"
-	   ng-click="$event.stopPropagation()">
+		<img src="../../../assets/icons/ic_help_black_24dp.png"/ style="color:white;">
+<!--		<h1 class="drabLabel">{{dc.config.label}}</h1>-->
+
+		<div ng-if="dc.active"
+		class="drabPane fade"
+		ng-click="$event.stopPropagation()">
+
 			<iframe
-				class="itemIframe"
-				ng-src="{{dc.config.template | trusted}}"
-				frameborder="no"></iframe>
-  </div>
+			class="itemIframe"
+			ng-src="{{dc.config.template | trusted}}"
+			frameborder="no"></iframe>
+		</div>
 </div>
 
-
-dc.active ? 'drabPane' : 'drabPaneOff'

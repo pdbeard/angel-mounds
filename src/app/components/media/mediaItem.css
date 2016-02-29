@@ -16,10 +16,7 @@ md-card {
 .itemImg {
  width: 100%;
 }
-.itemIframe {
- width: 100%;
- height:2000px;
-}
+
 .itemHtml {
   font-size: 4em;
   height: 1920px;
