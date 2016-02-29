@@ -1,0 +1,12 @@
+<div class="drab"
+	 ng-click="dc.activate()">
+  <h1 class="drabLabel">{{dc.config.label}}</h1>
+  <div ng-if="dc.active"
+	   class="drabPane"
+	   ng-click="$event.stopPropagation()">
+			<iframe
+				class="itemIframe"
+				ng-src="{{dc.config.template | trusted}}"
+				frameborder="no"></iframe>
+  </div>
+</div>
