@@ -39,6 +39,15 @@
 	  </ul>
 	</li>
   </ul>
+   <div layout="row" layout-align="space-around center" layout-margin
+	   style="position: absolute; bottom: 0px; width: 100%;">
+	<drab ng-repeat="drab in drabs" config="drab" flex="15"/>
+  </div>
+
+  <div layout="row" layout-align="space-around center" layout-margin
+	   style="position: absolute; top: 0px; width: 100%; transform: rotate(180deg);">
+	<drab ng-repeat="drab in drabs" config="drab" flex="15"/>
+  </div>
 </div>
 
 <img src="assets/background/idle-overlay.png"

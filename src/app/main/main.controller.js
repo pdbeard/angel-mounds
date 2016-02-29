@@ -6,6 +6,14 @@ angular.module('angelMounds')
 
     $scope.sites = sites.query();
     $scope.media = media.query();
+    $scope.drabs = [
+      {
+        label: 'About',
+        template: 'assets/templates/about/index.html',
+        bottom: '0%',
+        left: '5%'
+      }
+	];
 
     $scope.showIdleOverlay = false;
 
