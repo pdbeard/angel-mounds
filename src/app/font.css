@@ -1,0 +1,72 @@
+@font-face {
+  font-family:'videogular';
+  src:url("../assets/fonts/videogular.eot");
+  src:url("../assets/fonts/videogular.eot?#iefix") format("embedded-opentype"),
+	  url("../assets/fonts/videogular.woff") format("woff"),
+	  url("../assets/fonts/videogular.ttf") format("truetype"),
+	  url("../assets/fonts/videogular.svg#videogular") format("svg");
+  font-weight:400;
+  font-style:normal
+}
+
+/***************  IU Fonts  *********************/
+@font-face {
+	font-family: 'BentonSansRegular';
+	src:url("../assets/fonts/benton-sans-regular/benton-sans-regular.eot");
+	src:url("../assets/fonts/benton-sans-regular/benton-sans-regular.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/benton-sans-regular/benton-sans-regular.woff") format("woff"),
+		url("../assets/fonts/benton-sans-regular/benton-sans-regular.ttf") format("truetype"),
+		url("../assets/fonts/benton-sans-regular/benton-sans-regular.svg#BentonSansRegular") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'BentonSansCondRegular';
+	src:url("../assets/fonts/benton-sans-cond-regular/benton-sans-cond-regular.eot");
+	src:url("../assets/fonts/benton-sans-cond-regular/benton-sans-cond-regular.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/benton-sans-cond-regular/benton-sans-cond-regular.woff") format("woff"),
+		url("../assets/fonts/benton-sans-cond-regular/benton-sans-cond-regular.ttf") format("truetype"),
+		url("../assets/fonts/benton-sans-cond-regular/benton-sans-cond-regular.svg#BentonSansCondRegular") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'BentonSansCondBold';
+	src:url("../assets/fonts/benton-sans-cond-bold/benton-sans-cond-bold.eot");
+	src:url("../assets/fonts/benton-sans-cond-bold/benton-sans-cond-bold.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/benton-sans-cond-bold/benton-sans-cond-bold.woff") format("woff"),
+		url("../assets/fonts/benton-sans-cond-bold/benton-sans-cond-bold.ttf") format("truetype"),
+		url("../assets/fonts/benton-sans-cond-bold/benton-sans-cond-bold.svg#BentonSansCondBold") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'GeorgiaProItalic';
+	src:url("../assets/fonts/georgia-pro-italic/georgia-pro-italic.eot");
+	src:url("../assets/fonts/georgia-pro-italic/georgia-pro-italic.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/georgia-pro-italic/georgia-pro-italic.woff") format("woff"),
+		url("../assets/fonts/georgia-pro-italic/georgia-pro-italic.ttf") format("truetype"),
+		url("../assets/fonts/georgia-pro-italic/georgia-pro-italic.svg#GeorgiaProItalic") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'GeorgiaProBoldItalic';
+	src:url("../assets/fonts/georgia-pro-bold-italic/georgia-pro-bold-italic.eot");
+	src:url("../assets/fonts/georgia-pro-bold-italic/georgia-pro-bold-italic.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/georgia-pro-bold-italic/georgia-pro-bold-italic.woff") format("woff"),
+		url("../assets/fonts/georgia-pro-bold-italic/georgia-pro-bold-italic.ttf") format("truetype"),
+		url("../assets/fonts/georgia-pro-bold-italic/georgia-pro-bold-italic.svg#GeorgiaProItalic") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'GeorgiaPro';
+	src:url("../assets/fonts/georgia-pro/georgia-pro.eot");
+	src:url("../assets/fonts/georgia-pro/georgia-pro.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/georgia-pro/georgia-pro.woff") format("woff"),
+		url("../assets/fonts/georgia-pro/georgia-pro.ttf") format("truetype"),
+		url("../assets/fonts/georgia-pro/georgia-pro.svg#GeorgiaProItalic") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}

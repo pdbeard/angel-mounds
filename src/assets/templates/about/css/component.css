@@ -1,3 +1,11 @@
+/*
+@font-face { font-family: 'BentonSansRegular'; src: url("https://fonts.iu.edu/fonts/benton-sans-regular.eot"); src: url("https://fonts.iu.edu/fonts/benton-sans-regular.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/benton-sans-regular.woff") format("woff"), url("https://fonts.iu.edu/fonts/benton-sans-regular.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/benton-sans-regular.svg#BentonSansRegular") format("svg"); font-style: normal; font-weight: normal; }
+@font-face { font-family: 'BentonSansCondRegular'; src: url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.eot"); src: url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.woff") format("woff"), url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-regular.svg#BentonSansCondRegular") format("svg"); font-style: normal; font-weight: normal; }
+@font-face { font-family: 'BentonSansCondBold'; src: url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.eot"); src: url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.woff") format("woff"), url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/benton-sans-cond-bold.svg#BentonSansCondBold") format("svg"); font-style: normal; font-weight: normal; }
+@font-face { font-family: 'GeorgiaProItalic'; src: url("https://fonts.iu.edu/fonts/georgia-pro-italic.eot"); src: url("https://fonts.iu.edu/fonts/georgia-pro-italic.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.woff") format("woff"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.svg#GeorgiaProItalic") format("svg"); font-style: normal; font-weight: normal; }
+*/
+
+
 html, body, .container {
 	width: 100%;
 	height: 100%;
@@ -29,8 +37,8 @@ img{
   float:left;
 }
 .page-center{
-  padding-left:30px;
-  padding-right:30px;
+  padding-left:2%;
+  padding-right:2%;
   position:relative;
   width:40%;
   /*outline: 5px solid #ecf0f1;
@@ -57,16 +65,20 @@ img{
 
 .right{
   float:right;
-  margin-left:200px;
+  padding-right:20%;
+  padding-top:1%;
 
 }
 
 .left{
+  padding-left:30%;
+  padding-top:1%;
   float:left;
 
 }
 
 h2 {
+  font-family:"BentonSansCondBold";
   margin:0;
 	font-weight: 300;
 	font-size: 2.4em;
@@ -75,5 +87,7 @@ h2 {
 p {
 	font-weight: 300;
 	font-size: 1.5em;
+  font-family:"GeorgiaPro";
 }
+
 

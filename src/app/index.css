@@ -4,16 +4,18 @@
 @font-face { font-family: 'GeorgiaProItalic'; src: url("https://fonts.iu.edu/fonts/georgia-pro-italic.eot"); src: url("https://fonts.iu.edu/fonts/georgia-pro-italic.eot?#iefix") format("embedded-opentype"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.woff") format("woff"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.ttf") format("truetype"), url("https://fonts.iu.edu/fonts/georgia-pro-italic.svg#GeorgiaProItalic") format("svg"); font-style: normal; font-weight: normal; }
 /*===================================================================================*/
 
+/*
 @font-face {
   font-family:'videogular';
   src:url("../assets/fonts/videogular.eot");
   src:url("../assets/fonts/videogular.eot?#iefix") format("embedded-opentype"),
-    url("../assets/fonts/videogular.woff") format("woff"),
-    url("../assets/fonts/videogular.ttf") format("truetype"),
-    url("../assets/fonts/videogular.svg#videogular") format("svg");
+	url("../assets/fonts/videogular.woff") format("woff"),
+	url("../assets/fonts/videogular.ttf") format("truetype"),
+	url("../assets/fonts/videogular.svg#videogular") format("svg");
   font-weight:400;
   font-style:normal
 }
+*/
 
 .browsehappy {
   margin: 0.2em 0;
