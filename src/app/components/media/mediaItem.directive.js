@@ -48,8 +48,19 @@
           transform.scale + ') ';
         transformString += 'rotate(' + transform.angle + 'deg)'; 
         
-//        shadowString = '0px 0px ' + 50/transform.scale + 'px rgba(0, 0, 0, 0.99)';
-        shadowString = '0px 0px 50px rgba(0, 0, 0, 0.99)';
+        /**
+         * Set shadow depending on whether item has been grabbed
+         */ 
+        shadowString = '0px 0px ';
+        
+        if (scope.item.grabbed) {
+          shadowString += '100px';
+        }
+        else {
+          shadowString += '50px'; 
+        }
+        
+        shadowString += ' rgba(0, 0, 0, 0.99)';
         
         // compensate for item height because transform-origin is in the center
         topValue = -1 * (scope.item.thing.height)/(scope.item.thing.width/1920)/2;
@@ -82,6 +93,9 @@
         
         if (event.type === 'tap') {
           scope.item.transform.scale = scope.item.SCALE_RESET;
+        }
+        else {
+          scope.item.grabbed = true; 
         }
         
         scope.item.transform.zIndex = zIndex.getNextZIndex();
@@ -119,6 +133,8 @@
        */ 
       scope.item.cantTouchThis = function () {
         scope.item.transform = newTransform;
+        scope.item.grabbed = false;
+        applyTransform(scope.item.transform);
       };
     }
 
@@ -139,6 +155,7 @@
       item.SCALE_RESET = 0.5;
       item.SCALE_MAX = 1.0;
       item.WINDOW_SCALE = windowScale.getWindowScale();
+      item.grabbed = false;
       
       item.transform = {
         translate: {
