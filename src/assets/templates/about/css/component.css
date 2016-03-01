@@ -69,9 +69,9 @@ html, body, .container {
 }
 
 .page-right {
-  position:relative;
-  width:40%;
-  float:left;
+	  position:relative;
+	  width:40%;
+	  float:left;
 }
 
 
@@ -85,30 +85,30 @@ html, body, .container {
 }
 
 .right{
-  float:right;
+	  float:right;
 }
 
 .left{
-  float:left;
+	  float:left;
 }
 .rightTitle{
 	padding-top: 2.5%;
-  padding-right: 20%;
-  float:right;
+	  padding-right: 20%;
+	  float:right;
 }
 
 .leftTitle{
 	padding-top: 2.5%;
-  padding-left:20%;
-  float:left;
+	padding-left:20%;
+	float:left;
 }
 .clear{
-clear:both;
+	clear:both;
 }
 
 h2 {
-  font-family:"BentonSansCondBold";
-  margin:0;
+	font-family:"BentonSansCondBold";
+	margin:0;
 	font-weight: 300;
 	font-size: 2.4em;
 }

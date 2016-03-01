@@ -27,9 +27,9 @@ body{
 	left:0px;
 	overflow:hidden;
 
-  -webkit-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.68);
-  -moz-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.68);
-  box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.68);
+  -webkit-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);
+  box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);
 
 }
 .va-slice-1{
