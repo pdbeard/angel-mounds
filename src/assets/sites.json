@@ -6,7 +6,7 @@
 	"width": 100,
 	"height": 100,
 	"angle": "160deg",
-	"color": "#ffffb3",
+	"color": "#fdb462",
 	"radius": 200,
 	"filterObject": { "category": "Agriculture" },
 	"layout": "circle"
@@ -30,7 +30,7 @@
 	"width": 100,
 	"height": 100,
 	"angle": "-90deg",
-	"color": "#fdb462",
+	"color": "#bc80bd",
 	"radius": 200,
 	"filterObject": { "category": "Daily Life" },
 	"layout": "circle"
@@ -42,7 +42,7 @@
 	"width": 100,
 	"height": 100,
 	"angle": "90deg",
-	"color": "#8dd3c7",
+	"color": "#b3de69",
 	"radius": 200,
 	"filterObject": { "category": "Landscape" },
 	"layout": "circle"
@@ -54,7 +54,7 @@
 	"width": 100,
 	"height": 100,
 	"angle": "0deg",
-	"color": "#bebada",
+	"color": "#8dd3c7",
 	"radius": 200,
 	"filterObject": { "category": "Protection" },
 	"layout": "circle"
