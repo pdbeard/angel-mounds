@@ -78,6 +78,7 @@
 }
 .va-slice p{
 	font-size: 2em;
+    padding-right:1%;
 	font-style: italic;
 	font-family:Georgia, serif;
 }
