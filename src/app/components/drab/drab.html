@@ -1,16 +1,22 @@
 <div class="drab"
-	 ng-click="dc.activate()">
-		<img src="../../../assets/icons/ic_help_black_24dp.png"/ style="color:white;">
+	 hm-tap="dc.activate()"
+	 hm-recognizer-options='{"preventDefault":true}'>
+	 <img src="../../../assets/icons/ic_help_black_24dp.png"/ style="color:white;">
 <!--		<h1 class="drabLabel">{{dc.config.label}}</h1>-->
 
-		<div ng-if="dc.active"
-		class="drabPane fade"
-		ng-click="$event.stopPropagation()">
-
+<!--		<div ng-if="dc.active"-->
+<!--			 class="drabPane fade">-->
 			<iframe
-			class="itemIframe"
+ng-if="dc.active"
+
+			hm-tap=""
+			hm-recognizer-options='{"stopPropagation":true}'
+
+			class="drabPane fade"
 			ng-src="{{dc.config.template | trusted}}"
 			frameborder="no"></iframe>
-		</div>
+<!--		</div>-->
 </div>
 
+
+<!--				ng-click="$event.stopPropagation()"-->

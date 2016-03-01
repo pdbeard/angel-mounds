@@ -1,3 +1,25 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #fff;
+	background: #333;
+}
+
+a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+
 .drab {
 	background: white;
 	position: relative;
@@ -20,11 +42,15 @@
 	left:-760px;
 	bottom: 250px;
 	width: 1600px;
-	height: 1000px;
+	height: 1010px;
 	overflow: hidden;
 	font-size: 3em;
 	z-index: 100;
 	box-shadow: 0 40px 77px 0 rgba(0, 0, 0, 0.22), 0 27px 24px 0 rgba(0, 0, 0, 0.2);
+	touch-action: none;
+		border-radius:80px;
+	-moz-border-radius:80px;
+	-webkit-border-radius:80px;
 }
 
 .itemIframe {
@@ -35,6 +61,7 @@
 	-moz-border-radius:80px;
 	-webkit-border-radius:80px;
 	overflow: hidden;
+	touch-action: none;
 }
 .drabPane img {
   object-fit: contain;

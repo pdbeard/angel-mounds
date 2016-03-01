@@ -1,4 +1,14 @@
+@import url('reset.css');
 /* Vertical Accordion Style */
+body{
+	touch-action: none;
+	 -webkit-touch-callout: none; /* iOS Safari */
+	 -webkit-user-select: none;   /* Chrome/Safari/Opera */
+	 -khtml-user-select: none;    /* Konqueror */
+	 -moz-user-select: none;      /* Firefox */
+	 -ms-user-select: none;       /* IE/Edge */
+	 user-select: none;
+}
 .va-container{
 	position:relative;
 	margin:40px auto 0 auto;
@@ -78,7 +88,7 @@
 }
 .va-slice p{
 	font-size: 2em;
-    padding-right:1%;
+	padding-right:1%;
 	font-style: italic;
 	font-family:Georgia, serif;
 }
