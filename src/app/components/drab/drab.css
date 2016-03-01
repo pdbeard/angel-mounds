@@ -1,39 +1,26 @@
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0;}
-
-.clearfix:before, .clearfix:after { content: " "; display: table; }
-.clearfix:after { clear: both; }
 
 body {
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-	color: #fff;
+/*	font-family: 'Lato', Calibri, Arial, sans-serif;*/
+/*	color: #fff;*/
 	background: #333;
 }
 
-a {
-	color: #ccc;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #000;
-}
 
 
 .drab {
-	background: white;
 	position: relative;
-	box-shadow: 0 40px 77px 0 rgba(0, 0, 0, 0.22), 0 27px 24px 0 rgba(0, 0, 0, 0.2)
+	box-shadow: 0 40px 77px 0 rgba(0, 0, 0, 0.22), 0 27px 24px 0 rgba(0, 0, 0, 0.2);
 }
 
 .drabLabel {
 	font-family:"BentonSansCondBold";
-	color:white;
 	font-size: 5em;
-	text-align: center;
+	text-align:center;
 	word-wrap:normal;
 	padding-left:10px;
 	padding-right:10px;
+	/* text-shadow: 0px 5px #black; */
+
 
 }
 
@@ -48,9 +35,9 @@ a:hover {
 	z-index: 100;
 	box-shadow: 0 40px 77px 0 rgba(0, 0, 0, 0.22), 0 27px 24px 0 rgba(0, 0, 0, 0.2);
 	touch-action: none;
-		border-radius:80px;
-	-moz-border-radius:80px;
-	-webkit-border-radius:80px;
+		border-radius:50px;
+	-moz-border-radius:50px;
+	-webkit-border-radius:40px;
 }
 
 .itemIframe {
@@ -69,8 +56,31 @@ a:hover {
   height: 500px;
 }
 
+
+
+
+/*********** Animations ****************/
+.highlight {
+  transition:0.5s linear all;
+  color:black;
+  background:white;
+}
+.highlight.on-add {
+  background:white;
+  color:black;
+
+}
+.highlight.on {
+  background:#333;
+  color:white;
+}
+.highlight.on-remove {
+/*  background:black;*/
+}
+
+
 .fade.ng-enter {
-  transition:0.2s linear all;
+  transition:0.5s linear all;
   opacity:0;
 }
 
@@ -80,7 +90,7 @@ a:hover {
 }
 
 .fade.ng-leave {
-  transition:0.2s linear all;
+  transition:.5s linear all;
   opacity:1;
 }
 .fade.ng-leave.ng-leave-active {

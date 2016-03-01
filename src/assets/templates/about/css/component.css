@@ -91,13 +91,13 @@ html, body, .container {
   float:left;
 }
 .rightTitle{
-	padding-top: 1%;
+	padding-top: 2.5%;
   padding-right: 20%;
   float:right;
 }
 
 .leftTitle{
-	padding-top: 1%;
+	padding-top: 2.5%;
   padding-left:20%;
   float:left;
 }
@@ -116,8 +116,8 @@ p {
 	padding-top:0px;
 	padding-left:2%;
 	padding-right:1%;
-	padding-bottom:2%;
-	line-height:130%;
+	padding-bottom:0%;
+	line-height:145%;
 	font-weight: 300;
 	font-size: 1.4em;
 	text-align: justify;

@@ -8,7 +8,7 @@ angular.module('angelMounds')
 	$scope.media = media.query();
 	$scope.drabs = [
 		{
-			label: 'ABOUT',
+			label: 'About',
 			template: 'assets/templates/about/index.html',
 			bottom: '0%',
 			left: '0%'
@@ -17,14 +17,14 @@ angular.module('angelMounds')
 
 	$scope.showIdleOverlay = false;
 
-    
-    $scope.$on('IdleStart', function() {
-      // the user appears to have gone idle
-      //console.log('idleStart');
-      
-      // show idle overlay
-      $scope.showIdleOverlay = true;
-    });
+
+	$scope.$on('IdleStart', function() {
+	  // the user appears to have gone idle
+	  //console.log('idleStart');
+
+	  // show idle overlay
+	  $scope.showIdleOverlay = true;
+	});
 
 	$scope.$on('IdleWarn', function(e, countdown) {
 	  // follows after the IdleStart event, but includes a countdown until the user is considered timed out
