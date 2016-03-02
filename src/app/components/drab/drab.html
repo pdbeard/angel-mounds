@@ -1,11 +1,11 @@
 <div ng-class="{ on: dc.active }"
-	 class="drab highlight"
+	 class="drab highlight shadow-site-button"
 	 hm-tap="dc.activate"
 	 hm-recognizer-options='{"preventDefault":true}'>
   <h1 class="drabLabel">{{dc.config.label}}</h1>
   </div>
   <div ng-if="dc.active"
-	   class="drabPane fade"
+	   class="drabPane fade shadow-site-button"
        ng-style="{ 'z-index': dc.zInit }"
        hm-tap="dc.touchThis"
        hm-recognizer-options='{"stopPropagation":true}'>
