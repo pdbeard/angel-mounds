@@ -21,7 +21,7 @@
   height: 1010px;
   overflow: hidden;
   font-size: 3em;
-  z-index: 9007199254740991; /* Number.MAX_SAFE_INTEGER */
+  /*z-index: 9007199254740991;  Number.MAX_SAFE_INTEGER */
   border: 3px solid black;
   opacity: .97;
   touch-action: none;

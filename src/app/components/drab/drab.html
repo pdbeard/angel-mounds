@@ -6,25 +6,27 @@
   </div>
   <div ng-if="dc.active"
 	   class="drabPane fade"
-	   hm-recognizer-options='{"stopPropagation":true}'>
-	<div class="title-bar">
-	  <h2 class="leftTitle header">ABOUT ANGEL MOUNDS</h2>
-	  <h2 class="rightTitle header">FAQ</h2>
-	</div>
-	<div class="page-left">
-	  <section class="left">
-		<img class="indiana" src="assets/images/Indiana-Map-dark.jpg"></img>
-		<p class="paragraph">
-		  Located on the banks of the Ohio River in southwest Indiana, Angel Mounds State Historic Site is one of the best-preserved Mississippian sites in North America. The site was built and occupied between A.D. 1050 and 1400, and would have supported several thousand residents. Mississippian is a term archaeologists use to describe the people who settled along major waterways in the Midwest and Southeast United States during this time. They shared similar cultural items and traits, and they often built large earthen mounds as platforms to elevate important buildings.
-		</p>
-		<p class="paragraph">
+       ng-style="{ 'z-index': dc.zInit }"
+       hm-tap="dc.touchThis"
+       hm-recognizer-options='{"stopPropagation":true}'>
+    <div class="title-bar">
+      <h2 class="leftTitle header">ABOUT ANGEL MOUNDS</h2>
+      <h2 class="rightTitle header">FAQ</h2>
+    </div>
+    <div class="page-left">
+      <section class="left">
+        <img class="indiana" src="assets/images/Indiana-Map-dark.jpg"></img>
+        <p class="paragraph">
+          Located on the banks of the Ohio River in southwest Indiana, Angel Mounds State Historic Site is one of the best-preserved Mississippian sites in North America. The site was built and occupied between A.D. 1050 and 1400, and would have supported several thousand residents. Mississippian is a term archaeologists use to describe the people who settled along major waterways in the Midwest and Southeast United States during this time. They shared similar cultural items and traits, and they often built large earthen mounds as platforms to elevate important buildings.
+        </p>
+        <p class="paragraph">
 
 		  The original Angel site included 11 earthen mounds and covered an area of 103 acres. More than a mile of defensive walls known as palisades once extended around the site. Houses were distributed within neighborhoods and were most abundant in the eastern half of the village. Houses were often placed in association with plazas,
 		  <img class="map" src="assets/images/MississippianSitesMap-dark.jpg"></img>
 		  which are open spaces that may have had ceremonial significance. Angel Mounds operated as a chiefdom, and would have served as an important religious, political, and trade center for people living within the region.
 
 		</p>
-		<p class="paragraph">
+        <p class="paragraph">
 		  This interactive exhibit allows you to explore the Angel Mounds site. Discover more images and information about the lifeways of the Mississippian people who lived here by clicking on the colored icons placed around the screen.
 		</p>
 	  </section>
