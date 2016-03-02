@@ -1,12 +1,13 @@
-(function() {
+(function () {
   'use strict';
 
   angular
-	.module('angelMounds')
-	.directive('drab', ['zIndex', drab]);
+    .module('angelMounds')
+    .directive('drab', ['zIndex', drab]);
 
   /** @ngInject */
   function drab(zIndex) {
+<<<<<<< HEAD
 	var directive = {
 	  restrict: 'E',
 	  templateUrl: 'app/components/drab/drab.html',
@@ -34,6 +35,29 @@
 		  }
 
 
+=======
+    var directive = {
+      restrict: 'E',
+      templateUrl: 'app/components/drab/drab.html',
+      scope: {
+        config: '='
+      },
+      controller: DrabController,
+      controllerAs: 'dc',
+      bindToController: true,
+      link: link
+    };
+
+    return directive;
+
+
+    function link(scope, element) {
+      
+      scope.dc.check = function(){
+		  var radio = event.target.previousElementSibling;
+
+		  angular.element(radio).prop("checked",true);
+>>>>>>> e008b724081874b426417068a10bc43ca332253a
 	  };
       
       scope.dc.touchThis = function (event) {
