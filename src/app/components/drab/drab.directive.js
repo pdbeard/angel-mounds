@@ -23,18 +23,17 @@
 
 
 	function link(scope, element) {
-	  /*element.children().css({
-		left: scope.dc.config.left,
-		bottom: scope.dc.config.bottom
-	  });*/
 
 		  scope.dc.check = function(){
-		  var radio = event.target.previousElementSibling;
-//		  console.log(event.currentTarget.nextElementSibling);
-		  console.log("yup");
+		  var radio = angular.element(event.target.previousElementSibling);
 
-		  angular.element(radio).prop("checked",true);
-		  event.target.type;
+		  if (radio.prop("checked")){
+			  radio.prop("checked", false);
+		  }else{
+			  radio.prop("checked",true);
+		  }
+
+
 	  };
 	}
 
