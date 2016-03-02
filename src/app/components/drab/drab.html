@@ -5,7 +5,8 @@
   <h1 class="drabLabel">{{dc.config.label}}</h1>
   <div ng-if="dc.active"
        class="drabPane fade"
-       hm-tap=""
+       ng-style="{ 'z-index': dc.zInit }"
+       hm-tap="dc.touchThis"
        hm-recognizer-options='{"stopPropagation":true}'>
     <div class="title-bar">
       <h2 class="leftTitle header">ABOUT ANGEL MOUNDS</h2>

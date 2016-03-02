@@ -164,7 +164,7 @@
         },
         scale: item.SCALE_MIN,
         angle: init.angle,
-        zIndex: 'auto'
+        zIndex: zIndex.getNextZIndex()
       };
       
       // for video only
