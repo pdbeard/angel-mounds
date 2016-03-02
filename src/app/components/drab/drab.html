@@ -1,7 +1,7 @@
 <div
-	  ng-class="{on:onOff}"
+	  ng-class="{ on: dc.active }"
 	  class="drab highlight"
-	 hm-tap="dc.activate(); onOff=!onOff"
+	 hm-tap="dc.activate"
 	 hm-recognizer-options='{"preventDefault":true}'
 	 >
 		<h1 class="drabLabel">{{dc.config.label}}</h1>
