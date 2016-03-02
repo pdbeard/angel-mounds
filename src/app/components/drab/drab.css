@@ -43,11 +43,6 @@
   touch-action: none;
 }
 
-.drabPane img {
-  object-fit: contain;
-  width: 100%;
-  height: 500px;
-}
 
 
 /*********** Animations ****************/
@@ -123,15 +118,13 @@
 .page-left {
   position: relative;
   width: 60%;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 0%;
   background: #333;
   float: left;
 }
 
 .page-center {
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 0%;
   position: relative;
   width: 40%;
   /*outline: 5px solid #ecf0f1;
@@ -190,10 +183,123 @@
 
 .paragraph {
   margin-top: .8em;
-  margin-bottom: 0px;
+  margin-left:2%;
   line-height: 145%;
   font-weight: 300;
-  font-size: 0.4em;
+  font-size: 0.45em;
   text-align: justify;
   font-family: "BentonSansCondRegular";
+}
+
+
+.ac-container{
+	width: 100%;
+	height:100%;
+	margin: 10px auto 30px auto;
+	text-align: left;
+	background:pink;
+}
+.ac-container label{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	padding: 1.5em 2em;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 3em;
+	cursor: pointer;
+	color: white;
+	/*text-shadow: 1px 1px 1px rgba(255,255,255,0.8);*/
+	line-height: 33px;
+	font-size: 19px;
+	background: #474747;
+	  -webkit-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);
+  box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);
+
+  /*
+	background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+	background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+  */
+/*	box-shadow:
+		0px 0px 0px 1px rgba(155,155,155,0.3),
+		1px 0px 0px 0px rgba(255,255,255,0.9) inset,
+		0px 2px 2px rgba(0,0,0,0.1);
+*/
+}
+.ac-container label:hover{
+	background: #333;
+}
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+	background: #474747;
+	color: white;
+	/*text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);*/
+
+  -webkit-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);
+  box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);
+}
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after{
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 13px;
+	top: 7px;
+	background: transparent url(../images/arrow_down.png) no-repeat center center;
+}
+.ac-container input:checked + label:hover:after{
+	background-image: url(../images/arrow_up.png);
+}
+.ac-container input{
+	display: none;
+}
+.ac-container article{
+	background: #5b5b5b;
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.ac-container article p{
+	font-style: italic;
+	color: white;
+	line-height: 1.4em;
+	font-size: .4em;
+	padding: .5em;
+/*	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);*/
+}
+.ac-container input:checked ~ article{
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.1s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.1s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.1s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.1s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.1s linear;
+	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+.ac-container input:checked ~ article.ac-small{
+	height: 140px;
+}
+.ac-container input:checked ~ article.ac-medium{
+	height: 180px;
+}
+.ac-container input:checked ~ article.ac-large{
+
+	height: 230px;
+
+  -webkit-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);
+  box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);
 }
