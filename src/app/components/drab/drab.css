@@ -1,95 +1,199 @@
-
-body {
-/*	font-family: 'Lato', Calibri, Arial, sans-serif;*/
-/*	color: #fff;*/
-	background: #333;
-}
-
 .drab {
-	position: relative;
-	-webkit-box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 1);
--moz-box-shadow:    0px 7px 4px 0px rgba(0, 0, 0, 1);
-box-shadow:         0px 7px 4px 0px rgba(0, 0, 0, 1);
+  position: relative;
+  -webkit-box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 1);
 }
 
 .drabLabel {
-	font-family:"BentonSansCondBold";
-	font-size: 3.5em;
-	text-align:center;
-	word-wrap:normal;
-/*	 text-shadow: 0px 5px black;*/
+  font-family: "BentonSansCondBold";
+  font-size: 3.5em;
+  text-align: center;
+  word-wrap: normal;
+  /*	 text-shadow: 0px 5px black;*/
 }
 
 .drabPane {
-	position: absolute;
-	left:-610px;
-	bottom: 250px;
-	width: 1600px;
-	height: 1010px;
-	overflow: hidden;
-	font-size: 3em;
-	z-index: 9007199254740991; /* Number.MAX_SAFE_INTEGER */
-	border:3px solid black;
-	opacity:.97;
-	touch-action: none;
-		border-radius:50px;
-	-moz-border-radius:50px;
-	-webkit-border-radius:40px;
+  position: absolute;
+  left: -610px;
+  bottom: 250px;
+  width: 1600px;
+  height: 1010px;
+  overflow: hidden;
+  font-size: 3em;
+  z-index: 9007199254740991; /* Number.MAX_SAFE_INTEGER */
+  border: 3px solid black;
+  opacity: .97;
+  touch-action: none;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 40px;
+  color: #fff;
+  background: #333;
 }
 
 .itemIframe {
-	width: 100%;
-	opacity:.97;
-	height:1000px;
-	border-radius:80px;
-	-moz-border-radius:80px;
-	-webkit-border-radius:80px;
-	overflow: hidden;
-	touch-action: none;
+  width: 100%;
+  opacity: .97;
+  height: 1000px;
+  border-radius: 80px;
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  overflow: hidden;
+  touch-action: none;
 }
 
 .drabPane img {
-	object-fit: contain;
-	width: 100%;
-	height: 500px;
+  object-fit: contain;
+  width: 100%;
+  height: 500px;
 }
+
 
 /*********** Animations ****************/
+
 .highlight {
-  transition:0.5s linear all;
-  color:black;
-  background:#d9d9d9;
+  transition: 0.5s linear all;
+  color: black;
+  background: #d9d9d9;
   border: 3px solid black;
-
 }
+
 .highlight.on-add {
-  background:white;
-  color:black;
-
+  background: white;
+  color: black;
 }
+
 .highlight.on {
-  background:#333;
-  color:white;
-}
-.highlight.on-remove {
-/*  background:black;*/
+  background: #333;
+  color: white;
 }
 
+.highlight.on-remove {
+  /*  background:black;*/
+}
 
 .fade.ng-enter {
-  transition:.5s linear all;
-  opacity:0;
+  transition: .5s linear all;
+  opacity: 0;
 }
 
+
 /* The finishing CSS styles for the enter animation */
+
 .fade.ng-enter.ng-enter-active {
-  opacity:1;
+  opacity: 1;
 }
 
 .fade.ng-leave {
-  transition:0.2s linear all;
-  opacity:1;
+  transition: 0.2s linear all;
+  opacity: 1;
 }
+
 .fade.ng-leave.ng-leave-active {
-  opacity:0;
+  opacity: 0;
+}
+
+.indiana {
+  float: right;
+  max-height: 20%;
+  max-width: 20%;
+}
+
+.map {
+  border: solid 10px #272727;
+  float: left;
+  margin: 10px;
+  max-width: 63%;
+  max-height: 63%;
+}
+
+.frame {
+  width: 100%;
+  height: 850px;
+}
+
+.title-bar {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+}
+
+.page-left {
+  position: relative;
+  width: 60%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background: #333;
+  float: left;
+}
+
+.page-center {
+  padding-left: 2%;
+  padding-right: 2%;
+  position: relative;
+  width: 40%;
+  /*outline: 5px solid #ecf0f1;
+  background: #ecf0f1;
+  color: #97a8b2;*/
+  float: left;
+}
+
+.page-right {
+  position: relative;
+  width: 40%;
+  float: right;
+}
+
+
+/* Inner page content */
+
+.page-inner {
+  padding: 2em;
+}
+
+.page-inner section {
+  padding-bottom: 1em;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.rightTitle {
+  padding-top: 2.5%;
+  padding-right: 20%;
+  float: right;
+}
+
+.leftTitle {
+  padding-top: 2.5%;
+  padding-left: 20%;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.header {
+  font-family: "BentonSansCondBold";
+  margin: 0;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.paragraph {
+  margin-top: .8em;
+  margin-bottom: 0px;
+  line-height: 145%;
+  font-weight: 300;
+  font-size: 0.4em;
+  text-align: justify;
+  font-family: "BentonSansCondRegular";
 }
