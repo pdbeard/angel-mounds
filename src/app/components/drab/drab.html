@@ -3,9 +3,9 @@
 	 hm-tap="dc.activate"
 	 hm-recognizer-options='{"preventDefault":true}'>
   <h1 class="drabLabel">{{dc.config.label}}</h1>
+  </div>
   <div ng-if="dc.active"
 	   class="drabPane fade"
-	   hm-tap=""
 	   hm-recognizer-options='{"stopPropagation":true}'>
 	<div class="title-bar">
 	  <h2 class="leftTitle header">ABOUT ANGEL MOUNDS</h2>
@@ -32,36 +32,48 @@
 	<div class="page-right">
 		<div class="container">
 
-			<section class="ac-container">
-				<div>
-					<input id="ac-1" name="accordion-1" type="radio"  />
-					<label for="ac-1">Q: Why is the site called Angel Mounds?</label>
+			<section class="ac-container"
+			 ng-click="$event.stopPropagation()">
+
+				<div
+					hm-tap="dc.check()"
+					hm-recognizer-options='{"preventDefault":true}'>
+					<input id="ac-1" name="accordion-1" type="radio"/>
+				 <label for="ac-1">Q: Why is the site called Angel Mounds?</label>
 					<article class="ac-large">
 						<p>A: The site is named for the Angel family who owned and farmed a large portion of the site in the 19th century. In 1938, Mr. Eli Lilly purchased the land and donated it to the State of Indiana to preserve the mounds.</p>
 					</article>
 				</div>
-				<div>
+				<div
+					hm-tap="dc.check()"
+					hm-recognizer-options='{"preventDefault":true}'>
 					<input id="ac-2" name="accordion-1" type="radio" />
 					<label for="ac-2">Q: What tribes lived at the site? </label>
 					<article class="ac-large">
 						<p> A: The residents of Angel Mounds were the ancestors to tribes known today, although it is difficult to precisely identify which ones. They may have spoken a language ancestral to those spoken by several tribes of the Mississippi valley. In the 18th to 19th centuries, Shawnee, Miami, Potawatomi, Wea, Delaware and members of many other tribes moved through the region and used the areas around Angel Mounds.</p>
 					</article>
 				</div>
-				<div>
+				<div
+					hm-tap="dc.check()"
+					hm-recognizer-options='{"preventDefault":true}'>
 					<input id="ac-3" name="accordion-1" type="radio" />
 					<label for="ac-3">Q: Can the public visit Angel Mounds?</label>
 					<article class="ac-large">
 						<p>Yes, Angel Mounds is an Indiana State Historic Site and is open to the public. Facilities at the site include an interpretive center, recreations of Mississippian buildings and a working reconstruction of the 1939 WPA archaeology laboratory. The 500-acre non-archaeological portion of the site contains a nature preserve with hiking and biking trails. For more information, visit: http://www.indianamuseum.org/explore/angel-mounds.</p>
 					</article>
 				</div>
-				<div>
+				<div
+					hm-tap="dc.check()"
+					hm-recognizer-options='{"preventDefault":true}'>
 					<input id="ac-4" name="accordion-1" type="radio" />
 					<label for="ac-4">Q: When was the site excavated?</label>
 					<article class="ac-large">
 						<p> A: Starting in 1939, under the direction of Glenn A. Black, a crew of 277 Works Progress Administration (WPA) workers began excavating the site, recovering over 2.5 million artifacts. Indiana University's Glenn Black Laboratory of Archaeology has since conducted a number of field school excavations at the site and continues to curate and research the Angel Mounds artifact collections. </p>
 					</article>
 				</div>
-				<div>
+				<div
+					hm-tap="dc.check()"
+					hm-recognizer-options='{"preventDefault":true}'>
 					<input id="ac-5" name="accordion-1" type="radio" />
 					<label for="ac-5">Q: When and why did the Mississippian people leave Angel Mounds?</label>
 					<article class="ac-large">
@@ -72,6 +84,6 @@
 		</div>
 	</div>
   </div>
-</div>
+
 
 

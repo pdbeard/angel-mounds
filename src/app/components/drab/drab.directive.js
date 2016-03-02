@@ -27,6 +27,15 @@
 		left: scope.dc.config.left,
 		bottom: scope.dc.config.bottom
 	  });*/
+
+		  scope.dc.check = function(){
+		  var radio = event.target.previousElementSibling;
+//		  console.log(event.currentTarget.nextElementSibling);
+		  console.log("yup");
+
+		  angular.element(radio).prop("checked",true);
+		  event.target.type;
+	  };
 	}
 
 	/**
@@ -39,18 +48,10 @@
 
 	  dc.active = false;
 
-dc.frameLoad = function(){
 
-	  var iframe = document.getElementsByClassName('itemIframe');
-	  var frameBody = iframe[0].contentDocument.body;
-	  frameBody.click();
-		console.log(iframe[0].contentDocument.body);
-//	window.onload = function(){
-//		  //var iframeBody = iframe.contentWindow.document.body;
-//		  console.log("testetse");
-//}
-}
+
 	  dc.activate = function () {
+		  console.log("drr");
 		dc.active = !dc.active;
 	  };
 	}
