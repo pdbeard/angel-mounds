@@ -90,9 +90,22 @@
       // stop tap events from bubbling up to the sites
       scope.item.touchThis = function (event) {
         event.srcEvent.stopImmediatePropagation();
+        console.log(event.target.className);
+        var className = event.target.className;
         
         if (event.type === 'tap') {
-          scope.item.transform.scale = scope.item.SCALE_RESET;
+          // prevent scale-on-tap for video since you need to be able to tap controls
+          if (scope.item.thing.type === 'video') {
+            if ((className === 'titleBar') || 
+                (className === 'descbox') ||
+                className.startsWith('description') ||
+                className.startsWith('titleFont')) {
+              scope.item.transform.scale = scope.item.SCALE_RESET;
+            }
+          } else {
+            scope.item.transform.scale = scope.item.SCALE_RESET;           
+          }
+          
         }
         else {
           scope.item.grabbed = true; 
