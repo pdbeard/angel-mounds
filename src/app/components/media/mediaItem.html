@@ -9,10 +9,10 @@
 	hm-panend="item.cantTouchThis"
 	hm-pinchend="item.cantTouchThis"
 	hm-rotateend="item.cantTouchThis"
-	hm-recognizer-options='[
-	  {"type":"tap","pointers":1},
-	  {"type":"pan","pointers":0}
-	]'
+    hm-recognizer-options='[
+      {"type":"tap","pointers":1},
+      {"type":"pan","pointers":0}
+    ]'
 	analytics-on="click"
 	analytics-label="{{item.thing.url}}">
   <div id="card" layout="column">
@@ -52,7 +52,7 @@
 	 <div id ="item{{$index}}"
 		 style="width: 100%"
 		 class="slideable" duration=".3s">
-	   <div layout = "row">
+	   <div class="titleBar" layout = "row">
 		 <h1 class="titleFont" layout-style="center center">
 		 {{item.thing.title}}
 		 </h1>
@@ -74,7 +74,7 @@
 	   </div>
 	   <div class="descbox" layout ="column">
 		 <p class="description">{{item.thing.description}}</p>
-		 <p class="attribution">{{item.thing.attribution}}</p>
+         <p class="attribution">{{item.thing.attribution}}</p>
 	   </div>
 	 </div>
    </div>
