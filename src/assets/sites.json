@@ -1,6 +1,6 @@
 [
   {
-	"logo": "../icons/Agriculture.png",
+	"logo": "../icons/Agriculture.svg",
 	"y": 900,
 	"x": 1400,
 	"width": 100,
@@ -12,7 +12,7 @@
 	"layout": "circle"
   },
   {
-	"logo": "../icons/Ceremonial.png",
+	"logo": "../icons/Ceremonial.svg",
 	"y": 1600,
 	"x": 950,
 	"width": 100,
@@ -24,7 +24,7 @@
 	"layout": "circle"
   },
   {
-	"logo": "../icons/Daily-Life.png",
+	"logo": "../icons/Daily-Life.svg",
 	"y": 1000,
 	"x": 3000,
 	"width": 100,
@@ -36,7 +36,7 @@
 	"layout": "circle"
   },
   {
-	"logo": "../icons/Landscape.png",
+	"logo": "../icons/Landscape.svg",
 	"y": 600,
 	"x": 500,
 	"width": 100,
@@ -48,7 +48,7 @@
 	"layout": "circle"
   },
   {
-	"logo": "../icons/Protection.png",
+	"logo": "../icons/Protection.svg",
 	"y": 400,
 	"x": 2200,
 	"width": 100,
@@ -60,7 +60,7 @@
 	"layout": "circle"
   },
   {
-	"logo": "../icons/River.png",
+	"logo": "../icons/River.svg",
 	"y": 1700,
 	"x": 3200,
 	"width": 100,
