@@ -200,7 +200,7 @@
 }
 .ac-container label{
 	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-	padding: 1.5em 2em;
+	padding: 1.6em 0em 0em .6em;
 	position: relative;
 	z-index: 20;
 	display: block;
@@ -208,8 +208,8 @@
 	cursor: pointer;
 	color: white;
 	/*text-shadow: 1px 1px 1px rgba(255,255,255,0.8);*/
-	line-height: 33px;
-	font-size: 19px;
+	line-height: 1.5em;
+	font-size: .56em;
 	background: #474747;
 	  -webkit-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);
   -moz-box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,0.48);

@@ -9,6 +9,17 @@
   font-style:normal
 }
 
+@font-face {
+  font-family:'BebasNeueRegular';
+  src:url("../assets/fonts/BebasNeue-webfont.eot");
+  src:url("../assets/fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"),
+	  url("../assets/fonts/BebasNeue-webfont.woff") format("woff"),
+	  url("../assets/fonts/BebasNeue-webfont.ttf") format("truetype"),
+	  url("../assets/fonts/BebasNeue-webfont.svg#videogular") format("svg");
+  font-weight:400;
+  font-style:normal
+}
+
 /***************  IU Fonts  *********************/
 @font-face {
 	font-family: 'BentonSansRegular';
