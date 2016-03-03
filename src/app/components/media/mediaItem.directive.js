@@ -152,7 +152,7 @@
                                 item.hub.layoutAngle);
       
       item.SCALE_MIN = 0.1;
-      item.SCALE_RESET = 0.5;
+      item.SCALE_RESET = 0.3;
       item.SCALE_MAX = 1.0;
       item.WINDOW_SCALE = windowScale.getWindowScale();
       item.grabbed = false;
