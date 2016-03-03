@@ -28,14 +28,19 @@ md-card {
 }
 
 .titlebox {
-  background: no-repeat left center;
-  background-size: 900px 900px;
-  opacity: 1;
-  position: absolute;
+  opacity: .2;
+  position: relative;
   height: 100%;
   width: 100%;
-  left: 0px;
+/*  left: -100px;*/
   z-index: -1;
+}
+.imgSize{
+	 position:absolute;
+	left:-100px;
+	 top:-170px;
+	 width:700px;
+	 height:700px;
 }
 
 .titleFont {
